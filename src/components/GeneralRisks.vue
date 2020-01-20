@@ -1,15 +1,27 @@
 <template>
+  <div class="first_graph">
+  <div class="command">
+    <SensesSelect
+    :options='scenarioArray'
+    v-model='selected'/>
+   </div>
   <div class="bubbles">
     <svg>
         <line
-        v-for="(single,i) in createDots[0].singleDots"
+        v-for="(single, i) in createDots[0].singleDots"
         v-bind:key="i"
         stroke="black"
         :x1="single.horizontal"
         y1="100"
         :x2="single.horizontal"
-        y2="600"
+        y2="650"
         />
+        <text
+        v-for="(single, i) in createDots[0].singleDots"
+        v-bind:key="i"
+        :x="single.horizontal"
+        y="680"
+        >{{ years[i] }}</text>
       <g v-for="(dot,i) in createDots" v-bind:key="i" :id="dot.label">
       <circle
       v-for="(single, i) in dot.singleDots"
@@ -21,6 +33,7 @@
     </g>
    </svg>
   </div>
+</div>
 </template>
 
 <script>
@@ -28,8 +41,14 @@ import * as d3 from 'd3'
 import _ from 'lodash'
 
 import PrEnQuantity from '../assets/data/PrimaryEnergyQuantity.json'
+
+import SensesSelect from 'library/src/components/SensesSelect.vue'
+
 export default {
   name: 'GeneralRisks',
+  components: {
+    SensesSelect
+  },
   props: {
     step: {
       type: Number,
@@ -46,7 +65,25 @@ export default {
   },
   data () {
     return {
-      PrEnQuantity
+      PrEnQuantity,
+      years: [
+        2005,
+        2010,
+        2015,
+        2020,
+        2025,
+        2030,
+        2035,
+        2040,
+        2045,
+        2050,
+        2055,
+        2060,
+        2070,
+        2080,
+        2090,
+        2100],
+      selected: 'NPi2020_400_V3'
     }
   },
   computed: {
@@ -59,49 +96,67 @@ export default {
     },
     transformData () {
       let obj = {}
+      const allValues = []
       _.forEach(this.groupData, (scenario, s) => {
         let scenObj = {}
         _.forEach(scenario, (energy, e) => {
           const data = _.map(energy)
+          const cleanData = data.splice(0, 16)
           const label = energy['variable']
-          scenObj[label] = data.splice(0, 16)
+          scenObj[label] = cleanData
+          _.map(energy, (el, e) => { allValues.push(el) })
         })
         obj[s] = scenObj
       })
-      return obj
+      return {
+        obj,
+        allValues: d3.values(allValues)
+      }
+    },
+    scenarioArray () {
+      const allScenario = []
+      const { obj } = this.transformData
+
+      _.forEach(obj, (arr, key) => {
+        allScenario.push(key)
+        return allScenario
+      })
+      return allScenario
     },
     selectData () {
-      const data = this.transformData
-      return data['NPi2020_400_V3']
+      const selected = this.selected
+      const { obj } = this.transformData
+      return obj[selected]
     },
     scale () {
+      const { allValues } = this.transformData
       return d3.scaleLinear()
-        .range([0, 800])
+        .domain([0, d3.max(allValues)])
+        .range([0, 2000])
     },
     createDots () {
       const selecteddata = this.selectData
       const scale = this.scale
-      const arrayData = _.forEach(selecteddata, (energy, e) => { d3.values(energy) })
-      let initDist = 50
-      console.log(this.svgWidth)
+      // const arrayData = _.forEach(selecteddata, (energy, e) => { d3.values(energy) })
+      let initDist = 0
 
       const dots = _.map(selecteddata, (energy, e) => {
         const dist = initDist
-        initDist = dist + 150
+        initDist = dist + 180
 
         let initHorizontal = this.svgWidth
-        if (this.step === 1) { initHorizontal = 50 }
 
         const singleDots = _.map(energy, (dot, d) => {
           const distHor = initHorizontal
-          initHorizontal = distHor + 50
+          initHorizontal = distHor + 45
           return {
-            single: scale.domain([0, d3.max(arrayData[e])])(Math.sqrt(dot)),
+            single: scale(Math.sqrt(dot)),
             horizontal: initHorizontal
           }
         })
         return {
-          singleDots: this.step === 1 ? singleDots : [singleDots[0]],
+          singleDots: this.step === 0 ? [singleDots[0]] : singleDots &&
+          this.step === 1 ? [singleDots[0], singleDots[15]] : singleDots,
           label: e,
           vertical: initDist
         }
@@ -117,13 +172,26 @@ export default {
 <style scoped lang="scss">
 @import "library/src/style/variables.scss";
 
+.first_graph {
+  margin: 0 auto;
+  max-width: 1000px;
+  width: 100%;
+}
+
 .bubbles {
   margin: 0 auto;
   display: flex;
   position: sticky;
-  max-width: 900px;
+  max-width: 1000px;
   width: 100%;
   height: 100vh;
+}
+
+.command {
+  margin: 0 auto;
+  max-width: 600px;
+  height: 30px;
+  left: 0px;
 }
 
 svg {
@@ -139,6 +207,10 @@ svg {
 
   line {
     stroke: getColor(gray, 50);
+  }
+
+  text {
+    text-anchor: middle;
   }
 
   .primenCoal {

@@ -22,7 +22,7 @@
             height: `${height}px`
            }"
         >
-        <GeneralRisks v-if="step <= 2" :step="step" :width="width" :height="height"/>
+        <GeneralRisks v-if="step <= 3" :step="step" :width="width" :height="height"/>
         </div>
       </template>
       <div slot="text" class="observer">
