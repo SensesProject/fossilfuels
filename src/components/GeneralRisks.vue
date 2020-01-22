@@ -23,13 +23,18 @@
         y="680"
         >{{ years[i] }}</text>
       <g v-for="(dot,i) in createDots" v-bind:key="i" :id="dot.label">
+        <path
+        v-bind:key="shape"
+        :d="dot.area"
+        :class="dot.label"
+        />
       <circle
       v-for="(single, i) in dot.singleDots"
       v-bind:key="i"
       :class="dot.label"
       :r="single.single"
       :cx="single.horizontal"
-      :cy="dot.vertical"/>
+      :cy="single.vertical"/>
     </g>
    </svg>
   </div>
@@ -38,6 +43,7 @@
 
 <script>
 import * as d3 from 'd3'
+import { area, curveCardinal } from 'd3-shape'
 import _ from 'lodash'
 
 import PrEnQuantity from '../assets/data/PrimaryEnergyQuantity.json'
@@ -134,13 +140,25 @@ export default {
         .domain([0, d3.max(allValues)])
         .range([0, 2000])
     },
+    drawArea () {
+      return area()
+        .curve(curveCardinal)
+        .x((d) => {
+          return d.horizontal
+        })
+        .y1((d) => {
+          return d.y1
+        })
+        .y0((d) => {
+          return d.y0
+        })
+    },
     createDots () {
       const selecteddata = this.selectData
       const scale = this.scale
-      // const arrayData = _.forEach(selecteddata, (energy, e) => { d3.values(energy) })
       let initDist = 0
 
-      const dots = _.map(selecteddata, (energy, e) => {
+      return _.map(selecteddata, (energy, e) => {
         const dist = initDist
         initDist = dist + 180
 
@@ -151,18 +169,20 @@ export default {
           initHorizontal = distHor + 45
           return {
             single: scale(Math.sqrt(dot)),
-            horizontal: initHorizontal
+            vertical: initDist,
+            horizontal: initHorizontal,
+            y0: initDist - scale(Math.sqrt(dot)),
+            y1: initDist + scale(Math.sqrt(dot))
           }
         })
         return {
           singleDots: this.step === 0 ? [singleDots[0]] : singleDots &&
           this.step === 1 ? [singleDots[0], singleDots[15]] : singleDots,
           label: e,
-          vertical: initDist
+          area: this.step === 1 ? this.drawArea([singleDots[0], singleDots[15]]) : this.drawArea(singleDots) &&
+          this.step === 0 ? '' : this.drawArea(singleDots)
         }
       })
-      console.log(dots)
-      return dots
     }
   }
 }
@@ -181,7 +201,6 @@ export default {
 .bubbles {
   margin: 0 auto;
   display: flex;
-  position: sticky;
   max-width: 1000px;
   width: 100%;
   height: 100vh;
@@ -203,6 +222,10 @@ svg {
 
   circle {
     fill-opacity: 0.7;
+  }
+
+  path {
+    fill-opacity: 0;
   }
 
   line {

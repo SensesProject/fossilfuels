@@ -11,6 +11,14 @@
       <p>
         We live in a society heavily relying on fossil fuels, mitigation
         strategies due to climate change will force us to change our model.
+        <br />
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum.
       </p>
     </div>
 <LayoutScrollytelling>
@@ -70,10 +78,9 @@ export default {
 
 .noscroll {
   padding-top: $spacing;
-  margin: 0 auto;
+  margin: 20px auto;
   max-width: 600px;
   width: 100%;
-  height: 200px;
 }
 
 .author__section {
