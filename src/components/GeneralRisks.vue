@@ -1,37 +1,52 @@
 <template>
   <div class="first_graph">
-  <div class="command">
+  <div class="command" v-if ="step < 3">
+    Select a primary energy scenario: <br/>
     <SensesSelect
     :options='scenarioArray'
     v-model='selected'/>
    </div>
   <div class="bubbles">
     <svg>
+      <linearGradient id="PriceRisk">
+        <stop offset="0%" stop-color="#fcb69f"/>
+        <stop offset="75%" stop-color="#fcb69f" stop-opacity="0.2"/>
+      </linearGradient>
+      <linearGradient id="UncRisk">
+        <stop offset="0%" stop-color="#ed96ab"/>
+        <stop offset="90%" stop-color="#ed96ab" stop-opacity="0"/>
+      </linearGradient>
+      <filter id="glitch">
+          <feGaussianBlur stdDeviation="0.8" edgeMode="wrap"/>
+          <feTurbulence type="fractalNoise" baseFrequency="0.02 0.05" numOctaves="1" result="warp" />
+          <feDisplacementMap scale="15" in="SourceGraphic" in2="warp" />
+      </filter>
         <line
         v-for="(single, i) in createDots[0].singleDots"
         v-bind:key="i"
         stroke="black"
         :x1="single.horizontal"
-        y1="100"
+        y1="50"
         :x2="single.horizontal"
-        y2="650"
+        :y2="height - 150"
         />
         <text
         v-for="(single, i) in createDots[0].singleDots"
         v-bind:key="i"
         :x="single.horizontal"
-        y="680"
+        :y="height - 130"
         >{{ years[i] }}</text>
       <g v-for="(dot,i) in createDots" v-bind:key="i" :id="dot.label">
         <path
         v-bind:key="shape"
         :d="dot.area"
-        :class="dot.label"
+        :class="[dot.label, step >= 3 ? 'paths_info' : '']"
         />
       <circle
       v-for="(single, i) in dot.singleDots"
       v-bind:key="i"
-      :class="dot.label"
+      :id="step >= 3 ? single.id : ''"
+      :class="[dot.label, step >= 3 ? 'dots_info' : '']"
       :r="single.single"
       :cx="single.horizontal"
       :cy="single.vertical"/>
@@ -44,6 +59,7 @@
 <script>
 import * as d3 from 'd3'
 import { area, curveCardinal } from 'd3-shape'
+import numberToWords from 'number-to-words'
 import _ from 'lodash'
 
 import PrEnQuantity from '../assets/data/PrimaryEnergyQuantity.json'
@@ -94,7 +110,7 @@ export default {
   },
   computed: {
     svgWidth () {
-      return 900 / 5
+      return 900 / 9
     },
     groupData () {
       const primaryenergy = this.PrEnQuantity
@@ -130,7 +146,8 @@ export default {
       return allScenario
     },
     selectData () {
-      const selected = this.selected
+      let selected = this.selected
+      if (this.step === 3) { selected = 'NPi2020_400_V3' }
       const { obj } = this.transformData
       return obj[selected]
     },
@@ -160,7 +177,7 @@ export default {
 
       return _.map(selecteddata, (energy, e) => {
         const dist = initDist
-        initDist = dist + 180
+        initDist = dist + 160
 
         let initHorizontal = this.svgWidth
 
@@ -168,6 +185,7 @@ export default {
           const distHor = initHorizontal
           initHorizontal = distHor + 45
           return {
+            id: numberToWords.toWords(d),
             single: scale(Math.sqrt(dot)),
             vertical: initDist,
             horizontal: initHorizontal,
@@ -177,9 +195,9 @@ export default {
         })
         return {
           singleDots: this.step === 0 ? [singleDots[0]] : singleDots &&
-          this.step === 1 ? [singleDots[0], singleDots[15]] : singleDots,
+          this.step === 1 | this.step >= 3 ? [singleDots[0], singleDots[15]] : singleDots,
           label: e,
-          area: this.step === 1 ? this.drawArea([singleDots[0], singleDots[15]]) : this.drawArea(singleDots) &&
+          area: this.step === 1 | this.step >= 3 ? this.drawArea([singleDots[0], singleDots[15]]) : this.drawArea(singleDots) &&
           this.step === 0 ? '' : this.drawArea(singleDots)
         }
       })
@@ -191,6 +209,11 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 @import "library/src/style/variables.scss";
+@media screen and (min-height: 700px) {
+  svg {
+    height: 50%;
+  }
+}
 
 .first_graph {
   margin: 0 auto;
@@ -207,10 +230,15 @@ export default {
 }
 
 .command {
+  font-weight: bold;
   margin: 0 auto;
-  max-width: 600px;
-  height: 30px;
+  max-width: 900px;
+  height: 60px;
   left: 0px;
+
+  .senses-select {
+    margin: 10px auto;
+  }
 }
 
 svg {
@@ -250,5 +278,46 @@ svg {
     fill: getColor(red, 80);
     stroke: getColor(red, 40);
   }
+
+  .paths_info, .dots_info {
+    fill-opacity: 1;
+  }
+
+}
+
+#primenCoal {
+      & > .paths_info {
+        stroke-dasharray: 2;
+        fill: white;
+      }
+
+      & > #fifteen {
+        stroke-dasharray: 2;
+        fill: white;
+      }
+}
+
+#primenOil {
+      & > .paths_info {
+        fill: url(#PriceRisk);
+      }
+
+      & > #fifteen {
+        fill: #fef0ec;
+      }
+}
+
+#primenGas {
+      & > .paths_info {
+        -webkit-filter: url("#glitch");
+        filter: url("/#glitch");
+        fill: url(#UncRisk);
+        stroke: none;
+        }
+
+      & > #fifteen {
+        opacity: 0;
+      }
+
 }
 </style>
