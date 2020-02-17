@@ -1,7 +1,7 @@
 <template>
   <div class="first_graph">
   <div class="command" v-if ="step < 3">
-    Select a primary energy scenario: <br/>
+    Select a policy scenario: <br/>
     <SensesSelect
     :options='scenarioArray'
     v-model='selected'/>
@@ -14,13 +14,8 @@
       </linearGradient>
       <linearGradient id="UncRisk">
         <stop offset="0%" stop-color="#ed96ab"/>
-        <stop offset="90%" stop-color="#ed96ab" stop-opacity="0"/>
+        <stop offset="50%" stop-color="#ed96ab" stop-opacity="0"/>
       </linearGradient>
-      <filter id="glitch">
-          <feGaussianBlur stdDeviation="0.8" edgeMode="wrap"/>
-          <feTurbulence type="fractalNoise" baseFrequency="0.02 0.05" numOctaves="1" result="warp" />
-          <feDisplacementMap scale="15" in="SourceGraphic" in2="warp" />
-      </filter>
         <line
         v-for="(single, i) in createDots[0].singleDots"
         v-bind:key="i"
@@ -38,7 +33,7 @@
         >{{ years[i] }}</text>
       <g v-for="(dot,i) in createDots" v-bind:key="i" :id="dot.label">
         <path
-        v-bind:key="shape"
+        v-bind:key="dot.shape"
         :d="dot.area"
         :class="[dot.label, step >= 3 ? 'paths_info' : '']"
         />
@@ -197,7 +192,8 @@ export default {
           singleDots: this.step === 0 ? [singleDots[0]] : singleDots &&
           this.step === 1 | this.step >= 3 ? [singleDots[0], singleDots[15]] : singleDots,
           label: e,
-          area: this.step === 1 | this.step >= 3 ? this.drawArea([singleDots[0], singleDots[15]]) : this.drawArea(singleDots) &&
+          area: this.step === 1 | this.step >= 3
+            ? this.drawArea([singleDots[0], singleDots[15]]) : this.drawArea(singleDots) &&
           this.step === 0 ? '' : this.drawArea(singleDots)
         }
       })
@@ -309,9 +305,10 @@ svg {
 
 #primenGas {
       & > .paths_info {
-        -webkit-filter: url("#glitch");
-        filter: url("/#glitch");
         fill: url(#UncRisk);
+        // -webkit-filter: url("#glitch");
+        // filter: url("/#glitch");
+        // fill: url(#UncRisk);
         stroke: none;
         }
 

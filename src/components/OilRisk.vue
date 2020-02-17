@@ -1,41 +1,8 @@
 <template>
-  <div class="second_graph">
-  <div class="coal">
+  <div class="third_graph">
+  <div class="oil">
     <svg>
-      <g :transform="'translate('+ margins.marginleft + ',30)'">
-      <path
-      v-for="(line,i) in generateLine"
-      v-bind:key="i"
-      :d="line.singleLine"
-      :id="line.id"
-      stroke="black"
-      />
-      <circle
-      v-for="circle in transformData.lastValue"
-      v-bind:key="circle[1]"
-      :id="circle[1]"
-      :cx="scales.x(2100)"
-      :cy="scales.y(circle[0])"
-      r="5px"/>
-      <text :x="scales.x(2099)" :y="scales.y(valueLabel[0] + 10)">
-        {{ valueLabel[0] + ' EJ/y'}}
-        <tspan :x="scales.x(2099)" :y="scales.y(valueLabel[0] + 25)">
-          Produced Coal
-        </tspan>
-      </text>
-      <line
-      :x1="scales.x(2005)"
-      :x2="scales.x(2005)"
-      :y2="scales.y(461.8547 + 100)"
-      :y1="scales.y(-10)"
-      />
-      <line
-      :x1="scales.x(2100)"
-      :x2="scales.x(2100)"
-      :y2="scales.y(461.8547 + 100)"
-      :y1="scales.y(-10)"
-      />
-    </g>
+
    </svg>
   </div>
 </div>
@@ -154,31 +121,19 @@ export default {
 <style scoped lang="scss">
 @import "library/src/style/variables.scss";
 
-.second_graph {
+.third_graph {
   margin: 0 auto;
   padding-top: 30px;
   max-width: 900px;
   width: 100%;
 }
 
-.coal {
+.oil {
   margin: 0 auto;
   display: flex;
   max-width: 1000px;
   width: 100%;
   height: 100vh;
-}
-
-.command {
-  font-weight: bold;
-  margin: 0 auto;
-  max-width: 900px;
-  height: 60px;
-  left: 0px;
-
-  .senses-select {
-    margin: 10px auto;
-  }
 }
 
 svg {
@@ -188,32 +143,6 @@ svg {
   display: block;
   margin: 0 auto;
 
-  path {
-    fill: none;
-    stroke-width: 2px;
-  }
-
-  line {
-    stroke-width: 0.5;
-    stroke: black;
-  }
-
-  circle {
-    fill-opacity: 0.5;
-    fill: none;
-    stroke-width: 2px;
-  }
-
-  #NPi_V3 {
-    stroke: $color-red;
-  }
-
-  #NPi2020_1000_V3 {
-    stroke: $color-yellow;
-  }
-
-  #NPi2020_400_V3 {
-    stroke: getColor(green, 40);
-  }
+  background-color: lightblue;
 }
 </style>

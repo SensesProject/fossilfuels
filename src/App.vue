@@ -55,8 +55,8 @@
     </div>
     </LayoutScrollytelling>
     <div class="noscroll">
-      <h2 class="title" id="price">Price Risk - Coal</h2  >
-      <p>
+      <h2 class="title" id="quantity">Quantity Risk - Coal</h2  >
+      <p class="paragraph">
         We live in a society heavily relying on fossil fuels, mitigation
         strategies due to climate change will force us to change our model.
         <br />
@@ -83,26 +83,48 @@
           </template>
           <div slot="text" class="observer">
           <IntersectionObserver :step="6">
-            <p>hey!</p>
+            <p>this would be the quantity of coal burned if no policies will be
+              implemented.</p>
           </IntersectionObserver>
           <IntersectionObserver :step="7">
-            <p>hey!</p>
+            <p>However, if a small package of policies on fossil fuels will
+              be implemented there will be a major drop in the quantity of coal
+              that could be burned.</p>
           </IntersectionObserver>
           <IntersectionObserver :step="8">
-            <p>hey!</p>
-          </IntersectionObserver>
-          <IntersectionObserver :step="9">
-            <p>hey!</p>
-          </IntersectionObserver>
-          <IntersectionObserver :step="10">
-            <p>hey!</p>
-          </IntersectionObserver>
-          <IntersectionObserver :step="11">
-            <p>hey!</p>
+            <p>If a strong policy model will be implemented the produced quantity
+              will decrease even more. Led investments in coal to be useless.</p>
           </IntersectionObserver>
         </div>
         </LayoutScrollytelling>
-
+        <div class="noscroll">
+          <h2 class="title" id="price">Price Risk - Oil</h2  >
+          <p>
+            While oil quantity remains stable during time, its price will
+            decrease substantially due to taxes.
+            In a strong policies scenario, for example, oil will increase its
+            quantity on the market, however this will affect negatively revenues.
+          </p>
+        </div>
+        <LayoutScrollytelling>
+              <template v-slot:vis="{ width, height, step }">
+                <div
+                  class="vis-inner"
+                  :style="{
+                     width: `${width}px`,
+                    height: `${height}px`
+                   }"
+                >
+                <OilRisk :step="step" :width="width" :height="height"/>
+                </div>
+              </template>
+              <div slot="text" class="observer">
+              <IntersectionObserver :step="9">
+                <p>this would be the quantity of coal burned if no policies will be
+                  implemented.</p>
+              </IntersectionObserver>
+            </div>
+            </LayoutScrollytelling>
   </div>
 </template>
 
@@ -115,6 +137,7 @@ import IntersectionObserver from 'library/src/components/IntersectionObserver.vu
 //  from project
 import GeneralRisks from './components/GeneralRisks.vue'
 import CoalRisk from './components/CoalRisk.vue'
+import OilRisk from './components/OilRisk.vue'
 
 export default {
   name: 'app',
@@ -122,6 +145,7 @@ export default {
     SensesMenu,
     GeneralRisks,
     CoalRisk,
+    OilRisk,
     LayoutScrollytelling,
     IntersectionObserver
   }
@@ -150,7 +174,11 @@ export default {
   color: $color-neon;
 }
 
-#price {
+#quantity {
   margin-bottom: $spacing;
+}
+
+.paragraph {
+  margin-bottom: $spacing * 2;
 }
 </style>
