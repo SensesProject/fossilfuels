@@ -21,7 +21,7 @@
       </linearGradient>
         <line
         v-for="(single, i) in createDots[0].singleDots"
-        v-bind:key="'lines' + i"
+        v-bind:key="`${i}a`"
         stroke="black"
         :x1="single.horizontal"
         y1="50"
@@ -30,7 +30,7 @@
         />
         <text
         v-for="(single, i) in createDots[0].singleDots"
-        v-bind:key="'text' + i"
+        v-bind:key="`${i}b`"
         :x="single.horizontal"
         :y="height - 130"
         >{{ step > 2 ? onlytwo[i] : all[i]}}</text>
