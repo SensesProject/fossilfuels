@@ -18,7 +18,7 @@
       </linearGradient>
         <line
         v-for="(single, i) in createDots[0].singleDots"
-        v-bind:key="i"
+        v-bind:key="`${i}a`"
         stroke="black"
         :x1="single.horizontal"
         y1="50"
@@ -27,7 +27,7 @@
         />
         <text
         v-for="(single, i) in createDots[0].singleDots"
-        v-bind:key="i"
+        v-bind:key="`${i}b`"
         :x="single.horizontal"
         :y="height - 130"
         >{{ years[i] }}</text>
