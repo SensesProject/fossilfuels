@@ -106,17 +106,10 @@
     </div>
     <LayoutScrollytelling>
       <template v-slot:vis="{ width, height, step }">
-        <div
-          class="vis-inner"
-          :style="{
-            width: `${width}px`,
-            height: `${height}px`
-          }">
-          <OilRisk :step="step" :width="width" :height="height"/>
-        </div>
+        <OilRisk :step="step" :width="width" :height="height"/>
       </template>
       <div slot="text" class="observer">
-        <IntersectionObserver :step="9">
+        <IntersectionObserver :step="0">
           <p>this would be the quantity of coal burned if no policies will be
             implemented.</p>
         </IntersectionObserver>
