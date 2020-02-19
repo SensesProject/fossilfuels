@@ -1,13 +1,16 @@
 <template>
   <div class="first_graph">
-  <div class="command" v-if ="step < 3">
-    Select a policy scenario: <br/>
-    <SensesSelect
+  <div class="command">
+    Fossil fuels production in the next century. <br/>
+    <div id="selection" v-show ="step < 3">
+      Select a scenario:
+      <SensesSelect
     :options='scenarioArray'
     v-model='selected'/>
+    </div>
    </div>
   <div class="bubbles">
-    <svg>
+    <svg  ref="vis">
       <linearGradient id="PriceRisk">
         <stop offset="0%" stop-color="#fcb69f"/>
         <stop offset="75%" stop-color="#fcb69f" stop-opacity="0.2"/>
@@ -18,33 +21,49 @@
       </linearGradient>
         <line
         v-for="(single, i) in createDots[0].singleDots"
-        v-bind:key="i"
+        v-bind:key="'lines' + i"
         stroke="black"
         :x1="single.horizontal"
         y1="50"
         :x2="single.horizontal"
-        :y2="height - 150"
+        :y2="svgHeight - 150 + 'px'"
         />
         <text
         v-for="(single, i) in createDots[0].singleDots"
-        v-bind:key="i"
+        v-bind:key="'text' + i"
         :x="single.horizontal"
         :y="height - 130"
-        >{{ years[i] }}</text>
-      <g v-for="(dot,i) in createDots" v-bind:key="i" :id="dot.label">
-        <path
-        v-bind:key="dot.shape"
+        >{{ step > 2 ? onlytwo[i] : all[i]}}</text>
+      <g v-for="(dot,i) in createDots" v-bind:key="i" :id="dot.id">
+        <path v-bind:key="'dot' + i"
         :d="dot.area"
-        :class="[dot.label, step >= 3 ? 'paths_info' : '']"
+        :class="[dot.id, step >= 3 ? 'paths_info' : '']"
         />
       <circle
       v-for="(single, i) in dot.singleDots"
-      v-bind:key="i"
+      v-bind:key="'circle'  + i"
       :id="step >= 3 ? single.id : ''"
-      :class="[dot.label, step >= 3 ? 'dots_info' : '']"
+      :class="[dot.id, step >= 3 ? 'dots_info' : '']"
       :r="single.single"
       :cx="single.horizontal"
       :cy="single.vertical"/>
+      <text
+      v-bind:key="'label'  + i"
+      :x="dot.singleDots[0]['horizontal'] - 100"
+      :y="dot.singleDots[0]['vertical']"
+      >
+      {{ dot.label }}
+    </text>
+    <text
+    v-if="step > 2"
+    class="risk"
+    :id="dot.id"
+    v-bind:key="'risk'  + i"
+    :x="dot.singleDots[1]['horizontal'] + 50"
+    :y="dot.singleDots[1]['vertical']"
+    >
+      {{ dot.risks[i] }}
+    </text>
     </g>
    </svg>
   </div>
@@ -83,7 +102,13 @@ export default {
   data () {
     return {
       PrEnQuantity,
-      years: [
+      svgWidth: 0,
+      svgHeight: 0,
+      onlytwo: [
+        2005,
+        2100
+      ],
+      all: [
         2005,
         2010,
         2015,
@@ -104,9 +129,6 @@ export default {
     }
   },
   computed: {
-    svgWidth () {
-      return 900 / 9
-    },
     groupData () {
       const primaryenergy = this.PrEnQuantity
       return _.groupBy(primaryenergy, 'scenario')
@@ -142,7 +164,7 @@ export default {
     },
     selectData () {
       let selected = this.selected
-      if (this.step === 3) { selected = 'NPi2020_400_V3' }
+      if (this.step > 2) { selected = 'NPi2020_400_V3' }
       const { obj } = this.transformData
       return obj[selected]
     },
@@ -169,13 +191,11 @@ export default {
       const selecteddata = this.selectData
       const scale = this.scale
       let initDist = 0
-
       return _.map(selecteddata, (energy, e) => {
         const dist = initDist
         initDist = dist + 160
 
         let initHorizontal = this.svgWidth
-
         const singleDots = _.map(energy, (dot, d) => {
           const distHor = initHorizontal
           initHorizontal = distHor + 45
@@ -190,14 +210,39 @@ export default {
         })
         return {
           singleDots: this.step === 0 ? [singleDots[0]] : singleDots &&
-          this.step === 1 | this.step >= 3 ? [singleDots[0], singleDots[15]] : singleDots,
-          label: e,
+          this.step === 1 | this.step >= 3
+            ? [singleDots[0], singleDots[15]] : singleDots,
+          label: e.replace('primen', ''),
+          id: e,
+          risks: ['➔ Quantity Risk', '➔ Uncertainty Risk', '➔ Price Risk'],
           area: this.step === 1 | this.step >= 3
             ? this.drawArea([singleDots[0], singleDots[15]]) : this.drawArea(singleDots) &&
-          this.step === 0 ? '' : this.drawArea(singleDots)
+          this.step === 0
+              ? '' : this.drawArea(singleDots)
         }
       })
     }
+  },
+  methods: {
+    calcSizes: function () {
+      const { vis: el } = this.$refs
+      const svgWidth = el.clientWidth
+      const svgHeight = el.clientHeight || el.parentNode.clientHeight
+      console.log('width', el.clientWidth)
+      console.log('height', Math.max(svgHeight, 500))
+      this.svgWidth = Math.max(svgWidth, 500)
+      this.svgHeight = Math.max(svgHeight, 500)
+    }
+  },
+  mounted () {
+    this.calcSizes()
+    window.addEventListener('resize', this.calcSizes, false)
+  },
+  updated () {
+    this.calcSizes()
+  },
+  beforeDestroy () {
+    window.removeEventListener('resize', this.calcSizes, false)
   }
 }
 </script>
@@ -205,15 +250,11 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 @import "library/src/style/variables.scss";
-@media screen and (min-height: 700px) {
-  svg {
-    height: 50%;
-  }
-}
 
 .first_graph {
   margin: 0 auto;
   max-width: 1000px;
+  max-height: 900px;
   width: 100%;
 }
 
@@ -235,11 +276,15 @@ export default {
   .senses-select {
     margin: 10px auto;
   }
+
+  #selection {
+    font-weight: normal;
+  }
 }
 
 svg {
   width: 100%;
-  height: 100%;
+  height: 60%;
 
   display: block;
   margin: 0 auto;
@@ -277,6 +322,10 @@ svg {
 
   .paths_info, .dots_info {
     fill-opacity: 1;
+  }
+
+  .risk {
+    text-anchor: start;
   }
 
 }

@@ -44,13 +44,13 @@
         <p>hey!</p>
       </IntersectionObserver>
       <IntersectionObserver :step="3">
-        <p>hey!</p>
+        <p>Quantity Risk</p>
       </IntersectionObserver>
       <IntersectionObserver :step="4">
-        <p>hey!</p>
+        <p>Price Risk</p>
       </IntersectionObserver>
       <IntersectionObserver :step="5">
-        <p>hey!</p>
+        <p>Uncertainty</p>
       </IntersectionObserver>
     </div>
     </LayoutScrollytelling>
@@ -78,7 +78,7 @@
                 height: `${height}px`
                }"
             >
-            <CoalRisk :step="step" :width="width" :height="height"/>
+            <CoalRisk v-if="step > 5" :step="step" :width="width" :height="height"/>
             </div>
           </template>
           <div slot="text" class="observer">

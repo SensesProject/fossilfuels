@@ -1,7 +1,7 @@
 <template>
   <div class="second_graph">
   <div class="coal">
-    <svg>
+    <svg ref="vis">
       <g :transform="'translate('+ margins.marginleft + ',30)'">
       <path
       v-for="(line,i) in generateLine"
@@ -66,6 +66,8 @@ export default {
   data () {
     return {
       PrEnQuantity,
+      svgWidth: 0,
+      svgHeight: 0,
       margins: {
         marginleft: 65,
         marginright: 30
@@ -73,12 +75,6 @@ export default {
     }
   },
   computed: {
-    svgWidth () {
-      return this.width - this.width / 2
-    },
-    chartHeight () {
-      return this.height - this.height / 3
-    },
     groupData () {
       const primaryenergy = this.PrEnQuantity
       const groupVariable = _.groupBy(primaryenergy, 'variable')
@@ -130,12 +126,13 @@ export default {
         y: d3
           .scaleLinear()
           .domain([0, max[0] + 50])
-          .rangeRound([this.chartHeight, 0]),
+          .rangeRound([this.svgHeight, 0]),
         max: max[0] + 100
       }
     },
     generateLine () {
       const { obj } = this.transformData
+      console.log('height somewhere else', this.svgHeight)
       return _.map(obj, (line, l) => {
         const singleLine = _.map(line, values => {
           return this.linePath(values)
@@ -146,6 +143,27 @@ export default {
         }
       })
     }
+  },
+  methods: {
+    calcSizes: function () {
+      const { vis: el } = this.$refs
+      const svgWidth = el.clientWidth
+      const svgHeight = el.clientHeight || el.parentNode.clientHeight
+      console.log('width', el.clientWidth)
+      console.log('height', Math.max(svgHeight, 500))
+      this.svgWidth = Math.max(svgWidth, 500)
+      this.svgHeight = Math.max(svgHeight, 500)
+    }
+  },
+  mounted () {
+    this.calcSizes()
+    window.addEventListener('resize', this.calcSizes, false)
+  },
+  updated () {
+    this.calcSizes()
+  },
+  beforeDestroy () {
+    window.removeEventListener('resize', this.calcSizes, false)
   }
 }
 </script>
@@ -183,9 +201,9 @@ export default {
 
 svg {
   width: 100%;
-  height: 100%;
+  height: 80%;
 
-  display: block;
+  // display: block;
   margin: 0 auto;
 
   path {
