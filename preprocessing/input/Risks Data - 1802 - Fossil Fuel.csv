@@ -1,0 +1,385 @@
+Risk Factor Pathway,Sector,Model,Scenario,Geography,Units,2010,2015,2020,2030,2040,2050,2060,2070,2080,2090,2100
+Direct emissions cost,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,World,$ 2010/local currency per year,0,4366513.796,8733027.592,253965439.6,-53854963.42,-571488115.7,-1471502597,-2531347155,-3524756734,-4562351270,-5854451022
+Direct emissions cost,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5ASIA,$ 2010/local currency per year,0,1118084.969,2236169.938,147904435.1,4857338.654,-145813401.5,-366335578.1,-571951531.3,-754185126.7,-966547900,-1169057695
+Direct emissions cost,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5MAF,$ 2010/local currency per year,0,117545.385,235090.7699,29948161.71,1842390.594,-67591307.14,-264151416.5,-523035683.5,-782861221.6,-1023255849,-1260076760
+Direct emissions cost,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5LAM,$ 2010/local currency per year,0,31830.45272,63660.90544,4220336.383,-29770879.26,-138640047.3,-302335465.3,-525042484.5,-689619832,-807087939.7,-1046499162
+Direct emissions cost,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5REF,$ 2010/local currency per year,0,73541.89806,147083.7961,13147102.99,2662250.705,-2783316.831,-21739635.68,-59084620.4,-106532259.2,-196162489,-361797966
+Direct emissions cost,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5OECD90+EU,$ 2010/local currency per year,0,2724488.143,5448976.286,58745396.57,-33446064.11,-216660033.8,-516940546,-852233173.9,-1191558157,-1569298282,-2017020772
+Direct emissions cost,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,World,$ 2010/local currency per year,0,4366513.796,8733027.592,10223945.1,16611259.72,26574444.88,41865156.68,60221924.38,84790701.52,107859661.7,134369960
+Direct emissions cost,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5ASIA,$ 2010/local currency per year,0,1113724.577,2227449.154,3057412.081,7119786.456,12855095.43,20612747.46,29666262.05,42506814.63,54697169.58,68817199.14
+Direct emissions cost,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5MAF,$ 2010/local currency per year,0,117545.385,235090.7699,375124.7276,1287151.889,3448354.979,7797768.444,14042883.28,22679813.69,32645915.59,44326293.34
+Direct emissions cost,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5LAM,$ 2010/local currency per year,0,31830.45272,63660.90544,83131.01465,325549.5302,1124191.454,2997855.842,5628446.135,8595339.553,10704844.55,11658926.74
+Direct emissions cost,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5REF,$ 2010/local currency per year,0,73541.89806,147083.7961,190486.4656,566956.8576,1140186.066,1786634.219,2283464.497,2609244.566,2822144.902,3233285.175
+Direct emissions cost,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5OECD90+EU,$ 2010/local currency per year,0,2721406.904,5442813.808,5707764.748,6172291.156,6448234.869,6763996.835,6737732.689,6875143.81,6137373.134,6334242.431
+Direct emissions cost,Coal,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,World,$ 2010/local currency per year,0,490320.2335,980640.467,202596005.9,80846380.86,-259520743.8,-1222544205,-2684784299,-4894336043,-8722866972,-15703783244
+Direct emissions cost,Coal,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,R5ASIA,$ 2010/local currency per year,0,24151.70362,48303.40724,69861277.32,21644151.09,-104304773.8,-292079094.1,-615680903.2,-1110249331,-2006635370,-3489504076
+Direct emissions cost,Coal,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,R5MAF,$ 2010/local currency per year,0,31065.87684,62131.75368,39709995.33,29291291.84,-26046627.38,-204086357.4,-444825571.1,-741231086.7,-1297228579,-2651814801
+Direct emissions cost,Coal,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,R5LAM,$ 2010/local currency per year,0,0,0,7647080.169,3490992.622,-51599779.88,-426565338.7,-895220520.9,-1636567481,-2867906606,-4997281208
+Direct emissions cost,Coal,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,R5REF,$ 2010/local currency per year,0,0,0,14623462.37,5120688.31,-5219636.75,-15092033.9,-59621401.52,-125320927.9,-236764757.4,-444639512.3
+Direct emissions cost,Coal,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,R5OECD90+EU,$ 2010/local currency per year,0,3216.969512,6433.939024,66548753.99,16637950,-76015352.44,-286656649.2,-669930640.5,-1281081311,-2314332065,-4120544043
+Direct emissions cost,Coal,MESSAGEix-GLOBIOM_1.0,NPi_V3,World,$ 2010/local currency per year,0,490320.2335,980640.467,2928178.121,5605338.767,6994557.818,2746134.712,6444490.352,5561458.199,6059702.395,8428331.918
+Direct emissions cost,Coal,MESSAGEix-GLOBIOM_1.0,NPi_V3,R5ASIA,$ 2010/local currency per year,0,24151.70362,48303.40724,0,113162.9515,26545.25588,0,63803.62172,133691.178,82178.72412,759445.2477
+Direct emissions cost,Coal,MESSAGEix-GLOBIOM_1.0,NPi_V3,R5MAF,$ 2010/local currency per year,0,31065.87684,62131.75368,196899.5793,95710.75925,0,27790.64994,349760.4422,0,0,0
+Direct emissions cost,Coal,MESSAGEix-GLOBIOM_1.0,NPi_V3,R5LAM,$ 2010/local currency per year,0,0,0,0,0,0,99247.49345,0,0,0,0
+Direct emissions cost,Coal,MESSAGEix-GLOBIOM_1.0,NPi_V3,R5REF,$ 2010/local currency per year,0,0,0,0,0,14032.59686,180802.7306,362601.7802,286605.183,260080.0034,261518.4397
+Direct emissions cost,Coal,MESSAGEix-GLOBIOM_1.0,NPi_V3,R5OECD90+EU,$ 2010/local currency per year,0,3216.969512,6433.939024,0,870746.9547,976115.8628,298777.0415,656034.2706,90091.74769,392840.6562,546053.8207
+Direct emissions cost,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,World,$ 2010/local currency per year,0,478337954.5,956675909,27821121048,-5899643112,-62604738940,-161198515638,-277301178189,-386126096232,-499791338415,-641336832438
+Direct emissions cost,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5ASIA,$ 2010/local currency per year,0,122482717.8,244965435.6,16202469118,532106285.3,-15973402923,-40130918919,-62655504677,-82618626133,-105882304967,-128066620794
+Direct emissions cost,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5MAF,$ 2010/local currency per year,0,12876729.96,25753459.91,3280727620,201828137.8,-7404416684,-28936963016,-57296926263,-85760002809,-112094483745,-138037475220
+Direct emissions cost,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5LAM,$ 2010/local currency per year,0,3486926.724,6973853.448,462324675.3,-3261306881,-15187584357,-33119906363,-57516765044,-75545699671,-88413964135,-114640716069
+Direct emissions cost,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5REF,$ 2010/local currency per year,0,8056285.341,16112570.68,1440224088,291641253.4,-304903669.6,-2381509219,-6472535708,-11670276408,-21488988271,-39633837672
+Direct emissions cost,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5OECD90+EU,$ 2010/local currency per year,0,298459170.5,596918340.9,6435374797,-3663911908,-23734430313,-56629222976,-93359483609,-130531476109,-171911727542,-220958328616
+Direct emissions cost,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,World,$ 2010/local currency per year,0,478337954.5,956675909,1120001267,1819711643,2911147474,4586197215,6597123809,9288556643,11815689216,14719809626
+Direct emissions cost,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5ASIA,$ 2010/local currency per year,0,122005050.5,244010100.9,334929948.6,779950379,1408235572,2258062134,3249846392,4656488840,5991904168,7538709325
+Direct emissions cost,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5MAF,$ 2010/local currency per year,0,12876729.96,25753459.91,41093742.8,141003471.1,377756522.5,854221189.1,1538354023,2484502786,3576258136,4855807053
+Direct emissions cost,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5LAM,$ 2010/local currency per year,0,3486926.724,6973853.448,9106743.128,35662934.7,123151664.1,328405748.4,616578702.6,941592614.2,1172682301,1277199026
+Direct emissions cost,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5REF,$ 2010/local currency per year,0,8056285.341,16112570.68,20867197.63,62108353.76,124903824,195720201,250146406.9,285834596.4,309157163.5,354196296.9
+Direct emissions cost,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5OECD90+EU,$ 2010/local currency per year,0,298121630.4,596243260.7,625267809,676155226.9,706383999.1,740974736.7,738097581.5,753150540.8,672330066.5,693896483.4
+Direct emissions cost,Gas,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,World,$ 2010/local currency per year,0,53713050.84,107426101.7,22193759965,8856468628,-28429687282,-133925900965,-294109738284,-536159233844,-955562844799,-1720300428623
+Direct emissions cost,Gas,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,R5ASIA,$ 2010/local currency per year,0,2645743.732,5291487.464,7653084830,2371049181,-11426262344,-31996352911,-67445920846,-121624348164,-219820640245,-382264277559
+Direct emissions cost,Gas,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,R5MAF,$ 2010/local currency per year,0,3403169.823,6806339.646,4350106018,3208769577,-2853326714,-22357023311,-48729252606,-81199551487,-142107341037,-290498032708
+Direct emissions cost,Gas,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,R5LAM,$ 2010/local currency per year,0,0,0,837713759,382427343.2,-5652594796,-46728901153,-98068613267,-179280858346,-314170215318,-547436555243
+Direct emissions cost,Gas,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,R5REF,$ 2010/local currency per year,0,0,0,1601954649,560955418.1,-571794910.8,-1653285198,-6531338404,-13728516412,-25936840017,-48708870454
+Direct emissions cost,Gas,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,R5OECD90+EU,$ 2010/local currency per year,0,352408.9669,704817.9339,7290208241,1822635480,-8327244547,-31402341004,-73388810206,-140338458171,-253527852575,-451392735954
+Direct emissions cost,Gas,MESSAGEix-GLOBIOM_1.0,NPi_V3,World,$ 2010/local currency per year,0,53713050.84,107426101.7,320772771.7,614047362.6,766231972.6,300830484.5,705973799,609240383.3,663821479.5,923297449.2
+Direct emissions cost,Gas,MESSAGEix-GLOBIOM_1.0,NPi_V3,R5ASIA,$ 2010/local currency per year,0,2645743.732,5291487.464,0,12396648.05,2907949.91,0,6989487.57,14645451.18,9002422.673,83194855.97
+Direct emissions cost,Gas,MESSAGEix-GLOBIOM_1.0,NPi_V3,R5MAF,$ 2010/local currency per year,0,3403169.823,6806339.646,21569734.21,10484814.88,0,3044378.941,38315164.52,0,0,0
+Direct emissions cost,Gas,MESSAGEix-GLOBIOM_1.0,NPi_V3,R5LAM,$ 2010/local currency per year,0,0,0,0,0,0,10872253.07,0,0,0,0
+Direct emissions cost,Gas,MESSAGEix-GLOBIOM_1.0,NPi_V3,R5REF,$ 2010/local currency per year,0,0,0,0,0,1537227.178,19806374.69,39721893.01,31396703.04,28490952.43,28648528.64
+Direct emissions cost,Gas,MESSAGEix-GLOBIOM_1.0,NPi_V3,R5OECD90+EU,$ 2010/local currency per year,0,352408.9669,704817.9339,0,95387610.49,106930445.4,32730092.14,71866506.27,9869269.702,43034467.48,59818491.33
+Direct emissions cost,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,World,$ 2010/local currency per year,0,1224198482,2448396964,71201906182,-15098810529,-160222758127,-412551369417,-709690038706,-988202956692,-1279103596389,-1641357474243
+Direct emissions cost,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5ASIA,$ 2010/local currency per year,0,313466986.7,626933973.5,41466578003,1361806440,-40880334561,-102706067053,-160352681621,-211443804029,-270981961206,-327757731365
+Direct emissions cost,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5MAF,$ 2010/local currency per year,0,32955096.12,65910192.24,8396284960,516533755.4,-18949940268,-74057652900,-146638604577,-219483451569,-286880636524,-353275892195
+Direct emissions cost,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5LAM,$ 2010/local currency per year,0,8924005.22,17848010.44,1183216093,-8346581943,-38869208564,-84762956229,-147201232526,-193342238477,-226275669073,-293397145861
+Direct emissions cost,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5REF,$ 2010/local currency per year,0,20618251.58,41236503.16,3685929846,746390238.2,-780332411.4,-6094937573,-16565000363,-29867449428,-54996235563,-101433899328
+Direct emissions cost,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5OECD90+EU,$ 2010/local currency per year,0,763839164.4,1527678329,16469895362,-9376959019,-60742939779,-144929768090,-238932614598,-334065974538,-439969427358,-565493178975
+Direct emissions cost,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,World,$ 2010/local currency per year,0,1224198482,2448396964,2866391509,4657142948,7450427644,11737340969,16883855604,23771973010,30239600826,37672044279
+Direct emissions cost,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5ASIA,$ 2010/local currency per year,0,312244504.5,624489009,857177923.7,1996107691,3604062428,5779002503,8317251398,11917236583,15334931963,19293632099
+Direct emissions cost,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5MAF,$ 2010/local currency per year,0,32955096.12,65910192.24,105170198.4,360866691.9,966782914,2186187137,3937071357,6358526457,9152628890,12427346749
+Direct emissions cost,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5LAM,$ 2010/local currency per year,0,8924005.22,17848010.44,23306662.18,91271265.67,315179004.5,840480699.8,1577994606,2409794662,3001216774,3268703840
+Direct emissions cost,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5REF,$ 2010/local currency per year,0,20618251.58,41236503.16,53404902.17,158952371.8,319663263.8,500901863.9,640193504.9,731529404.5,791218273.1,906485811.9
+Direct emissions cost,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5OECD90+EU,$ 2010/local currency per year,0,762975306.4,1525950613,1600232421,1730467329,1807831077,1896358295,1888994863,1927519529,1720677691,1775872087
+Direct emissions cost,Oil,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,World,$ 2010/local currency per year,0,137466481,274932961.9,56799940309,22666140852,-72759394674,-342753242018,-752707770338,-1372179050606,-2445548326698,-4402722288269
+Direct emissions cost,Oil,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,R5ASIA,$ 2010/local currency per year,0,6771186.419,13542372.84,19586350498,6068167456,-29242950275,-81887473700,-172612675101,-311270182551,-562581521299,-978319499789
+Direct emissions cost,Oil,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,R5MAF,$ 2010/local currency per year,0,8709648.257,17419296.51,11133118612,8212124520,-7302448404,-57217776147,-124711569543,-207812001428,-363691799001,-743464421691
+Direct emissions cost,Oil,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,R5LAM,$ 2010/local currency per year,0,0,0,2143940080,978736829.6,-14466545890,-119592119603,-250984573523,-458829061348,-804048052465,-1401040820011
+Direct emissions cost,Oil,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,R5REF,$ 2010/local currency per year,0,0,0,4099842865,1435639311,-1463380556,-4231211869,-16715492645,-35135052103,-66379512397,-124659406005
+Direct emissions cost,Oil,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,R5OECD90+EU,$ 2010/local currency per year,0,901911.5426,1803823.085,18657649427,4664625852,-21311710768,-80367233734,-187822164679,-359164740886,-648847555147,-1155238251575
+Direct emissions cost,Oil,MESSAGEix-GLOBIOM_1.0,NPi_V3,World,$ 2010/local currency per year,0,137466481,274932961.9,820945811.5,1571516210,1960998514,769908009.7,1806781262,1559213827,1698901875,2362972299
+Direct emissions cost,Oil,MESSAGEix-GLOBIOM_1.0,NPi_V3,R5ASIA,$ 2010/local currency per year,0,6771186.419,13542372.84,0,31726434.39,7442244.196,0,17888022.46,37481740.56,23039677.43,212918534.8
+Direct emissions cost,Oil,MESSAGEix-GLOBIOM_1.0,NPi_V3,R5MAF,$ 2010/local currency per year,0,8709648.257,17419296.51,55202886.66,26833527.08,0,7791403.637,98059051.78,0,0,0
+Direct emissions cost,Oil,MESSAGEix-GLOBIOM_1.0,NPi_V3,R5LAM,$ 2010/local currency per year,0,0,0,0,0,0,27825088.05,0,0,0,0
+Direct emissions cost,Oil,MESSAGEix-GLOBIOM_1.0,NPi_V3,R5REF,$ 2010/local currency per year,0,0,0,0,0,3934187.451,50689964.29,101659257.2,80352804.65,72916189.04,73319469.93
+Direct emissions cost,Oil,MESSAGEix-GLOBIOM_1.0,NPi_V3,R5OECD90+EU,$ 2010/local currency per year,0,901911.5426,1803823.085,0,244123149.5,273664441.1,83765314.34,183926169.9,25258177.56,110137047,153091983.6
+Direct emissions cost,Oil and gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,World,$ 2010/local currency per year,0,1702536437,3405072873,99023027230,-20998453641,-222827497066,-573749885055,-986991216895,-1374329052924,-1778894934804,-2282694306681
+Direct emissions cost,Oil and gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5ASIA,$ 2010/local currency per year,0,435949704.6,871899409.1,57669047121,1893912725,-56853737484,-142836985972,-223008186298,-294062430161,-376864266173,-455824352159
+Direct emissions cost,Oil and gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5MAF,$ 2010/local currency per year,0,45831826.08,91663652.16,11677012581,718361893.2,-26354356951,-102994615916,-203935530839,-305243454378,-398975120270,-491313367415
+Direct emissions cost,Oil and gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5LAM,$ 2010/local currency per year,0,12410931.94,24821863.89,1645540768,-11607888824,-54056792921,-117882862592,-204717997570,-268887938148,-314689633209,-408037861931
+Direct emissions cost,Oil and gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5REF,$ 2010/local currency per year,0,28674536.92,57349073.85,5126153934,1038031492,-1085236081,-8476446792,-23037536071,-41537725837,-76485223834,-141067737000
+Direct emissions cost,Oil and gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5OECD90+EU,$ 2010/local currency per year,0,1062298335,2124596670,22905270159,-13040870927,-84477370092,-201558991067,-332292098207,-464597450647,-611881154901,-786451507591
+Direct emissions cost,Oil and gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,World,$ 2010/local currency per year,0,1702536437,3405072873,3986392776,6476854592,10361575118,16323538184,23480979413,33060529654,42055290041,52391853905
+Direct emissions cost,Oil and gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5ASIA,$ 2010/local currency per year,0,434249555,868499109.9,1192107872,2776058070,5012298000,8037064637,11567097791,16573725424,21326836130,26832341423
+Direct emissions cost,Oil and gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5MAF,$ 2010/local currency per year,0,45831826.08,91663652.16,146263941.2,501870162.9,1344539436,3040408326,5475425379,8843029242,12728887026,17283153801
+Direct emissions cost,Oil and gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5LAM,$ 2010/local currency per year,0,12410931.94,24821863.89,32413405.31,126934200.4,438330668.6,1168886448,2194573308,3351387276,4173899075,4545902866
+Direct emissions cost,Oil and gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5REF,$ 2010/local currency per year,0,28674536.92,57349073.85,74272099.8,221060725.6,444567087.8,696622064.9,890339911.8,1017364001,1100375437,1260682109
+Direct emissions cost,Oil and gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5OECD90+EU,$ 2010/local currency per year,0,1061096937,2122193874,2225500230,2406622556,2514215076,2637333032,2627092445,2680670070,2393007757,2469768571
+Direct emissions cost,Oil and gas,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,World,$ 2010/local currency per year,0,191179531.8,382359063.6,78993700275,31522609480,-101189081955,-476679142983,-1046817508622,-1908338284450,-3401111171497,-6123022716893
+Direct emissions cost,Oil and gas,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,R5ASIA,$ 2010/local currency per year,0,9416930.151,18833860.3,27239435328,8439216636,-40669212619,-113883826611,-240058595947,-432894530715,-782402161544,-1360583777348
+Direct emissions cost,Oil and gas,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,R5MAF,$ 2010/local currency per year,0,12112818.08,24225636.16,15483224630,11420894097,-10155775118,-79574799458,-173440822149,-289011552915,-505799140038,-1033962454400
+Direct emissions cost,Oil and gas,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,R5LAM,$ 2010/local currency per year,0,0,0,2981653839,1361164173,-20119140687,-166321020757,-349053186790,-638109919694,-1118218267782,-1948477375254
+Direct emissions cost,Oil and gas,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,R5REF,$ 2010/local currency per year,0,0,0,5701797514,1996594729,-2035175467,-5884497067,-23246831049,-48863568515,-92316352414,-173368276458
+Direct emissions cost,Oil and gas,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,R5OECD90+EU,$ 2010/local currency per year,0,1254320.51,2508641.019,25947857668,6487261333,-29638955315,-111769574738,-261210974885,-499503199057,-902375407722,-1606630987529
+Direct emissions cost,Oil and gas,MESSAGEix-GLOBIOM_1.0,NPi_V3,World,$ 2010/local currency per year,0,191179531.8,382359063.6,1141718583,2185563572,2727230486,1070738494,2512755061,2168454210,2362723354,3286269748
+Direct emissions cost,Oil and gas,MESSAGEix-GLOBIOM_1.0,NPi_V3,R5ASIA,$ 2010/local currency per year,0,9416930.151,18833860.3,0,44123082.45,10350194.11,0,24877510.03,52127191.74,32042100.1,296113390.7
+Direct emissions cost,Oil and gas,MESSAGEix-GLOBIOM_1.0,NPi_V3,R5MAF,$ 2010/local currency per year,0,12112818.08,24225636.16,76772620.87,37318341.96,0,10835782.58,136374216.3,0,0,0
+Direct emissions cost,Oil and gas,MESSAGEix-GLOBIOM_1.0,NPi_V3,R5LAM,$ 2010/local currency per year,0,0,0,0,0,0,38697341.11,0,0,0,0
+Direct emissions cost,Oil and gas,MESSAGEix-GLOBIOM_1.0,NPi_V3,R5REF,$ 2010/local currency per year,0,0,0,0,0,5471414.629,70496338.98,141381150.2,111749507.7,101407141.5,101967998.6
+Direct emissions cost,Oil and gas,MESSAGEix-GLOBIOM_1.0,NPi_V3,R5OECD90+EU,$ 2010/local currency per year,0,1254320.51,2508641.019,0,339510760,380594886.6,116495406.5,255792676.2,35127447.26,153171514.5,212910474.9
+Indirect emissions cost,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,World,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5ASIA,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5MAF,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5LAM,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5REF,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5OECD90+EU,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,World,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5ASIA,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5MAF,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5LAM,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5REF,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5OECD90+EU,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Coal,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,World,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Coal,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,R5ASIA,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Coal,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,R5MAF,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Coal,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,R5LAM,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Coal,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,R5REF,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Coal,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,R5OECD90+EU,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Coal,MESSAGEix-GLOBIOM_1.0,NPi_V3,World,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Coal,MESSAGEix-GLOBIOM_1.0,NPi_V3,R5ASIA,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Coal,MESSAGEix-GLOBIOM_1.0,NPi_V3,R5MAF,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Coal,MESSAGEix-GLOBIOM_1.0,NPi_V3,R5LAM,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Coal,MESSAGEix-GLOBIOM_1.0,NPi_V3,R5REF,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Coal,MESSAGEix-GLOBIOM_1.0,NPi_V3,R5OECD90+EU,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,World,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5ASIA,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5MAF,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5LAM,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5REF,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5OECD90+EU,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,World,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5ASIA,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5MAF,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5LAM,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5REF,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5OECD90+EU,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Gas,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,World,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Gas,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,R5ASIA,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Gas,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,R5MAF,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Gas,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,R5LAM,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Gas,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,R5REF,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Gas,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,R5OECD90+EU,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Gas,MESSAGEix-GLOBIOM_1.0,NPi_V3,World,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Gas,MESSAGEix-GLOBIOM_1.0,NPi_V3,R5ASIA,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Gas,MESSAGEix-GLOBIOM_1.0,NPi_V3,R5MAF,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Gas,MESSAGEix-GLOBIOM_1.0,NPi_V3,R5LAM,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Gas,MESSAGEix-GLOBIOM_1.0,NPi_V3,R5REF,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Gas,MESSAGEix-GLOBIOM_1.0,NPi_V3,R5OECD90+EU,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,World,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5ASIA,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5MAF,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5LAM,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5REF,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5OECD90+EU,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,World,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5ASIA,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5MAF,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5LAM,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5REF,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5OECD90+EU,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Oil,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,World,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Oil,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,R5ASIA,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Oil,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,R5MAF,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Oil,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,R5LAM,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Oil,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,R5REF,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Oil,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,R5OECD90+EU,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Oil,MESSAGEix-GLOBIOM_1.0,NPi_V3,World,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Oil,MESSAGEix-GLOBIOM_1.0,NPi_V3,R5ASIA,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Oil,MESSAGEix-GLOBIOM_1.0,NPi_V3,R5MAF,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Oil,MESSAGEix-GLOBIOM_1.0,NPi_V3,R5LAM,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Oil,MESSAGEix-GLOBIOM_1.0,NPi_V3,R5REF,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Oil,MESSAGEix-GLOBIOM_1.0,NPi_V3,R5OECD90+EU,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Oil and gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,World,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Oil and gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5ASIA,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Oil and gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5MAF,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Oil and gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5LAM,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Oil and gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5REF,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Oil and gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5OECD90+EU,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Oil and gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,World,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Oil and gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5ASIA,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Oil and gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5MAF,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Oil and gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5LAM,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Oil and gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5REF,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Oil and gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5OECD90+EU,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Oil and gas,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,World,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Oil and gas,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,R5ASIA,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Oil and gas,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,R5MAF,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Oil and gas,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,R5LAM,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Oil and gas,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,R5REF,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Oil and gas,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,R5OECD90+EU,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Oil and gas,MESSAGEix-GLOBIOM_1.0,NPi_V3,World,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Oil and gas,MESSAGEix-GLOBIOM_1.0,NPi_V3,R5ASIA,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Oil and gas,MESSAGEix-GLOBIOM_1.0,NPi_V3,R5MAF,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Oil and gas,MESSAGEix-GLOBIOM_1.0,NPi_V3,R5LAM,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Oil and gas,MESSAGEix-GLOBIOM_1.0,NPi_V3,R5REF,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Indirect emissions cost,Oil and gas,MESSAGEix-GLOBIOM_1.0,NPi_V3,R5OECD90+EU,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,World,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5ASIA,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5MAF,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5LAM,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5REF,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5OECD90+EU,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,World,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5ASIA,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5MAF,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5LAM,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5REF,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5OECD90+EU,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Coal,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,World,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Coal,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,R5ASIA,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Coal,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,R5MAF,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Coal,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,R5LAM,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Coal,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,R5REF,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Coal,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,R5OECD90+EU,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Coal,MESSAGEix-GLOBIOM_1.0,NPi_V3,World,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Coal,MESSAGEix-GLOBIOM_1.0,NPi_V3,R5ASIA,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Coal,MESSAGEix-GLOBIOM_1.0,NPi_V3,R5MAF,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Coal,MESSAGEix-GLOBIOM_1.0,NPi_V3,R5LAM,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Coal,MESSAGEix-GLOBIOM_1.0,NPi_V3,R5REF,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Coal,MESSAGEix-GLOBIOM_1.0,NPi_V3,R5OECD90+EU,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,World,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5ASIA,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5MAF,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5LAM,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5REF,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5OECD90+EU,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,World,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5ASIA,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5MAF,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5LAM,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5REF,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5OECD90+EU,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Gas,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,World,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Gas,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,R5ASIA,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Gas,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,R5MAF,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Gas,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,R5LAM,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Gas,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,R5REF,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Gas,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,R5OECD90+EU,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Gas,MESSAGEix-GLOBIOM_1.0,NPi_V3,World,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Gas,MESSAGEix-GLOBIOM_1.0,NPi_V3,R5ASIA,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Gas,MESSAGEix-GLOBIOM_1.0,NPi_V3,R5MAF,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Gas,MESSAGEix-GLOBIOM_1.0,NPi_V3,R5LAM,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Gas,MESSAGEix-GLOBIOM_1.0,NPi_V3,R5REF,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Gas,MESSAGEix-GLOBIOM_1.0,NPi_V3,R5OECD90+EU,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,World,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5ASIA,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5MAF,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5LAM,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5REF,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5OECD90+EU,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,World,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5ASIA,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5MAF,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5LAM,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5REF,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5OECD90+EU,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Oil,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,World,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Oil,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,R5ASIA,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Oil,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,R5MAF,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Oil,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,R5LAM,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Oil,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,R5REF,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Oil,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,R5OECD90+EU,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Oil,MESSAGEix-GLOBIOM_1.0,NPi_V3,World,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Oil,MESSAGEix-GLOBIOM_1.0,NPi_V3,R5ASIA,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Oil,MESSAGEix-GLOBIOM_1.0,NPi_V3,R5MAF,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Oil,MESSAGEix-GLOBIOM_1.0,NPi_V3,R5LAM,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Oil,MESSAGEix-GLOBIOM_1.0,NPi_V3,R5REF,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Oil,MESSAGEix-GLOBIOM_1.0,NPi_V3,R5OECD90+EU,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Oil and gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,World,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Oil and gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5ASIA,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Oil and gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5MAF,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Oil and gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5LAM,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Oil and gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5REF,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Oil and gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5OECD90+EU,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Oil and gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,World,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Oil and gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5ASIA,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Oil and gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5MAF,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Oil and gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5LAM,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Oil and gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5REF,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Oil and gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5OECD90+EU,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Oil and gas,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,World,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Oil and gas,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,R5ASIA,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Oil and gas,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,R5MAF,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Oil and gas,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,R5LAM,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Oil and gas,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,R5REF,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Oil and gas,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,R5OECD90+EU,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Oil and gas,MESSAGEix-GLOBIOM_1.0,NPi_V3,World,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Oil and gas,MESSAGEix-GLOBIOM_1.0,NPi_V3,R5ASIA,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Oil and gas,MESSAGEix-GLOBIOM_1.0,NPi_V3,R5MAF,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Oil and gas,MESSAGEix-GLOBIOM_1.0,NPi_V3,R5LAM,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Oil and gas,MESSAGEix-GLOBIOM_1.0,NPi_V3,R5REF,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Low-carbon capital expenditure,Oil and gas,MESSAGEix-GLOBIOM_1.0,NPi_V3,R5OECD90+EU,$ 2010/local currency per year,0,0,0,0,0,0,0,0,0,0,0
+Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,World,$ 2010/local currency per year,265677159500,291563131750,317449104000,83263450460,8427567330,10386663440,8724371240,7040179520,6145939500,5717101970,5314530000
+Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5ASIA,$ 2010/local currency per year,173344093580,205561934135,237779774690,66771564060,3409427520,4442175450,3028082020,2231822290,2560096940,2950675790,2567618160
+Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5MAF,$ 2010/local currency per year,5235330800,10887821170,16540311540,6147269730,520232340,468404020,380461760,390088100,612267010,897394340,865769320
+Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5LAM,$ 2010/local currency per year,2424816440,2664569580,2904322720,1075526080,476817600,311292740,474280800,505081880,360601190,328477120,318580080
+Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5REF,$ 2010/local currency per year,3794862720,3331856985,2868851250,693412620,77076300,55481100,41972140,28116000,37504500,36443980,37517760
+Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5OECD90+EU,$ 2010/local currency per year,80889252700,69124267890,57359283080,8575448120,3943948900,5109437120,4800028420,3885258430,2575357350,1504082580,1525010740
+Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,World,$ 2010/local currency per year,265677159500,291563131750,317449104000,386789804050,569784508020,928716518480,1520867472630,2110218743720,2642178367760,2813876514300,2850325880970
+Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5ASIA,$ 2010/local currency per year,173344093580,205561934135,237779774690,278795183070,388341156620,554845151460,783545517660,944301290660,1105478203560,1098005603690,1078555148060
+Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5MAF,$ 2010/local currency per year,5235330800,10887821170,16540311540,38283401990,83168200700,203822601100,434453255560,720128818420,989184996220,1174619778750,1291325097040
+Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5LAM,$ 2010/local currency per year,2424816440,2664569580,2904322720,9149138160,27230702400,79508361810,183318153750,290105243750,378468157650,387456900020,336609499500
+Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5REF,$ 2010/local currency per year,3794862720,3331856985,2868851250,6453734430,16847650400,32569094620,46568598900,71548971600,81314031420,83267711460,81726125040
+Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5OECD90+EU,$ 2010/local currency per year,80889252700,69124267890,57359283080,54114019520,54194874420,57958791740,72994232780,84125026140,87746502560,70526612320,62158029960
+Revenue,Coal,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,World,$ 2010/local currency per year,0,357402861426,714805722852,175923542677,213633580481,415243875853,522803589469,191101095091,62933734291,1632040189,2828499552
+Revenue,Coal,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,R5ASIA,$ 2010/local currency per year,0,85273110449,170546220898,84552880036,105070667006,184654517050,235668207542,70605128000,22751140450,0,0
+Revenue,Coal,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,R5MAF,$ 2010/local currency per year,0,4641596852,9283193704,9467323119,7631720663,8544113044,18819550776,35928959164,15556614737,10143633.54,16410497.94
+Revenue,Coal,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,R5LAM,$ 2010/local currency per year,0,1450104854,2900209708,3126100900,7531923773,6499180191,-0.000002185914904,745.3302622,-233.7622505,53.3740289,45.08609311
+Revenue,Coal,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,R5REF,$ 2010/local currency per year,0,4248545631,8497091262,7803896127,8389346200,20755860231,57538271225,11841052600,608983039.4,520786093.9,526791039
+Revenue,Coal,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,R5OECD90+EU,$ 2010/local currency per year,0,40681456034,81362912067,18308580578,65373888140,150395097571,142169032842,26842413948,6186720197,1086119691,547934770.7
+Revenue,Coal,MESSAGEix-GLOBIOM_1.0,NPi_V3,World,$ 2010/local currency per year,0,357402861426,714805722852,355119406859,539514325042,674028217052,816084510272,1126241967516,1390668543861,2126365707178,2342417542549
+Revenue,Coal,MESSAGEix-GLOBIOM_1.0,NPi_V3,R5ASIA,$ 2010/local currency per year,0,85273110449,170546220898,240408431413,282998645890,311821181016,417834817568,559551543829,690871342814,694334084136,744900051042
+Revenue,Coal,MESSAGEix-GLOBIOM_1.0,NPi_V3,R5MAF,$ 2010/local currency per year,0,4641596852,9283193704,15517958206,24438910106,45739829329,92016957371,152055741469,223785157355,414178609883,668819260720
+Revenue,Coal,MESSAGEix-GLOBIOM_1.0,NPi_V3,R5LAM,$ 2010/local currency per year,0,1450104854,2900209708,4923019477,9267779429,16559135830,20152493985,19022679949,18533718291,18616462416,13514673969
+Revenue,Coal,MESSAGEix-GLOBIOM_1.0,NPi_V3,R5REF,$ 2010/local currency per year,0,4248545631,8497091262,12979008421,17478096876,23029458360,33841658916,35973905877,37297072836,34820849113,44601522412
+Revenue,Coal,MESSAGEix-GLOBIOM_1.0,NPi_V3,R5OECD90+EU,$ 2010/local currency per year,0,40681456034,81362912067,51242548881,59714651850,71577916719,89814449919,118836178706,149830258502,155947169841,200206734885
+Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,World,$ 2010/local currency per year,490174731130,672441853035,854708974940,780698265120,549550145400,413039083080,386651597900,390741234670,452631823020,464524060000,422763659010
+Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5ASIA,$ 2010/local currency per year,78758744420,172830999695,266903254970,334060462490,280193101790,212004879860,188814630820,190663739510,218484529210,211133281150,196926697390
+Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5MAF,$ 2010/local currency per year,50196432720,74395240180,98594047640,76401090500,54732213760,59674110400,71023714750,80479767260,97505492840,113669127910,114227584860
+Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5LAM,$ 2010/local currency per year,28064129200,35025042680,41985956160,30845004240,32752906600,32576879520,41474268000,46937736100,57539131500,56867622000,50415519600
+Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5REF,$ 2010/local currency per year,36595636240,43267801400,49939966560,23028772500,7795696490,6411238710,5587475040,4801168260,5292925870,5454075580,4704375040
+Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5OECD90+EU,$ 2010/local currency per year,296566151680,346921966635,397277781590,316369716520,174072203650,102374872660,79751507010,67861199630,73806606440,77402213130,56489788180
+Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,World,$ 2010/local currency per year,490174731130,672441853035,854708974940,1111849710720,1597276672680,1865985076480,2120870292600,2262612171470,2624088210720,2827452611400,3267675557700
+Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5ASIA,$ 2010/local currency per year,78758744420,172830999695,266903254970,358685343500,623329507520,719431151400,782566230800,785633055900,883595006260,965110964440,1124107198280
+Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5MAF,$ 2010/local currency per year,50196432720,74395240180,98594047640,166425490380,268542695600,367822181190,482530174990,580096155380,736267279740,857318014660,1032072017610
+Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5LAM,$ 2010/local currency per year,28064129200,35025042680,41985956160,58963994850,87222781100,119953434560,174434601600,221958256920,287880870060,322783032320,356775313930
+Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5REF,$ 2010/local currency per year,36595636240,43267801400,49939966560,60006795840,70048016850,74596314140,67826362460,61659276750,50727821920,37583680860,40785709800
+Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5OECD90+EU,$ 2010/local currency per year,296566151680,346921966635,397277781590,467767267640,548122320340,584192859970,613511274810,613260419960,665609439920,644670829690,713924786180
+Revenue,Gas,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,World,$ 2010/local currency per year,0,446012343751,892024687503,1087673613738,2063228794786,2029373762887,1924590780810,1190776041296,1106969363989,1307767549568,1842187443631
+Revenue,Gas,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,R5ASIA,$ 2010/local currency per year,0,44446992354,88893984707,207049106364,366694126257,305515429095,311183527511,321939245497,407933536882,517235318936,716949320016
+Revenue,Gas,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,R5MAF,$ 2010/local currency per year,0,22313003237,44626006473,86959652240,201963340954,282528811301,442001716613,421614779408,199102717477,344451627380,630095220869
+Revenue,Gas,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,R5LAM,$ 2010/local currency per year,0,9460111477,18920222953,20872144200,39945192242,31990262778,20394862634,9530375100,9727588729,3498012284,75265512.73
+Revenue,Gas,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,R5REF,$ 2010/local currency per year,0,17814768529,35629537059,45185281243,60895362507,52989899931,30995098080,39144883282,48463807903,64413486348,87404554749
+Revenue,Gas,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,R5OECD90+EU,$ 2010/local currency per year,0,124481884721,248963769441,315499887709,365484302087,427366401667,354744408263,237019583481,117967234430,141910690277,217149402327
+Revenue,Gas,MESSAGEix-GLOBIOM_1.0,NPi_V3,World,$ 2010/local currency per year,0,446012343751,892024687503,715816452684,1215163216565,1550068488813,1957702025453,2349640084663,2754687805442,2881696538095,4942973373937
+Revenue,Gas,MESSAGEix-GLOBIOM_1.0,NPi_V3,R5ASIA,$ 2010/local currency per year,0,44446992354,88893984707,147364953517,255278724344,334916540444,406406231137,431738644516,493977830797,575596896673,807085904266
+Revenue,Gas,MESSAGEix-GLOBIOM_1.0,NPi_V3,R5MAF,$ 2010/local currency per year,0,22313003237,44626006473,85953675207,149067595220,206938465189,337491061038,474434828871,537440090560,578838084682,587127439626
+Revenue,Gas,MESSAGEix-GLOBIOM_1.0,NPi_V3,R5LAM,$ 2010/local currency per year,0,9460111477,18920222953,28661314631,44764925649,64018765616,116198515382,151036463588,180634485432,229895264424,263150220901
+Revenue,Gas,MESSAGEix-GLOBIOM_1.0,NPi_V3,R5REF,$ 2010/local currency per year,0,17814768529,35629537059,35174941051,46581484283,60997042758,95202507700,122677452731,144640018632,143887045542,191823085811
+Revenue,Gas,MESSAGEix-GLOBIOM_1.0,NPi_V3,R5OECD90+EU,$ 2010/local currency per year,0,124481884721,248963769441,240537712897,324095338307,448529579544,514861400491,593820243222,623277148955,639872008307,739383005573
+Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,World,$ 2010/local currency per year,1610369347210,1907332378835,2204295410460,2496486051200,2398317915780,2216077579070,1769898130000,1378239857280,1091716525410,993058542280,947151290800
+Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5ASIA,$ 2010/local currency per year,421875798090,597654034110,773432270130,1011355776130,1037349600990,1021668562420,874785290710,765312633950,662240111640,639560481870,609892525830
+Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5MAF,$ 2010/local currency per year,119688868710,180694358200,241699847690,295522947300,397171432530,410449675010,327055563500,274995886300,253061642180,233970421860,253029816760
+Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5LAM,$ 2010/local currency per year,135380220560,170984076970,206587933380,200969005010,166198350990,126163169740,54213185000,14450171400,13826669880,13656419700,12835042440
+Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5REF,$ 2010/local currency per year,44078241480,53879694780,63681148080,70958531280,65624395520,50750898330,31648661460,17444154030,2423151540,2297393250,2233839600
+Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5OECD90+EU,$ 2010/local currency per year,889352771890,904128980305,918905188720,917704495570,731965678770,607055172150,482191855630,306037068770,160171989050,103576022710,69160724780
+Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,World,$ 2010/local currency per year,1610369347210,1907332378835,2204295410460,2957314698000,3593051154000,3466029787500,3334347433780,2905969490920,2471562119680,2422113856080,2580773460470
+Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5ASIA,$ 2010/local currency per year,421875798090,597654034110,773432270130,1151177024830,1356939078800,839474814600,591670176270,293991573240,103293211840,93590530200,119929916440
+Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5MAF,$ 2010/local currency per year,119688868710,180694358200,241699847690,377996990840,591700089750,718539268010,719397652130,620442209280,546012851550,573468715620,655763373980
+Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5LAM,$ 2010/local currency per year,135380220560,170984076970,206587933380,278528194600,351655820920,372298850240,296733749400,185631773250,78246066600,106503231500,233449186210
+Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5REF,$ 2010/local currency per year,44078241480,53879694780,63681148080,64652296600,52357628800,32859220750,11951205200,9220741040,8962831620,8483607000,8911018020
+Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5OECD90+EU,$ 2010/local currency per year,889352771890,904128980305,918905188720,1084953200950,1240405642670,1502853750580,1714587766550,1796694314120,1735036800320,1640069218040,1562725962760
+Revenue,Oil,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,World,$ 2010/local currency per year,0,823030379661,1646060759322,653863113369,726434779630,231952843648,81531632237,45210476937,14715045356,1591300832,1739626861
+Revenue,Oil,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,R5ASIA,$ 2010/local currency per year,0,98830377531,197660755061,220868651910,252569056543,104431724419,18311676647,-5328908381,0,0,0
+Revenue,Oil,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,R5MAF,$ 2010/local currency per year,0,43794716039,87589432079,78998319924,45972282569,16781718348,3116859791,2118899482,1208109042,77578322.57,476315679.6
+Revenue,Oil,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,R5LAM,$ 2010/local currency per year,0,26186594349,52373188698,55530274918,32202589664,10131696869,499842750.2,253907221.7,293121072.2,168037491.7,67909102.9
+Revenue,Oil,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,R5REF,$ 2010/local currency per year,0,19815823755,39631647510,25941236895,13866571492,3913147536,256366656.7,306684925.2,175997552.2,22437465.14,0
+Revenue,Oil,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,R5OECD90+EU,$ 2010/local currency per year,0,168195831347,336391662694,221225554748,217570296199,76024622088,-18266476137,-34720603353,-32402877290,-3907964106,-6167695870
+Revenue,Oil,MESSAGEix-GLOBIOM_1.0,NPi_V3,World,$ 2010/local currency per year,0,823030379661,1646060759322,973562752347,1416975009211,1730328526806,1587050449440,1709456321257,2079853965831,2262825440696,2880337700690
+Revenue,Oil,MESSAGEix-GLOBIOM_1.0,NPi_V3,R5ASIA,$ 2010/local currency per year,0,98830377531,197660755061,299460723729,400592907557,537942608156,551585588673,620513357627,715156950160,769914446664,957229512199
+Revenue,Oil,MESSAGEix-GLOBIOM_1.0,NPi_V3,R5MAF,$ 2010/local currency per year,0,43794716039,87589432079,120517855782,162690233962,192308783007,248422632286,349475783113,487435517352,552711769590,733146336840
+Revenue,Oil,MESSAGEix-GLOBIOM_1.0,NPi_V3,R5LAM,$ 2010/local currency per year,0,26186594349,52373188698,92605633822,122944067096,148955395401,130866189566,148324980791,215654782316,257405837711,322318034262
+Revenue,Oil,MESSAGEix-GLOBIOM_1.0,NPi_V3,R5REF,$ 2010/local currency per year,0,19815823755,39631647510,45129065831,58287550191,77757257733,101145819245,81666648676,90646165235,84729658315,109501918941
+Revenue,Oil,MESSAGEix-GLOBIOM_1.0,NPi_V3,R5OECD90+EU,$ 2010/local currency per year,0,168195831347,336391662694,317926483766,475545275939,539679537913,481590800916,387009644095,460470744188,456785476821,521813509840
+Revenue,Oil and gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,World,$ 2010/local currency per year,2100544078340,2579774231870,3059004385400,3277184316320,2947868061180,2629116662150,2156549727900,1768981091950,1544348348430,1457582602280,1369914949810
+Revenue,Oil and gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5ASIA,$ 2010/local currency per year,500634542510,770485033805,1040335525100,1345416238620,1317542702780,1233673442280,1063599921530,955976373460,880724640850,850693763020,806819223220
+Revenue,Oil and gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5MAF,$ 2010/local currency per year,169885301430,255089598380,340293895330,371924037800,451903646290,470123785410,398079278250,355475653560,350567135020,347639549770,367257401620
+Revenue,Oil and gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5LAM,$ 2010/local currency per year,163444349760,206009119650,248573889540,231814009250,198951257590,158740049260,95687453000,61387907500,71365801380,70524041700,63250562040
+Revenue,Oil and gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5REF,$ 2010/local currency per year,80673877720,97147496180,113621114640,93987303780,73420092010,57162137040,37236136500,22245322290,7716077410,7751468830,6938214640
+Revenue,Oil and gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5OECD90+EU,$ 2010/local currency per year,1185918923570,1251050946940,1316182970310,1234074212090,906037882420,709430044810,561943362640,373898268400,233978595490,180978235840,125650512960
+Revenue,Oil and gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,World,$ 2010/local currency per year,2100544078340,2579774231870,3059004385400,4069164408720,5190327826680,5332014863980,5455217726380,5168581662390,5095650330400,5249566467480,5848449018170
+Revenue,Oil and gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5ASIA,$ 2010/local currency per year,500634542510,770485033805,1040335525100,1509862368330,1980268586320,1558905966000,1374236407070,1079624629140,986888218100,1058701494640,1244037114720
+Revenue,Oil and gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5MAF,$ 2010/local currency per year,169885301430,255089598380,340293895330,544422481220,860242785350,1086361449200,1201927827120,1200538364660,1282280131290,1430786730280,1687835391590
+Revenue,Oil and gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5LAM,$ 2010/local currency per year,163444349760,206009119650,248573889540,337492189450,438878602020,492252284800,471168351000,407590030170,366126936660,429286263820,590224500140
+Revenue,Oil and gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5REF,$ 2010/local currency per year,80673877720,97147496180,113621114640,124659092440,122405645650,107455534890,79777567660,70880017790,59690653540,46067287860,49696727820
+Revenue,Oil and gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5OECD90+EU,$ 2010/local currency per year,1185918923570,1251050946940,1316182970310,1552720468590,1788527963010,2087046610550,2328099041360,2409954734080,2400646240240,2284740047730,2276650748940
+Revenue,Oil and gas,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,World,$ 2010/local currency per year,0,1269042723412,2538085446825,1741536727106,2789663574417,2261326606535,2006122413048,1235986518234,1121684409345,1309358850400,1843927070491
+Revenue,Oil and gas,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,R5ASIA,$ 2010/local currency per year,0,143277369884,286554739769,427917758274,619263182800,409947153514,329495204158,316610337116,407933536882,517235318936,716949320016
+Revenue,Oil and gas,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,R5MAF,$ 2010/local currency per year,0,66107719276,132215438552,165957972164,247935623524,299310529649,445118576404,423733678890,200310826519,344529205703,630571536548
+Revenue,Oil and gas,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,R5LAM,$ 2010/local currency per year,0,35646705826,71293411651,76402419118,72147781906,42121959647,20894705384,9784282321,10020709802,3666049776,143174615.6
+Revenue,Oil and gas,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,R5REF,$ 2010/local currency per year,0,37630592285,75261184569,71126518138,74761933999,56903047468,31251464736,39451568207,48639805455,64435923813,87404554749
+Revenue,Oil and gas,MESSAGEix-GLOBIOM_1.0,NPi2020_400_V3,R5OECD90+EU,$ 2010/local currency per year,0,292677716068,585355432135,536725442457,583054598286,503391023755,336477932126,202298980128,85564357140,138002726171,210981706457
+Revenue,Oil and gas,MESSAGEix-GLOBIOM_1.0,NPi_V3,World,$ 2010/local currency per year,0,1269042723412,2538085446825,1689379205031,2632138225775,3280397015620,3544752474893,4059096405920,4834541771273,5144521978791,7823311074627
+Revenue,Oil and gas,MESSAGEix-GLOBIOM_1.0,NPi_V3,R5ASIA,$ 2010/local currency per year,0,143277369884,286554739769,446825677246,655871631901,872859148600,957991819810,1052252002143,1209134780957,1345511343337,1764315416465
+Revenue,Oil and gas,MESSAGEix-GLOBIOM_1.0,NPi_V3,R5MAF,$ 2010/local currency per year,0,66107719276,132215438552,206471530989,311757829182,399247248196,585913693325,823910611984,1024875607911,1131549854272,1320273776465
+Revenue,Oil and gas,MESSAGEix-GLOBIOM_1.0,NPi_V3,R5LAM,$ 2010/local currency per year,0,35646705826,71293411651,121266948453,167708992745,212974161017,247064704948,299361444379,396289267748,487301102135,585468255162
+Revenue,Oil and gas,MESSAGEix-GLOBIOM_1.0,NPi_V3,R5REF,$ 2010/local currency per year,0,37630592285,75261184569,80304006882,104869034474,138754300492,196348326944,204344101406,235286183867,228616703857,301325004752
+Revenue,Oil and gas,MESSAGEix-GLOBIOM_1.0,NPi_V3,R5OECD90+EU,$ 2010/local currency per year,0,292677716068,585355432135,558464196664,799640614245,988209117457,996452201407,980829887317,1083747893143,1096657485128,1261196515412
