@@ -68,9 +68,12 @@ export default {
       PrEnQuantity,
       svgWidth: 0,
       svgHeight: 0,
+      chartWidth: 0,
+      chartHeight: 0,
       margins: {
-        marginleft: 65,
-        marginright: 30
+        marginleft: 100,
+        marginright: 30,
+        margintop: 100
       }
     }
   },
@@ -117,16 +120,17 @@ export default {
         .curve(d3.curveBasis)
     },
     scales () {
+      console.log('updating scales', this.svgWidth, this.svgHeight)
       const { max } = this.transformData
       return {
         x: d3
           .scaleLinear()
           .domain([2005, 2100])
-          .rangeRound([0, this.svgWidth]),
+          .rangeRound([0, this.chartWidth]),
         y: d3
           .scaleLinear()
           .domain([0, max[0] + 50])
-          .rangeRound([this.svgHeight, 0]),
+          .rangeRound([this.chartHeight, 0]),
         max: max[0] + 100
       }
     },
@@ -153,6 +157,8 @@ export default {
       console.log('height', Math.max(svgHeight, 500))
       this.svgWidth = Math.max(svgWidth, 500)
       this.svgHeight = Math.max(svgHeight, 500)
+      this.chartWidth = Math.max(svgWidth, 500) - this.margins.marginleft
+      this.chartHeight = Math.max(svgWidth, 500) / this.margins.margintop
     }
   },
   mounted () {

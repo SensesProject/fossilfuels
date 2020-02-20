@@ -19,6 +19,7 @@
         <stop offset="0%" stop-color="#ed96ab"/>
         <stop offset="50%" stop-color="#ed96ab" stop-opacity="0"/>
       </linearGradient>
+      <g :transform="'translate(' + margin.left + '0)'">
         <line
         v-for="(single, i) in createDots[0].singleDots"
         v-bind:key="`${i}a`"
@@ -26,7 +27,7 @@
         :x1="single.horizontal"
         y1="50"
         :x2="single.horizontal"
-        :y2="svgHeight - 150 + 'px'"
+        :y2="axisHeight - 150 + 'px'"
         />
         <text
         v-for="(single, i) in createDots[0].singleDots"
@@ -65,6 +66,7 @@
       {{ dot.risks[i] }}
     </text>
     </g>
+  </g>
    </svg>
   </div>
 </div>
@@ -104,6 +106,8 @@ export default {
       PrEnQuantity,
       svgWidth: 0,
       svgHeight: 0,
+      axisWidth: 0,
+      axisHeight: 0,
       onlytwo: [
         2005,
         2100
@@ -129,6 +133,14 @@ export default {
     }
   },
   computed: {
+    margin () {
+      return {
+        left: 0,
+        top: 0,
+        right: 0,
+        bottom: 0
+      }
+    },
     groupData () {
       const primaryenergy = this.PrEnQuantity
       return _.groupBy(primaryenergy, 'scenario')
@@ -190,20 +202,20 @@ export default {
     createDots () {
       const selecteddata = this.selectData
       const scale = this.scale
-      let initDist = 0
-      return _.map(selecteddata, (energy, e) => {
+      let initDist = this.svgHeight / 6
+      return _.map(selecteddata, (energy, e, energies) => {
         const dist = initDist
-        initDist = dist + 160
+        if (e !== 'primenCoal') {
+          initDist = dist + (this.svgHeight / energy.length) * 3
+        }
 
-        let initHorizontal = this.svgWidth
-        const singleDots = _.map(energy, (dot, d) => {
-          const distHor = initHorizontal
-          initHorizontal = distHor + 45
+        const singleDots = _.map(energy, (dot, d, dots) => {
+          const horizontal = (this.axisWidth / dots.length) * d
           return {
             id: numberToWords.toWords(d),
             single: scale(Math.sqrt(dot)),
             vertical: initDist,
-            horizontal: initHorizontal,
+            horizontal,
             y0: initDist - scale(Math.sqrt(dot)),
             y1: initDist + scale(Math.sqrt(dot))
           }
@@ -228,10 +240,11 @@ export default {
       const { vis: el } = this.$refs
       const svgWidth = el.clientWidth
       const svgHeight = el.clientHeight || el.parentNode.clientHeight
-      console.log('width', el.clientWidth)
-      console.log('height', Math.max(svgHeight, 500))
       this.svgWidth = Math.max(svgWidth, 500)
       this.svgHeight = Math.max(svgHeight, 500)
+      this.margin.left = svgWidth / (svgWidth / 12)
+      this.axisWidth = Math.max(svgWidth, 500) - (this.margin.left * 20)
+      this.axisHeight = Math.max(svgHeight, 500) - (svgHeight / 10)
     }
   },
   mounted () {
@@ -284,7 +297,7 @@ export default {
 
 svg {
   width: 100%;
-  height: 60%;
+  height: 100%;
 
   display: block;
   margin: 0 auto;
