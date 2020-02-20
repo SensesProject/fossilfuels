@@ -33,7 +33,7 @@
         v-for="(single, i) in createDots[0].singleDots"
         v-bind:key="`${i}b`"
         :x="single.horizontal"
-        :y="height - 130"
+        :y="axisHeight - 130"
         >{{ step > 2 ? onlytwo[i] : all[i]}}</text>
       <g v-for="(dot,i) in createDots" v-bind:key="i" :id="dot.id">
         <path v-bind:key="'dot' + i"
@@ -206,7 +206,7 @@ export default {
       return _.map(selecteddata, (energy, e, energies) => {
         const dist = initDist
         if (e !== 'primenCoal') {
-          initDist = dist + (this.svgHeight / energy.length) * 3
+          initDist = dist + (this.svgHeight / energy.length) * 3.5
         }
 
         const singleDots = _.map(energy, (dot, d, dots) => {
@@ -244,7 +244,7 @@ export default {
       this.svgHeight = Math.max(svgHeight, 500)
       this.margin.left = svgWidth / (svgWidth / 12)
       this.axisWidth = Math.max(svgWidth, 500) - (this.margin.left * 20)
-      this.axisHeight = Math.max(svgHeight, 500) - (svgHeight / 10)
+      this.axisHeight = Math.max(svgHeight, 500) - (svgHeight / 18)
     }
   },
   mounted () {
