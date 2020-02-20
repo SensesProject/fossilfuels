@@ -1,5 +1,8 @@
 <template>
   <div class="second_graph">
+    <div class="command">
+      The production of coal will shrink when policies are implemented. <br/>
+     </div>
   <div class="coal">
     <svg ref="vis">
       <g :transform="'translate('+ margin.left + ',' + margin.top + ')'">
@@ -16,16 +19,25 @@
         <g v-for="(path, i) in generateLine" v-bind:key="`${i}paths`">
           <path :d="path.singleLine" :stroke="path.stroke[i]" :id="path.active ? 'active' : 'inactive'"/>
         </g>
+        <g class="gap_elements">
+        <text :x="scales.x(2000)" :y="scales.y(131.2274)">Coal</text>
         <circle id="coal" :cx="scales.x(2005)" :cy="scales.y(131.2274)" r="5"/>
         <circle :cx="scales.x(2100)" :cy="scales.y(valueLabel[0])" :fill="colorValue" r="5"/>
-        <rect class="gapline" width="5" height="1" :x="scales.x(2101)" :y="scales.y(valueLabel[0]) - 2" />
-        <line
-        class="gapline"
+        <rect class="gapline" width="5" height="1" :x="scales.x(2102)" :y="scales.y(valueLabel[0]) - 2" />
+        <text :x="scales.x(2104)" :y="scales.y(valueLabel[0])">{{ valueLabel[0] }}</text>
+        <text v-show="step > 6"
+        :x="scales.x(2104)"
+        :y="scales.y(transformData.max[0] / 2)"
+        >
+        Gap in Coal production
+        </text>
+        <line class="gapline"
           :x1="scales.x(2101)"
           :x2="scales.x(2101)"
           :y1="scales.y(gapValue)"
           :y2="scales.y(valueLabel[0])"
         />
+      </g>
       </g>
    </svg>
   </div>
@@ -190,7 +202,7 @@ export default {
 
 .second_graph {
   margin: 0 auto;
-  padding-top: 30px;
+  padding-top: 10px;
   max-width: 1000px;
   width: 100%;
 }
@@ -219,11 +231,13 @@ svg {
   width: 100%;
   height: 80%;
 
-  // display: block;
+  display: block;
   margin: 0 auto;
 
   // background-color: lightblue;
-
+  line {
+    stroke: black;
+  }
   text {
     text-anchor: middle;
   }
@@ -257,7 +271,16 @@ svg {
   }
 
   #coal {
-    fill: #c8005f;
+    fill: getColor(gray, 40);
+  }
+
+  .gap_elements {
+    text {
+      text-anchor: start;
+
+      transition: y 0.8s;
+      transition-timing-function: easeInOutQuint;
+    }
   }
 }
 </style>
