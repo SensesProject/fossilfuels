@@ -1,41 +1,44 @@
 <template>
   <div class="second_graph">
+    <div class="command">
+      The production of coal will shrink when policies are implemented. <br/>
+     </div>
   <div class="coal">
     <svg ref="vis">
-      <g :transform="'translate('+ margins.marginleft + ',30)'">
-      <path
-      v-for="(line,i) in generateLine"
-      v-bind:key="i"
-      :d="line.singleLine"
-      :id="line.id"
-      stroke="black"
-      />
-      <circle
-      v-for="circle in transformData.lastValue"
-      v-bind:key="circle[1]"
-      :id="circle[1]"
-      :cx="scales.x(2100)"
-      :cy="scales.y(circle[0])"
-      r="5px"/>
-      <text :x="scales.x(2099)" :y="scales.y(valueLabel[0] + 10)">
-        {{ valueLabel[0] + ' EJ/y'}}
-        <tspan :x="scales.x(2099)" :y="scales.y(valueLabel[0] + 25)">
-          Produced Coal
-        </tspan>
-      </text>
-      <line
-      :x1="scales.x(2005)"
-      :x2="scales.x(2005)"
-      :y2="scales.y(461.8547 + 100)"
-      :y1="scales.y(-10)"
-      />
-      <line
-      :x1="scales.x(2100)"
-      :x2="scales.x(2100)"
-      :y2="scales.y(461.8547 + 100)"
-      :y1="scales.y(-10)"
-      />
-    </g>
+      <g :transform="'translate('+ margin.left + ',' + margin.top + ')'">
+        <g v-for="(line, i) in transformData.axis" v-bind:key="`${i}axis`">
+          <text :x="scales.x(line)" :y="scales.y(0) + 20">{{ line }}</text>
+          <line
+            :x1="scales.x(line)"
+            :x2="scales.x(line)"
+            :y1="scales.y(transformData.max)"
+            :y2="scales.y(0)"
+            stroke="black"
+          />
+        </g>
+        <g v-for="(path, i) in generateLine" v-bind:key="`${i}paths`">
+          <path :d="path.singleLine" :stroke="path.stroke[i]" :id="path.active ? 'active' : 'inactive'"/>
+        </g>
+        <g class="gap_elements">
+        <text :x="scales.x(2000)" :y="scales.y(131.2274)">Coal</text>
+        <circle id="coal" :cx="scales.x(2005)" :cy="scales.y(131.2274)" r="5"/>
+        <circle :cx="scales.x(2100)" :cy="scales.y(valueLabel[0])" :fill="colorValue" r="5"/>
+        <rect class="gapline" width="5" height="1" :x="scales.x(2102)" :y="scales.y(valueLabel[0]) - 2" />
+        <text :x="scales.x(2104)" :y="scales.y(valueLabel[0])">{{ valueLabel[0] }}</text>
+        <text v-show="step > 6"
+        :x="scales.x(2104)"
+        :y="scales.y(transformData.max[0] / 2)"
+        >
+        Gap in Coal production
+        </text>
+        <line class="gapline"
+          :x1="scales.x(2101)"
+          :x2="scales.x(2101)"
+          :y1="scales.y(gapValue)"
+          :y2="scales.y(valueLabel[0])"
+        />
+      </g>
+      </g>
    </svg>
   </div>
 </div>
@@ -66,15 +69,22 @@ export default {
   data () {
     return {
       PrEnQuantity,
+      colors: ['#c8005f', '#ffac00', '#00cc84'],
       svgWidth: 0,
       svgHeight: 0,
-      margins: {
-        marginleft: 65,
-        marginright: 30
-      }
+      chartWidth: 0,
+      chartHeight: 0
     }
   },
   computed: {
+    margin () {
+      return {
+        top: 65,
+        left: 115,
+        right: 170,
+        bottom: 65
+      }
+    },
     groupData () {
       const primaryenergy = this.PrEnQuantity
       const groupVariable = _.groupBy(primaryenergy, 'variable')
@@ -92,18 +102,27 @@ export default {
         lastValue[scenario['scenario']] = [scenario['2100'], scenario['scenario']]
         obj[scenario['scenario']] = [ data ]
       })
+      console.log(obj, max, lastValue)
       return {
         obj,
         max,
-        lastValue
+        lastValue,
+        axis: [2005, 2100]
       }
     },
-    valueLabel () {
-      const { lastValue } = this.transformData
-      let current = lastValue['NPi_V3']
-      if (this.step === 7) { current = lastValue['NPi2020_1000_V3'] }
-      if (this.step === 8) { current = lastValue['NPi2020_400_V3'] }
-      return current
+    scales () {
+      const { max } = this.transformData
+      return {
+        x: d3
+          .scaleLinear()
+          .domain([2005, 2100])
+          .rangeRound([0, this.chartWidth]),
+        y: d3
+          .scaleLinear()
+          .domain([0, max[0] + 50])
+          .rangeRound([this.chartHeight, 0]),
+        max: max[0] + 100
+      }
     },
     linePath () {
       return d3
@@ -116,32 +135,41 @@ export default {
         })
         .curve(d3.curveBasis)
     },
-    scales () {
-      const { max } = this.transformData
-      return {
-        x: d3
-          .scaleLinear()
-          .domain([2005, 2100])
-          .rangeRound([0, this.svgWidth]),
-        y: d3
-          .scaleLinear()
-          .domain([0, max[0] + 50])
-          .rangeRound([this.svgHeight, 0]),
-        max: max[0] + 100
-      }
-    },
     generateLine () {
       const { obj } = this.transformData
-      console.log('height somewhere else', this.svgHeight)
       return _.map(obj, (line, l) => {
         const singleLine = _.map(line, values => {
           return this.linePath(values)
         })
         return {
           singleLine,
-          id: l
+          id: l,
+          stroke: this.colors,
+          active: !!(this.step > 4 && l === 'NPi_V3') ||
+            !!(this.step > 6 && l === 'NPi2020_1000_V3') ||
+            !!(this.step > 7 && l === 'NPi2020_400_V3')
         }
       })
+    },
+    valueLabel () {
+      const { lastValue } = this.transformData
+      let current = lastValue['NPi_V3']
+      if (this.step === 7) { current = lastValue['NPi2020_1000_V3'] }
+      if (this.step === 8) { current = lastValue['NPi2020_400_V3'] }
+      console.log(current)
+      return current
+    },
+    gapValue () {
+      const { lastValue } = this.transformData
+      return lastValue['NPi_V3'][0]
+    },
+    colorValue () {
+      const colors = this.colors
+      let color = colors[0]
+      if (this.step === 7) { color = colors[1] }
+      if (this.step === 8) { color = colors[2] }
+
+      return color
     }
   },
   methods: {
@@ -149,10 +177,10 @@ export default {
       const { vis: el } = this.$refs
       const svgWidth = el.clientWidth
       const svgHeight = el.clientHeight || el.parentNode.clientHeight
-      console.log('width', el.clientWidth)
-      console.log('height', Math.max(svgHeight, 500))
       this.svgWidth = Math.max(svgWidth, 500)
       this.svgHeight = Math.max(svgHeight, 500)
+      this.chartWidth = Math.max(svgWidth, 500) - (this.margin.left + this.margin.right)
+      this.chartHeight = Math.max(svgHeight, 500) - (this.margin.top + this.margin.bottom)
     }
   },
   mounted () {
@@ -174,8 +202,8 @@ export default {
 
 .second_graph {
   margin: 0 auto;
-  padding-top: 30px;
-  max-width: 900px;
+  padding-top: 10px;
+  max-width: 1000px;
   width: 100%;
 }
 
@@ -203,35 +231,56 @@ svg {
   width: 100%;
   height: 80%;
 
-  // display: block;
+  display: block;
   margin: 0 auto;
+
+  // background-color: lightblue;
+  line {
+    stroke: black;
+  }
+  text {
+    text-anchor: middle;
+  }
 
   path {
     fill: none;
-    stroke-width: 2px;
-  }
-
-  line {
-    stroke-width: 0.5;
-    stroke: black;
+    stroke-width: 3;
   }
 
   circle {
-    fill-opacity: 0.5;
-    fill: none;
-    stroke-width: 2px;
+  transition: cy 0.8s, fill 0.8s;
+  transition-timing-function: easeInOutQuint;
   }
 
-  #NPi_V3 {
-    stroke: $color-red;
+  .gapline {
+    stroke-width: 2;
+    stroke: $color-neon;
   }
 
-  #NPi2020_1000_V3 {
-    stroke: $color-yellow;
+  rect {
+    transition: y 0.8s;
+    transition-timing-function: easeInOutQuint;
   }
 
-  #NPi2020_400_V3 {
-    stroke: getColor(green, 40);
+  #inactive {
+    stroke-opacity: 0;
+  }
+
+  #active {
+    stroke-opacity: 1;
+  }
+
+  #coal {
+    fill: getColor(gray, 40);
+  }
+
+  .gap_elements {
+    text {
+      text-anchor: start;
+
+      transition: y 0.8s;
+      transition-timing-function: easeInOutQuint;
+    }
   }
 }
 </style>
