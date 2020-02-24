@@ -2,8 +2,9 @@
   <div class="oil-risk">
     <div class="wrapper" :style="{width: `${innerWidth}px`, height: `${height}px`}">
       <div class="key">
-        Key <br>
-        {{ svg.width }} x {{ svg.height }}
+        <PriceLegend />
+        <!-- Key <br>
+        {{ svg.width }} x {{ svg.height }} -->
       </div>
       <div class="chart" v-resize:debounce.initial="onResize">
         <svg>
@@ -42,6 +43,7 @@
 
 import risks from 'dsv-loader!@/assets/data/oil-risks.csv' // eslint-disable-line import/no-webpack-loader-syntax
 import resize from 'vue-resize-directive'
+import PriceLegend from './subcomponents/PriceLegend.vue'
 import OilRiskBoxes from '@/components/OilRiskBoxes.vue'
 
 export default {
@@ -50,7 +52,8 @@ export default {
     resize
   },
   components: {
-    OilRiskBoxes
+    OilRiskBoxes,
+    PriceLegend
   },
   props: {
     step: {
