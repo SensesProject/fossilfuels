@@ -17,27 +17,28 @@
           />
         </g>
         <g v-for="(path, i) in generateLine" v-bind:key="`${i}paths`">
-          <path :d="path.singleLine" :stroke="path.stroke[i]" :id="path.active ? 'active' : 'inactive'"/>
+          <text
+          :x="scales.x(2050)"
+          :y="path.labelPos"
+          > {{ path.id }}
+          </text>
+          <path
+          :d="path.singleLine"
+          :stroke="path.stroke[i]"
+          :id="path.active ? 'active' : 'inactive'"
+          />
         </g>
-        <g class="gap_elements">
-        <text :x="scales.x(2000)" :y="scales.y(131.2274)">Coal</text>
         <circle id="coal" :cx="scales.x(2005)" :cy="scales.y(131.2274)" r="5"/>
-        <circle :cx="scales.x(2100)" :cy="scales.y(valueLabel[0])" :fill="colorValue" r="5"/>
-        <rect class="gapline" width="5" height="1" :x="scales.x(2102)" :y="scales.y(valueLabel[0]) - 2" />
-        <text :x="scales.x(2104)" :y="scales.y(valueLabel[0])">{{ valueLabel[0] }}</text>
-        <text v-show="step > 6"
-        :x="scales.x(2104)"
-        :y="scales.y(transformData.max[0] / 2)"
-        >
-        Gap in Coal production
-        </text>
-        <line class="gapline"
-          :x1="scales.x(2101)"
-          :x2="scales.x(2101)"
-          :y1="scales.y(gapValue)"
-          :y2="scales.y(valueLabel[0])"
+        <GapElements
+        :scales="scales"
+        :data="{
+        valueLabel: valueLabel,
+        colorValue: colorValue,
+        transformData: transformData,
+        gapValue: gapValue,
+        step: step
+        }"
         />
-      </g>
       </g>
    </svg>
   </div>
@@ -50,8 +51,13 @@ import _ from 'lodash'
 
 import PrEnQuantity from '../assets/data/PrimaryEnergyQuantity.json'
 
+import GapElements from './subcomponents/GapElements.vue'
+
 export default {
   name: 'CoalRisk',
+  components: {
+    GapElements
+  },
   props: {
     step: {
       type: Number,
@@ -102,7 +108,7 @@ export default {
         lastValue[scenario['scenario']] = [scenario['2100'], scenario['scenario']]
         obj[scenario['scenario']] = [ data ]
       })
-      console.log(obj, max, lastValue)
+      console.log(obj)
       return {
         obj,
         max,
@@ -144,6 +150,7 @@ export default {
         return {
           singleLine,
           id: l,
+          labelPos: this.scales.y(line[0][8][0]),
           stroke: this.colors,
           active: !!(this.step > 4 && l === 'NPi_V3') ||
             !!(this.step > 6 && l === 'NPi2020_1000_V3') ||
@@ -156,7 +163,6 @@ export default {
       let current = lastValue['NPi_V3']
       if (this.step === 7) { current = lastValue['NPi2020_1000_V3'] }
       if (this.step === 8) { current = lastValue['NPi2020_400_V3'] }
-      console.log(current)
       return current
     },
     gapValue () {
@@ -247,21 +253,6 @@ svg {
     stroke-width: 3;
   }
 
-  circle {
-  transition: cy 0.8s, fill 0.8s;
-  transition-timing-function: easeInOutQuint;
-  }
-
-  .gapline {
-    stroke-width: 2;
-    stroke: $color-neon;
-  }
-
-  rect {
-    transition: y 0.8s;
-    transition-timing-function: easeInOutQuint;
-  }
-
   #inactive {
     stroke-opacity: 0;
   }
@@ -274,13 +265,5 @@ svg {
     fill: getColor(gray, 40);
   }
 
-  .gap_elements {
-    text {
-      text-anchor: start;
-
-      transition: y 0.8s;
-      transition-timing-function: easeInOutQuint;
-    }
-  }
 }
 </style>
