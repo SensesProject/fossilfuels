@@ -1,91 +1,136 @@
 year,value,model,scenario,region,variable,category
-2020,8.939958081,REMIND-MAgPIE 1.7-3.0,NPi,World,Coal,Direct emissions cost
-2020,956.5755146,REMIND-MAgPIE 1.7-3.0,NPi,World,Gas,Direct emissions cost
-2020,2449.548514,REMIND-MAgPIE 1.7-3.0,NPi,World,Oil,Direct emissions cost
-2020,317449.104,REMIND-MAgPIE 1.7-3.0,NPi,World,Coal,Revenue
-2020,854708.9749,REMIND-MAgPIE 1.7-3.0,NPi,World,Gas,Revenue
-2020,2.20429541e6,REMIND-MAgPIE 1.7-3.0,NPi,World,Oil,Revenue
-2020,8.939958081,REMIND-MAgPIE 1.7-3.0,NPi2020_1000,World,Coal,Direct emissions cost
-2020,956.5755146,REMIND-MAgPIE 1.7-3.0,NPi2020_1000,World,Gas,Direct emissions cost
-2020,2449.548514,REMIND-MAgPIE 1.7-3.0,NPi2020_1000,World,Oil,Direct emissions cost
-2020,317449.104,REMIND-MAgPIE 1.7-3.0,NPi2020_1000,World,Coal,Revenue
-2020,854708.9749,REMIND-MAgPIE 1.7-3.0,NPi2020_1000,World,Gas,Revenue
-2020,2.20429541e6,REMIND-MAgPIE 1.7-3.0,NPi2020_1000,World,Oil,Revenue
-2020,8.939958081,REMIND-MAgPIE 1.7-3.0,NPi2020_400,World,Coal,Direct emissions cost
-2020,956.5755146,REMIND-MAgPIE 1.7-3.0,NPi2020_400,World,Gas,Direct emissions cost
-2020,2449.548514,REMIND-MAgPIE 1.7-3.0,NPi2020_400,World,Oil,Direct emissions cost
-2020,317449.104,REMIND-MAgPIE 1.7-3.0,NPi2020_400,World,Coal,Revenue
-2020,854708.9749,REMIND-MAgPIE 1.7-3.0,NPi2020_400,World,Gas,Revenue
-2020,2.20429541e6,REMIND-MAgPIE 1.7-3.0,NPi2020_400,World,Oil,Revenue
-2040,17.00569595,REMIND-MAgPIE 1.7-3.0,NPi,World,Coal,Direct emissions cost
-2040,1819.609466,REMIND-MAgPIE 1.7-3.0,NPi,World,Gas,Direct emissions cost
-2040,4659.560689,REMIND-MAgPIE 1.7-3.0,NPi,World,Oil,Direct emissions cost
-2040,569784.508,REMIND-MAgPIE 1.7-3.0,NPi,World,Coal,Revenue
-2040,1.597276673e6,REMIND-MAgPIE 1.7-3.0,NPi,World,Gas,Revenue
-2040,3.593051154e6,REMIND-MAgPIE 1.7-3.0,NPi,World,Oil,Revenue
-2040,222.4803204,REMIND-MAgPIE 1.7-3.0,NPi2020_1000,World,Coal,Direct emissions cost
-2040,23805.39428,REMIND-MAgPIE 1.7-3.0,NPi2020_1000,World,Gas,Direct emissions cost
-2040,60959.60779,REMIND-MAgPIE 1.7-3.0,NPi2020_1000,World,Oil,Direct emissions cost
-2040,16854.88824,REMIND-MAgPIE 1.7-3.0,NPi2020_1000,World,Coal,Revenue
-2040,902417.118,REMIND-MAgPIE 1.7-3.0,NPi2020_1000,World,Gas,Revenue
-2040,3.156890313e6,REMIND-MAgPIE 1.7-3.0,NPi2020_1000,World,Oil,Revenue
-2040,239.6858753,REMIND-MAgPIE 1.7-3.0,NPi2020_400,World,Coal,Direct emissions cost
-2040,25646.38866,REMIND-MAgPIE 1.7-3.0,NPi2020_400,World,Gas,Direct emissions cost
-2040,65673.92984,REMIND-MAgPIE 1.7-3.0,NPi2020_400,World,Oil,Direct emissions cost
-2040,8427.56733,REMIND-MAgPIE 1.7-3.0,NPi2020_400,World,Coal,Revenue
-2040,549550.1454,REMIND-MAgPIE 1.7-3.0,NPi2020_400,World,Gas,Revenue
-2040,2.398317916e6,REMIND-MAgPIE 1.7-3.0,NPi2020_400,World,Oil,Revenue
-2060,42.85471095,REMIND-MAgPIE 1.7-3.0,NPi,World,Coal,Direct emissions cost
-2060,4585.454071,REMIND-MAgPIE 1.7-3.0,NPi,World,Gas,Direct emissions cost
-2060,11742.1908,REMIND-MAgPIE 1.7-3.0,NPi,World,Oil,Direct emissions cost
-2060,1.520867473e6,REMIND-MAgPIE 1.7-3.0,NPi,World,Coal,Revenue
-2060,2.120870293e6,REMIND-MAgPIE 1.7-3.0,NPi,World,Gas,Revenue
-2060,3.334347434e6,REMIND-MAgPIE 1.7-3.0,NPi,World,Oil,Revenue
-2060,447.0683899,REMIND-MAgPIE 1.7-3.0,NPi2020_1000,World,Coal,Direct emissions cost
-2060,47836.31772,REMIND-MAgPIE 1.7-3.0,NPi2020_1000,World,Gas,Direct emissions cost
-2060,122496.7388,REMIND-MAgPIE 1.7-3.0,NPi2020_1000,World,Oil,Direct emissions cost
-2060,22756.32021,REMIND-MAgPIE 1.7-3.0,NPi2020_1000,World,Coal,Revenue
-2060,793488.1508,REMIND-MAgPIE 1.7-3.0,NPi2020_1000,World,Gas,Revenue
-2060,3.129754495e6,REMIND-MAgPIE 1.7-3.0,NPi2020_1000,World,Oil,Revenue
-2060,362.823089,REMIND-MAgPIE 1.7-3.0,NPi2020_400,World,Coal,Direct emissions cost
-2060,38822.07052,REMIND-MAgPIE 1.7-3.0,NPi2020_400,World,Gas,Direct emissions cost
-2060,99413.52639,REMIND-MAgPIE 1.7-3.0,NPi2020_400,World,Oil,Direct emissions cost
-2060,8724.37124,REMIND-MAgPIE 1.7-3.0,NPi2020_400,World,Coal,Revenue
-2060,386651.5979,REMIND-MAgPIE 1.7-3.0,NPi2020_400,World,Gas,Revenue
-2060,1.76989813e6,REMIND-MAgPIE 1.7-3.0,NPi2020_400,World,Oil,Revenue
-2080,86.8307571,REMIND-MAgPIE 1.7-3.0,NPi,World,Coal,Direct emissions cost
-2080,9290.891009,REMIND-MAgPIE 1.7-3.0,NPi,World,Gas,Direct emissions cost
-2080,23791.62744,REMIND-MAgPIE 1.7-3.0,NPi,World,Oil,Direct emissions cost
-2080,2.642178368e6,REMIND-MAgPIE 1.7-3.0,NPi,World,Coal,Revenue
-2080,2.624088211e6,REMIND-MAgPIE 1.7-3.0,NPi,World,Gas,Revenue
-2080,2.47156212e6,REMIND-MAgPIE 1.7-3.0,NPi,World,Oil,Revenue
-2080,625.1588171,REMIND-MAgPIE 1.7-3.0,NPi2020_1000,World,Coal,Direct emissions cost
-2080,66891.99343,REMIND-MAgPIE 1.7-3.0,NPi2020_1000,World,Gas,Direct emissions cost
-2080,171293.5159,REMIND-MAgPIE 1.7-3.0,NPi2020_1000,World,Oil,Direct emissions cost
-2080,13582.83444,REMIND-MAgPIE 1.7-3.0,NPi2020_1000,World,Coal,Revenue
-2080,861149.4797,REMIND-MAgPIE 1.7-3.0,NPi2020_1000,World,Gas,Revenue
-2080,2.275856879e6,REMIND-MAgPIE 1.7-3.0,NPi2020_1000,World,Oil,Revenue
-2080,491.4956781,REMIND-MAgPIE 1.7-3.0,NPi2020_400,World,Coal,Direct emissions cost
-2080,52590.03756,REMIND-MAgPIE 1.7-3.0,NPi2020_400,World,Gas,Direct emissions cost
-2080,134669.8158,REMIND-MAgPIE 1.7-3.0,NPi2020_400,World,Oil,Direct emissions cost
-2080,6145.9395,REMIND-MAgPIE 1.7-3.0,NPi2020_400,World,Coal,Revenue
-2080,452631.823,REMIND-MAgPIE 1.7-3.0,NPi2020_400,World,Gas,Revenue
-2080,1.091716525e6,REMIND-MAgPIE 1.7-3.0,NPi2020_400,World,Oil,Revenue
-2100,138.2332708,REMIND-MAgPIE 1.7-3.0,NPi,World,Coal,Direct emissions cost
-2100,14790.95997,REMIND-MAgPIE 1.7-3.0,NPi,World,Gas,Direct emissions cost
-2100,37875.9162,REMIND-MAgPIE 1.7-3.0,NPi,World,Oil,Direct emissions cost
-2100,2.850325881e6,REMIND-MAgPIE 1.7-3.0,NPi,World,Coal,Revenue
-2100,3.267675558e6,REMIND-MAgPIE 1.7-3.0,NPi,World,Gas,Revenue
-2100,2.58077346e6,REMIND-MAgPIE 1.7-3.0,NPi,World,Oil,Revenue
-2100,627.2698667,REMIND-MAgPIE 1.7-3.0,NPi2020_1000,World,Coal,Direct emissions cost
-2100,67117.87573,REMIND-MAgPIE 1.7-3.0,NPi2020_1000,World,Gas,Direct emissions cost
-2100,171871.9435,REMIND-MAgPIE 1.7-3.0,NPi2020_1000,World,Oil,Direct emissions cost
-2100,8416.25292,REMIND-MAgPIE 1.7-3.0,NPi2020_1000,World,Coal,Revenue
-2100,767459.9779,REMIND-MAgPIE 1.7-3.0,NPi2020_1000,World,Gas,Revenue
-2100,1.96845261e6,REMIND-MAgPIE 1.7-3.0,NPi2020_1000,World,Oil,Revenue
-2100,601.6018185,REMIND-MAgPIE 1.7-3.0,NPi2020_400,World,Coal,Direct emissions cost
-2100,64371.39458,REMIND-MAgPIE 1.7-3.0,NPi2020_400,World,Gas,Direct emissions cost
-2100,164838.8983,REMIND-MAgPIE 1.7-3.0,NPi2020_400,World,Oil,Direct emissions cost
-2100,5314.53,REMIND-MAgPIE 1.7-3.0,NPi2020_400,World,Coal,Revenue
-2100,422763.659,REMIND-MAgPIE 1.7-3.0,NPi2020_400,World,Gas,Revenue
-2100,947151.2908,REMIND-MAgPIE 1.7-3.0,NPi2020_400,World,Oil,Revenue
+2020,15.252091607925,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Coal,Direct emissions cost
+2020,1631.97380204797,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Gas,Direct emissions cost
+2020,4179.07310057145,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Oil,Direct emissions cost
+2020,302055.63332,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Coal,Revenue
+2020,775726.94199,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Gas,Revenue
+2020,1.93963062354e6,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Oil,Revenue
+2020,15.252091607925,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Coal,Direct emissions cost
+2020,1631.97380204797,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Gas,Direct emissions cost
+2020,4179.07310057145,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Oil,Direct emissions cost
+2020,302055.63332,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Coal,Revenue
+2020,775726.94199,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Gas,Revenue
+2020,1.93963062354e6,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Oil,Revenue
+2020,0,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Coal,Direct emissions cost
+2020,0,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Gas,Direct emissions cost
+2020,0,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Oil,Direct emissions cost
+2020,474802.94499,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Coal,Revenue
+2020,874605.19652,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Gas,Revenue
+2020,2.457729401e6,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Oil,Revenue
+2040,887.88276589833,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Coal,Direct emissions cost
+2040,95003.4559511213,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Gas,Direct emissions cost
+2040,243279.877856142,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Oil,Direct emissions cost
+2040,2219.94548,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Coal,Revenue
+2040,453798.39384,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Gas,Revenue
+2040,1.2337207428e6,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Oil,Revenue
+2040,354.9648121185,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Coal,Direct emissions cost
+2040,37981.2348966795,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Gas,Direct emissions cost
+2040,97260.358520469,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Oil,Direct emissions cost
+2040,10502.23104,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Coal,Revenue
+2040,806966.32442,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Gas,Revenue
+2040,2.23800770739e6,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Oil,Revenue
+2040,0,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Coal,Direct emissions cost
+2040,0,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Gas,Direct emissions cost
+2040,0,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Oil,Direct emissions cost
+2040,1.12191277887e6,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Coal,Revenue
+2040,1.8219963531e6,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Gas,Revenue
+2040,3.64936643643e6,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Oil,Revenue
+2060,1328.80576941711,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Coal,Direct emissions cost
+2060,142182.217327631,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Gas,Direct emissions cost
+2060,364092.780820288,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Oil,Direct emissions cost
+2060,1253.70866,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Coal,Revenue
+2060,349937.50385,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Gas,Revenue
+2060,623841.8564,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Oil,Revenue
+2060,686.60831193924,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Coal,Direct emissions cost
+2060,73467.0893774987,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Gas,Direct emissions cost
+2060,188130.677471352,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Oil,Direct emissions cost
+2060,8830.38765,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Coal,Revenue
+2060,655655.33685,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Gas,Revenue
+2060,2.06908790622e6,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Oil,Revenue
+2060,0,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Coal,Direct emissions cost
+2060,0,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Gas,Direct emissions cost
+2060,0,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Oil,Direct emissions cost
+2060,2.62404934169e6,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Coal,Revenue
+2060,2.48708857866e6,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Gas,Revenue
+2060,3.202368007e6,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Oil,Revenue
+2080,1680.14029132296,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Coal,Direct emissions cost
+2080,179775.011171557,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Gas,Direct emissions cost
+2080,460358.439822491,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Oil,Direct emissions cost
+2080,1764.32032,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Coal,Revenue
+2080,182064.31971,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Gas,Revenue
+2080,530703.978,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Oil,Revenue
+2080,899.27368906986,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Coal,Direct emissions cost
+2080,96222.284730475,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Gas,Direct emissions cost
+2080,246400.990805142,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Oil,Direct emissions cost
+2080,8170.3327,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Coal,Revenue
+2080,483203.95715,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Gas,Revenue
+2080,1.9097600071e6,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Oil,Revenue
+2080,0,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Coal,Direct emissions cost
+2080,0,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Gas,Direct emissions cost
+2080,0,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Oil,Direct emissions cost
+2080,3.75386021096e6,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Coal,Revenue
+2080,3.30290965037e6,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Gas,Revenue
+2080,2.49314344652e6,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Oil,Revenue
+2100,2168.9803578264,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Coal,Direct emissions cost
+2100,232080.898287425,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Gas,Direct emissions cost
+2100,594300.618044434,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Oil,Direct emissions cost
+2100,2343.69595,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Coal,Revenue
+2100,171337.89432,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Gas,Revenue
+2100,430415.33545,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Oil,Revenue
+2100,1119.42557758854,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Coal,Direct emissions cost
+2100,119778.536801974,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Gas,Direct emissions cost
+2100,306722.60825926,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Oil,Direct emissions cost
+2100,6662.6378,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Coal,Revenue
+2100,467237.95125,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Gas,Revenue
+2100,1.76995825816e6,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Oil,Revenue
+2100,0,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Coal,Direct emissions cost
+2100,0,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Gas,Direct emissions cost
+2100,0,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Oil,Direct emissions cost
+2100,4.10219163156e6,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Coal,Revenue
+2100,4.09898213119e6,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Gas,Revenue
+2100,2.96017949643e6,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Oil,Revenue
+2020,149.6362,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Coal,Primary Energy
+2020,149.8497,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Gas,Primary Energy
+2020,190.0369,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Oil,Primary Energy
+2020,149.6362,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Coal,Primary Energy
+2020,149.8497,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Gas,Primary Energy
+2020,190.0369,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Oil,Primary Energy
+2020,171.3657,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Coal,Primary Energy
+2020,150.4723,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Gas,Primary Energy
+2020,199.4975,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Oil,Primary Energy
+2040,1.4876,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Coal,Primary Energy
+2040,45.9864,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Gas,Primary Energy
+2040,113.0402,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Oil,Primary Energy
+2040,6.5118,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Coal,Primary Energy
+2040,106.7783,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Gas,Primary Energy
+2040,172.8979,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Oil,Primary Energy
+2040,278.4801,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Coal,Primary Energy
+2040,226.4334,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Gas,Primary Energy
+2040,212.1367,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Oil,Primary Energy
+2060,0.4846,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Coal,Primary Energy
+2060,27.7607,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Gas,Primary Energy
+2060,41.2076,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Oil,Primary Energy
+2060,3.9095,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Coal,Primary Energy
+2060,70.7585,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Gas,Primary Energy
+2060,108.0791,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Oil,Primary Energy
+2060,438.7969,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Coal,Primary Energy
+2060,226.9697,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Gas,Primary Energy
+2060,132.0428,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Oil,Primary Energy
+2080,0.4496,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Coal,Primary Energy
+2080,14.2457,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Gas,Primary Energy
+2080,28.0536,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Oil,Primary Energy
+2080,2.9917,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Coal,Primary Energy
+2080,48.0365,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Gas,Primary Energy
+2080,80.0503,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Oil,Primary Energy
+2080,471.1643,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Coal,Primary Energy
+2080,230.0573,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Gas,Primary Energy
+2080,94.1989,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Oil,Primary Energy
+2100,0.5305,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Coal,Primary Energy
+2100,13.6632,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Gas,Primary Energy
+2100,23.0557,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Oil,Primary Energy
+2100,2.3618,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Coal,Primary Energy
+2100,45.1765,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Gas,Primary Energy
+2100,71.1644,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Oil,Primary Energy
+2100,433.7868,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Coal,Primary Energy
+2100,233.9989,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Gas,Primary Energy
+2100,99.3759,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Oil,Primary Energy
