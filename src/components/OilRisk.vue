@@ -133,7 +133,9 @@ export default {
       return Math.max(...rows.map(r => {
         return r.map(c => {
           return Object.keys(c).map(k => {
-            return Object.keys(c[k]).map(v => c[k][v]).reduce((a, b) => a + b)
+            // return (c[k]['Direct emissions cost'] + c[k]['Revenue']) / c[k]['Primary Energy']
+            return (c[k]['Direct emissions cost'] + c[k]['Revenue'])
+            // return Object.keys(c[k]).map(v => c[k][v]).reduce((a, b) => a + b)
           })
         })
       }).flat(2))
