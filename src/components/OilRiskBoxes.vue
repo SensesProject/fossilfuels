@@ -31,7 +31,7 @@ export default {
     scale () {
       const { max, size } = this
       return scalePow()
-        .exponent(1)
+        .exponent(0.5)
         .domain([0, max])
         .range([0, size / 2])
     },
