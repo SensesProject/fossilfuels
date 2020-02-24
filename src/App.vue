@@ -115,6 +115,16 @@
         </IntersectionObserver>
       </div>
     </LayoutScrollytelling>
+    <LayoutScrollytelling>
+      <template v-slot:vis="{ width, height, step }">
+        <UncertaintyRisk :step="step" :width="width" :height="height"/>
+      </template>
+      <div slot="text" class="observer">
+        <IntersectionObserver :step="0">
+          <p>this would be something on uncertainty.</p>
+        </IntersectionObserver>
+      </div>
+    </LayoutScrollytelling>
   </div>
 </template>
 
@@ -128,6 +138,7 @@ import IntersectionObserver from 'library/src/components/IntersectionObserver.vu
 import GeneralRisks from './components/GeneralRisks.vue'
 import CoalRisk from './components/CoalRisk.vue'
 import OilRisk from './components/OilRisk.vue'
+import UncertaintyRisk from './components/UncertaintyRisk.vue'
 
 export default {
   name: 'app',
@@ -137,7 +148,8 @@ export default {
     CoalRisk,
     OilRisk,
     LayoutScrollytelling,
-    IntersectionObserver
+    IntersectionObserver,
+    UncertaintyRisk
   }
 }
 </script>
