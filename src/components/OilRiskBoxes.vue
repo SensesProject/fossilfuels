@@ -1,6 +1,7 @@
 <template>
   <g class="oil-risk-boxes">
-    <rect v-for="(r, i) in rects" :key="`r-${i}`" v-bind="r"/>
+    <rect v-for="(r, i) in rects" :key="`r-${i}`" class="filled" v-bind="r.bind" :opacity="r.opacity"/>
+    <rect v-for="(r, i) in rects" :key="`r2-${i}`" v-bind="r.bind"/>
   </g>
 </template>
 
@@ -21,6 +22,10 @@ export default {
     max: {
       type: Number,
       default: 100
+    },
+    revenueDomains: {
+      type: Object,
+      default: null
     }
   },
   data () {
@@ -36,16 +41,23 @@ export default {
         .range([0, size / 2])
     },
     rects () {
-      const { data, scale } = this
+      const { data, scale, revenueDomains } = this
       return ['Gas', 'Oil', 'Coal'].map((k1, i) => {
-        return ['Revenue', 'Direct emissions cost'].map(k2 => {
-          // const size = scale((k2 === 'Revenue' ? (data[k1][k2]) : (data[k1][k2] + data[k1]['Revenue'])) / data[k1]['Primary Energy'])
-          const size = scale((k2 === 'Revenue' ? (data[k1][k2]) : (data[k1][k2] + data[k1]['Revenue'])))
+        return ['Primary Energy'].map(k2 => {
+          const opacScale = scalePow()
+            .exponent(0.5)
+            .domain(revenueDomains[k1])
+            .range([0.2, 0.8])
+          const size = scale(data[k1]['Primary Energy'])
           return {
-            class: [k1, { filled: k2 === 'Revenue' }],
-            transform: `rotate(${90 * i}) translate(8 8)`,
-            width: size,
-            height: size
+            bind: {
+              class: [k1],
+              transform: `rotate(${90 * i}) translate(8 8)`,
+              width: size,
+              height: size
+            },
+            // opacity: opacScale(data[k1].Revenue / data[k1]['Primary Energy'])
+            opacity: opacScale(data[k1].Revenue / data[k1]['Primary Energy'])
           }
         })
       }).flat()
@@ -64,21 +76,24 @@ export default {
     &.Coal {
       stroke: getColor(gray, 40);
       &.filled {
-        fill: getColor(gray, 80);
+        stroke: none;
+        fill: getColor(gray, 50);
       }
     }
 
     &.Oil {
       stroke: getColor(orange, 40);
       &.filled {
-        fill: getColor(orange, 80);
+        stroke: none;
+        fill: getColor(orange, 50);
       }
     }
 
     &.Gas {
       stroke: getColor(red, 40);
       &.filled {
-        fill: getColor(red, 80);
+        stroke: none;
+        fill: getColor(red, 50);
       }
     }
   }

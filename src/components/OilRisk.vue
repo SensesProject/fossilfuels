@@ -26,7 +26,7 @@
             </g>
             <g class="boxes">
               <g v-for="(r, ri) in rows" :key="`r-${ri}`">
-                <OilRiskBoxes v-for="(c, ci) in r" :key="`c-${ri}-${ci}`" :data="c" :size="layout.boxSize" :max="max"
+                <OilRiskBoxes v-for="(c, ci) in r" :key="`c-${ri}-${ci}`" :data="c" :size="layout.boxSize" :max="max" :revenue-domains="revenueDomains"
                   :transform="`translate(${layout.colWidth * (ci + 0.5)} ${layout.rowHeight * (ri + 0.5)})`"/>
               </g>
             </g>
@@ -137,11 +137,24 @@ export default {
         return r.map(c => {
           return Object.keys(c).map(k => {
             // return (c[k]['Direct emissions cost'] + c[k]['Revenue']) / c[k]['Primary Energy']
-            return (c[k]['Direct emissions cost'] + c[k]['Revenue'])
+            return (c[k]['Primary Energy'])
             // return Object.keys(c[k]).map(v => c[k][v]).reduce((a, b) => a + b)
           })
         })
       }).flat(2))
+    },
+    revenueDomains () {
+      const { rows } = this
+
+      const coalValues = rows.map(r => r.map(c => c.Coal.Revenue / c.Coal['Primary Energy'])).flat()
+      const gasValues = rows.map(r => r.map(c => c.Gas.Revenue / c.Gas['Primary Energy'])).flat()
+      const oilValues = rows.map(r => r.map(c => c.Oil.Revenue / c.Oil['Primary Energy'])).flat()
+
+      return {
+        Coal: [Math.min(...coalValues), Math.max(...coalValues)],
+        Gas: [Math.min(...gasValues), Math.max(...gasValues)],
+        Oil: [Math.min(...oilValues), Math.max(...oilValues)]
+      }
     }
   },
   methods: {
