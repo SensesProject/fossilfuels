@@ -1,7 +1,7 @@
 <template>
   <div class="second_graph">
     <div class="command">
-      The production of coal will shrink when policies are implemented. <br/>
+    <p class="graph-title">Coal volume in EJ/year across scenarios</p> <br/>
      </div>
   <div class="coal">
     <svg ref="vis">
@@ -17,16 +17,18 @@
           />
         </g>
         <g v-for="(path, i) in generateLine" v-bind:key="`${i}paths`">
-          <text
-          :x="scales.x(2050)"
-          :y="path.labelPos"
-          > {{ path.id }}
-          </text>
           <path
           :d="path.singleLine"
           :stroke="path.stroke[i]"
           :id="path.active ? 'active' : 'inactive'"
           />
+          <text
+          :class="path.active ? 'text-active' : 'text-inactive'"
+          :fill="path.stroke[i]"
+          :x="scales.x(position[i])"
+          :y="path.labelPos[i] - 15"
+          > {{ path.id }}
+          </text>
         </g>
         <circle id="coal" :cx="scales.x(2005)" :cy="scales.y(131.2274)" r="5"/>
         <GapElements
@@ -75,7 +77,8 @@ export default {
   data () {
     return {
       PrEnQuantity,
-      colors: ['#4E40B2', '#e66b46', '#FFAC00'],
+      colors: ['#FFAC00', '#e66b46', '#4E40B2'],
+      position: [2070, 2050, 2080],
       svgWidth: 0,
       svgHeight: 0,
       chartWidth: 0,
@@ -108,7 +111,7 @@ export default {
         lastValue[scenario['scenario']] = [scenario['2100'], scenario['scenario']]
         obj[scenario['scenario']] = [ data ]
       })
-      console.log(obj)
+      console.log(max)
       return {
         obj,
         max,
@@ -118,6 +121,7 @@ export default {
     },
     scales () {
       const { max } = this.transformData
+      const maxValue = max[2]
       return {
         x: d3
           .scaleLinear()
@@ -125,7 +129,7 @@ export default {
           .rangeRound([0, this.chartWidth]),
         y: d3
           .scaleLinear()
-          .domain([0, max[0] + 50])
+          .domain([0, maxValue + 25])
           .rangeRound([this.chartHeight, 0]),
         max: max[0] + 100
       }
@@ -150,24 +154,24 @@ export default {
         return {
           singleLine,
           id: l,
-          labelPos: this.scales.y(line[0][8][0]),
+          labelPos: [this.scales.y(line[0][9][0]), this.scales.y(line[0][8][0]), this.scales.y(line[0][12][0])],
           stroke: this.colors,
-          active: !!(this.step > 4 && l === 'NPi_V3') ||
-            !!(this.step > 6 && l === 'NPi2020_1000_V3') ||
-            !!(this.step > 7 && l === 'NPi2020_400_V3')
+          active: !!(this.step > 4 && l === 'No Policy') ||
+            !!(this.step > 6 && l === '2.0ºC') ||
+            !!(this.step > 7 && l === '1.5ºC')
         }
       })
     },
     valueLabel () {
       const { lastValue } = this.transformData
-      let current = lastValue['NPi_V3']
-      if (this.step === 7) { current = lastValue['NPi2020_1000_V3'] }
-      if (this.step === 8) { current = lastValue['NPi2020_400_V3'] }
+      let current = lastValue['No Policy']
+      if (this.step === 7) { current = lastValue['2.0ºC'] }
+      if (this.step === 8) { current = lastValue['1.5ºC'] }
       return current
     },
     gapValue () {
       const { lastValue } = this.transformData
-      return lastValue['NPi_V3'][0]
+      return lastValue['No Policy'][0]
     },
     colorValue () {
       const colors = this.colors
@@ -246,11 +250,13 @@ svg {
   }
   text {
     text-anchor: middle;
+    transition: fill-opacity 0.5s;
   }
 
   path {
     fill: none;
     stroke-width: 3;
+    transition: stroke-opacity 0.5s;
   }
 
   #inactive {
@@ -259,6 +265,14 @@ svg {
 
   #active {
     stroke-opacity: 1;
+  }
+
+  .text-active {
+    fill-opacity: 1;
+  }
+
+  .text-inactive {
+    fill-opacity: 0;
   }
 
   #coal {

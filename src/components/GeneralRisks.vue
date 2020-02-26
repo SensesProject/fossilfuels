@@ -1,7 +1,7 @@
 <template>
   <div class="first_graph">
   <div class="command">
-    Fossil fuels production in the next century. <br/>
+    <p class="graph-title">General risks associated with fossil fuels</p><br/>
     <div id="selection" v-show ="step < 3">
       Select a scenario:
       <SensesSelect
@@ -34,7 +34,7 @@
         v-bind:key="`${i}b`"
         :x="single.horizontal"
         :y="axisHeight - 130"
-        >{{ step > 2 ? onlytwo[i] : all[i]}}</text>
+        >{{ step === 1 || step > 2 ? onlytwo[i] : all[i]}}</text>
       <g v-for="(dot,i) in createDots" v-bind:key="i" :id="dot.id">
         <path v-bind:key="'dot' + i"
         :d="dot.area"
@@ -129,7 +129,7 @@ export default {
         2080,
         2090,
         2100],
-      selected: 'NPi2020_400_V3'
+      selected: '1.5ºC'
     }
   },
   computed: {
@@ -176,12 +176,13 @@ export default {
     },
     selectData () {
       let selected = this.selected
-      if (this.step > 2) { selected = 'NPi2020_400_V3' }
+      if (this.step > 2) { selected = '1.5ºC' }
       const { obj } = this.transformData
       return obj[selected]
     },
     scale () {
       const { allValues } = this.transformData
+      console.log(d3.max(allValues))
       return d3.scaleLinear()
         .domain([0, d3.max(allValues)])
         .range([0, 2000])

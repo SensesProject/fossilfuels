@@ -2,7 +2,8 @@
   <div class="uncertainty-risk">
     <div class="wrapper" :style="{width: `${innerWidth}px`, height: `${height}px`}">
       <div class="key">
-        Key <br>
+        <UncertaintyLegend call="legend"/>
+        Select model:<br>
         <SensesSelect :options="models" v-model="model"/>
       </div>
       <div class="chart" v-resize:debounce.initial="onResize">
@@ -43,6 +44,7 @@
 import risks from 'dsv-loader!@/assets/data/uncertainty.csv' // eslint-disable-line import/no-webpack-loader-syntax
 import resize from 'vue-resize-directive'
 import UncertaintyRiskSlopes from '@/components/UncertaintyRiskSlopes.vue'
+import UncertaintyLegend from './subcomponents/UncertaintyLegend.vue'
 import SensesSelect from 'library/src/components/SensesSelect.vue'
 
 export default {
@@ -52,6 +54,7 @@ export default {
   },
   components: {
     UncertaintyRiskSlopes,
+    UncertaintyLegend,
     SensesSelect
   },
   props: {
@@ -161,6 +164,7 @@ export default {
       width: $key-width;
       padding: $spacing / 2;
       // background: getColor(green, 100);
+
     }
     .chart {
       padding: $spacing / 2;

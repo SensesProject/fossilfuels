@@ -2,12 +2,9 @@
   <div id="app">
     <SensesMenu />
     <div class="noscroll">
-      <h1 class="title" id="cover">Fossil Fuels Risks</h1>
-      <p class="author__section">
-        <span class="tiny uppercase mono">Content:</span> <span class="tiny author mono">Ipsum L.</span>
-        <span class="tiny uppercase mono">Design:</span> <span class="tiny author mono">Ipsum L.</span>
-        <span class="tiny uppercase mono">Code:</span> <span class="tiny author mono">Ipsum L.</span>
-      </p>
+      <h1 class="t" id="cover">Fossil Fuels Risks</h1>
+      <h1 class="subtitle">Why you shouldn't invest in fossil fuels in the next 100 years</h1>
+      <h2 class="title" id="quantity">What kind of risks are we talking about?</h2>
       <p>
         We live in a society heavily relying on fossil fuels, mitigation
         strategies due to climate change will force us to change our model.
@@ -54,7 +51,7 @@
       </div>
     </LayoutScrollytelling>
     <div class="noscroll">
-      <h2 class="title" id="quantity">Quantity Risk - Coal</h2  >
+      <h2 class="title" id="quantity">What will happen to Coal production in the future?</h2  >
       <p class="paragraph">
         We live in a society heavily relying on fossil fuels, mitigation
         strategies due to climate change will force us to change our model.
@@ -68,6 +65,8 @@
         mollit anim id est laborum.
       </p>
     </div>
+    <div class="command">
+     </div>
     <LayoutScrollytelling>
       <template v-slot:vis="{ width, height, step }">
         <div
@@ -80,24 +79,24 @@
         </div>
       </template>
       <div slot="text" class="observer">
-        <IntersectionObserver :step="6">
+        <IntersectionObserver :step="6"  align="left">
           <p>this would be the quantity of coal burned if no policies will be
             implemented.</p>
         </IntersectionObserver>
-        <IntersectionObserver :step="7">
+        <IntersectionObserver :step="7"  align="left">
           <p>However, if a small package of policies on fossil fuels will
             be implemented there will be a major drop in the quantity of coal
             that could be burned.</p>
         </IntersectionObserver>
-        <IntersectionObserver :step="8">
+        <IntersectionObserver :step="8"  align="left">
           <p>If a strong policy model will be implemented the produced quantity
             will decrease even more. Led investments in coal to be useless.</p>
         </IntersectionObserver>
       </div>
     </LayoutScrollytelling>
     <div class="noscroll">
-      <h2 class="title" id="price">Price Risk - Oil</h2  >
-      <p>
+      <h2 class="title" id="price">Will fossil fuels be heavily depending on price?</h2  >
+        <p class="paragraph">
         While oil quantity remains stable during time, its price will
         decrease substantially due to taxes.
         In a strong policies scenario, for example, oil will increase its
@@ -116,8 +115,8 @@
       </div>
     </LayoutScrollytelling>
     <div class="noscroll">
-      <h2 class="title" id="price">Uncertainty Risk - Gas</h2  >
-      <p>
+      <h2 class="title" id="price">Are investments in fossil fuels safe investments?</h2  >
+        <p class="paragraph">
         While oil quantity remains stable during time, its price will
         decrease substantially due to taxes.
         In a strong policies scenario, for example, oil will increase its
@@ -129,7 +128,7 @@
         <UncertaintyRisk :step="step" :width="width" :height="height"/>
       </template>
       <div slot="text" class="observer">
-        <IntersectionObserver :step="0">
+        <IntersectionObserver :step="0" class="bottom">
           <p>this would be something on uncertainty.</p>
         </IntersectionObserver>
       </div>
@@ -174,6 +173,12 @@ export default {
   width: 100%;
 }
 
+.graph-title {
+  font-size: 20px;
+  font-weight: bold;
+  hyphens: none;
+}
+
 .author__section {
   margin-bottom: $spacing;
 }
@@ -189,7 +194,27 @@ export default {
   margin-bottom: $spacing;
 }
 
+.t {
+  font-size: 60px;
+  margin-bottom: $spacing / 2;
+}
+
+.subtitle {
+  font-size: 20px;
+  margin-bottom: $spacing * 2;
+}
+
+.title {
+  border-top: 1px solid black;
+  padding-top: $spacing * 2;
+  margin-bottom: $spacing;
+}
+
 .paragraph {
   margin-bottom: $spacing * 2;
+}
+
+.bottom {
+  padding-bottom: 50px;
 }
 </style>

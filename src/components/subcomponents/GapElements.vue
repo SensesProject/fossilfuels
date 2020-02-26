@@ -2,12 +2,12 @@
         <g class="gap_elements">
         <text :x="scales.x(2000)" :y="scales.y(131.2274)">Coal</text>
         <circle :cx="scales.x(2100)" :cy="scales.y(data.valueLabel[0])" :fill="data.colorValue" r="5"/>
-        <rect class="gapline" width="5" height="1" :x="scales.x(2102)" :y="scales.y(data.valueLabel[0]) - 2" />
+        <rect id="indicator" width="5" height="1" :x="scales.x(2102)" :y="scales.y(data.valueLabel[0]) - 2" />
         <text
         :x="scales.x(2104)"
         :y="scales.y(data.valueLabel[0])"
         >
-        {{ data.valueLabel[0] }}
+        {{ Math.round(data.valueLabel[0]) + ' EJ/year' }}
         </text>
         <text v-show="data.step > 6"
         :x="scales.x(2104)"
@@ -16,8 +16,8 @@
         Gap in Coal production
         </text>
         <line class="gapline"
-          :x1="scales.x(2101)"
-          :x2="scales.x(2101)"
+          :x1="scales.x(2102)"
+          :x2="scales.x(2102)"
           :y1="scales.y(data.gapValue)"
           :y2="scales.y(data.valueLabel[0])"
         />
@@ -33,7 +33,6 @@ export default {
   ],
   data () {
     return {
-      colors: ['#c8005f', '#ffac00', '#00cc84'],
       svgWidth: 0,
       svgHeight: 0,
       chartWidth: 0,
@@ -62,13 +61,15 @@ export default {
   }
 
   .gapline {
-    stroke-width: 2;
-    stroke: $color-neon;
+    stroke-width: 5;
+    stroke: black;
   }
 
   rect {
     transition: y 0.8s;
     transition-timing-function: easeInOutQuint;
+    stroke-width: 2;
+    stroke: black;
   }
 
   .gap_elements {

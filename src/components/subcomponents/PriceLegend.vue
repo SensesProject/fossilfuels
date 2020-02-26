@@ -1,5 +1,6 @@
 <template>
   <div>
+    <p class="graph-title">Fossil Fuels volatily ($/year)</p>
     <p>How to read:</p>
   <svg id="square">
     <g :transform="`translate(${marginleft}, ${margintop})`">

@@ -3,8 +3,6 @@
     <div class="wrapper" :style="{width: `${innerWidth}px`, height: `${height}px`}">
       <div class="key">
         <PriceLegend />
-        <!-- Key <br>
-        {{ svg.width }} x {{ svg.height }} -->
       </div>
       <div class="chart" v-resize:debounce.initial="onResize">
         <svg>
@@ -163,6 +161,16 @@ export default {
   display: flex;
   align-items: center;
   flex-direction: column;
+
+  margin-bottom: 40px;
+
+  .command {
+    font-weight: bold;
+    margin: 0 auto;
+    max-width: 900px;
+    height: 60px;
+    left: 0px;
+  }
 
   .wrapper {
     position: relative;
