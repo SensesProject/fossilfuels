@@ -115,6 +115,15 @@
         </IntersectionObserver>
       </div>
     </LayoutScrollytelling>
+    <div class="noscroll">
+      <h2 class="title" id="price">Uncertainty Risk - Gas</h2  >
+      <p>
+        While oil quantity remains stable during time, its price will
+        decrease substantially due to taxes.
+        In a strong policies scenario, for example, oil will increase its
+        quantity on the market, however this will affect negatively revenues.
+      </p>
+    </div>
     <LayoutScrollytelling>
       <template v-slot:vis="{ width, height, step }">
         <UncertaintyRisk :step="step" :width="width" :height="height"/>

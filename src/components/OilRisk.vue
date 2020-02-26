@@ -12,7 +12,7 @@
             <g class="axis">
               <g class="x-axis">
                 <g v-for="(y, i) in years" :key="`y-${i}`" :transform="`translate(${layout.colWidth * (i + 0.5)} 0)`">
-                  <circle cy="-5" r="5"/>
+                  <!-- <circle cy="-5" r="5"/> -->
                   <line :y2="layout.height"/>
                   <text :y="layout.height + layout.lineHeight">{{ y }}</text>
                 </g>

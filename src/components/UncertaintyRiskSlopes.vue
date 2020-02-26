@@ -73,9 +73,11 @@ export default {
     @include tint(stroke);
     stroke-width: 5;
     stroke-linecap: round;
-    opacity: 0.1;
+    opacity: 0.15;
+    transition: opacity 0.8s;
 
     &.opaque {
+      transition: opacity 1s easeOutQuart;
       opacity: 1;
     }
   }
