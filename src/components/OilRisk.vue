@@ -168,12 +168,12 @@ export default {
     position: relative;
     display: flex;
 
-    $key-width: 128px;
+    $key-width: 256px;
     .key {
       height: 100%;
       width: $key-width;
       padding: $spacing / 2;
-      background: getColor(green, 100);
+      // background: getColor(green, 100);
     }
     .chart {
       padding: $spacing / 2;
