@@ -38,11 +38,11 @@ export default {
     rects () {
       const { data, scale } = this
       return ['Gas', 'Oil', 'Coal'].map((k1, i) => {
-        return ['Revenue', 'Direct emissions cost'].map(k2 => {
-          // const size = scale((k2 === 'Revenue' ? (data[k1][k2]) : (data[k1][k2] + data[k1]['Revenue'])) / data[k1]['Primary Energy'])
-          const size = scale((k2 === 'Revenue' ? (data[k1][k2]) : (data[k1][k2] + data[k1]['Revenue'])))
+        return ['Revenue', 'Primary Energy'].map(k2 => {
+          const size = scale(k2 === 'Revenue' ? (data[k1][k2]) : (data[k1][k2] * 1000))
+          // const size = scale(data[k1][k2])
           return {
-            class: [k1, { filled: k2 === 'Revenue' }],
+            class: [k1, { filled: k2 !== 'Revenue' }],
             transform: `rotate(${90 * i}) translate(8 8)`,
             width: size,
             height: size
