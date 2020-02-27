@@ -111,6 +111,12 @@
         <IntersectionObserver :step="0" class="bottom">
           <p>this would be something on uncertainty.</p>
         </IntersectionObserver>
+        <IntersectionObserver :step="1" class="bottom">
+          <p>this would be more on uncertainty.</p>
+        </IntersectionObserver>
+        <IntersectionObserver :step="2" class="bottom">
+          <p>this would be on uncertainty again.</p>
+        </IntersectionObserver>
       </div>
     </LayoutScrollytelling>
     <div class="noscroll">

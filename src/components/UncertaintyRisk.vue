@@ -2,9 +2,13 @@
   <div class="uncertainty-risk">
     <div class="wrapper" :style="{width: `${innerWidth}px`, height: `${height}px`}">
       <div class="key">
-        <UncertaintyLegend call="legend"/>
-        Select model:<br>
-        <SensesSelect :options="models" v-model="model"/>
+        <UncertaintyLegend :step="step" call="legend"/>
+        <transition name="fade">
+          <div v-if="step >= 2">
+            Select model:<br>
+            <SensesSelect :options="models" v-model="model"/>
+          </div>
+        </transition>
       </div>
       <div class="chart" v-resize:debounce.initial="onResize">
         <svg>
@@ -27,7 +31,9 @@
             <g class="slopes">
               <g v-for="(r, ri) in rows" :key="`r-${ri}`">
                 <UncertaintyRiskSlopes v-for="(c, ci) in r" :key="`c-${ri}-${ci}`" :data="c" :size="layout.slopeSize" :max="max" :model="model"
-                  :transform="`translate(${layout.colWidth * (ci + 0.5)} ${layout.rowHeight * (ri + 0.5)})`"/>
+                  :transform="`translate(${layout.colWidth * (ci + 0.5)} ${layout.rowHeight * (ri + 0.5)})`"
+                  :scenarios="step === 0 ? ['NPi2020_1000'] : ['NPi2020_1000', 'NPi2020_400', 'NPi']"
+                  :show-uncertainty="step >= 2"/>
               </g>
             </g>
           </g>
@@ -141,6 +147,11 @@ export default {
       svg.width = rect.width
       svg.height = rect.height
     }
+  },
+  watch: {
+    step (step) {
+      if (step < 2) this.model = 'REMIND-MAgPIE 1.7-3.0'
+    }
   }
 }
 </script>
@@ -209,6 +220,12 @@ export default {
         height: calc(100% - #{$key-height});
       }
     }
+  }
+  .fade-enter-active, .fade-leave-active {
+    transition: opacity $transition;
+  }
+  .fade-enter, .fade-leave-to {
+    opacity: 0;
   }
 }
 </style>

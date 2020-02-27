@@ -1,7 +1,11 @@
 <template>
   <g class="uncertainty-risk-slopes">
     <g v-for="(s, i) in data" :key="`s-${i}`" :transform="`translate(0 ${size * (i - 1)})`">
-      <line v-for="(v, vi) in s.data" :key="`v-${i}-${vi}`" :x1="-size/2" :x2="size/2" :class="[colors[s.scenario], { opaque: model === v.model }]" :transform="`rotate(${scale(v.value)})`"/>
+      <template v-for="(v, vi) in s.data">
+          <line :key="`v-${i}-${vi}`"
+            :x1="-size/2" :x2="size/2" :transform="`rotate(${scale(v.value)})`"
+            :class="[colors[s.scenario], { opaque: model === v.model, hidden: !showUncertainty && (model !== v.model || scenarios.indexOf(s.scenario) === -1 )}]"/>
+      </template>
     </g>
   </g>
 </template>
@@ -27,6 +31,14 @@ export default {
     model: {
       type: String,
       default: null
+    },
+    showUncertainty: {
+      type: Boolean,
+      default: false
+    },
+    scenarios: {
+      type: Array,
+      default () { return ['NPi2020_1000', 'NPi2020_400', 'NPi'] }
     }
   },
   data () {
@@ -45,21 +57,6 @@ export default {
         .exponent(1)
         .domain([-max, max])
         .range([85, -85])
-    },
-    rects () {
-      const { data, scale } = this
-      return ['Gas', 'Oil', 'Coal'].map((k1, i) => {
-        return ['Revenue', 'Direct emissions cost'].map(k2 => {
-          // const size = scale((k2 === 'Revenue' ? (data[k1][k2]) : (data[k1][k2] + data[k1]['Revenue'])) / data[k1]['Primary Energy'])
-          const size = scale((k2 === 'Revenue' ? (data[k1][k2]) : (data[k1][k2] + data[k1]['Revenue'])))
-          return {
-            class: [k1, { filled: k2 === 'Revenue' }],
-            transform: `rotate(${90 * i}) translate(8 8)`,
-            width: size,
-            height: size
-          }
-        })
-      }).flat()
     }
   }
 }
@@ -79,6 +76,10 @@ export default {
     &.opaque {
       transition: opacity 1s easeOutQuart;
       opacity: 1;
+    }
+
+    &.hidden {
+      opacity: 0;
     }
   }
 }
