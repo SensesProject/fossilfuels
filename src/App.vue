@@ -95,6 +95,25 @@
       </div>
     </LayoutScrollytelling>
     <div class="noscroll">
+      <h2 class="title" id="price">Are investments in fossil fuels safe investments?</h2  >
+        <p class="paragraph">
+        While oil quantity remains stable during time, its price will
+        decrease substantially due to taxes.
+        In a strong policies scenario, for example, oil will increase its
+        quantity on the market, however this will affect negatively revenues.
+      </p>
+    </div>
+    <LayoutScrollytelling>
+      <template v-slot:vis="{ width, height, step }">
+        <UncertaintyRisk :step="step" :width="width" :height="height"/>
+      </template>
+      <div slot="text" class="observer">
+        <IntersectionObserver :step="0" class="bottom">
+          <p>this would be something on uncertainty.</p>
+        </IntersectionObserver>
+      </div>
+    </LayoutScrollytelling>
+    <div class="noscroll">
       <h2 class="title" id="price">Will fossil fuels be heavily depending on price?</h2  >
         <p class="paragraph">
         While oil quantity remains stable during time, its price will
@@ -115,24 +134,16 @@
       </div>
     </LayoutScrollytelling>
     <div class="noscroll">
-      <h2 class="title" id="price">Are investments in fossil fuels safe investments?</h2  >
+      <h2 class="title" id="price">Risks and Opportunities in a Fossil Fuels free future</h2  >
         <p class="paragraph">
         While oil quantity remains stable during time, its price will
         decrease substantially due to taxes.
         In a strong policies scenario, for example, oil will increase its
         quantity on the market, however this will affect negatively revenues.
       </p>
+      <SensesMeta :id="'transition-risk'"/>
     </div>
-    <LayoutScrollytelling>
-      <template v-slot:vis="{ width, height, step }">
-        <UncertaintyRisk :step="step" :width="width" :height="height"/>
-      </template>
-      <div slot="text" class="observer">
-        <IntersectionObserver :step="0" class="bottom">
-          <p>this would be something on uncertainty.</p>
-        </IntersectionObserver>
-      </div>
-    </LayoutScrollytelling>
+
   </div>
 </template>
 
@@ -141,6 +152,7 @@
 import SensesMenu from 'library/src/components/SensesMenu.vue'
 import LayoutScrollytelling from 'library/src/components/LayoutScrollytelling.vue'
 import IntersectionObserver from 'library/src/components/IntersectionObserver.vue'
+import SensesMeta from 'library/src/components/SensesMeta.vue'
 
 //  from project
 import GeneralRisks from './components/GeneralRisks.vue'
@@ -152,6 +164,7 @@ export default {
   name: 'app',
   components: {
     SensesMenu,
+    SensesMeta,
     GeneralRisks,
     CoalRisk,
     OilRisk,

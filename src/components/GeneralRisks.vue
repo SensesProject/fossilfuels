@@ -1,7 +1,7 @@
 <template>
   <div class="first_graph">
   <div class="command">
-    <p class="graph-title">General risks associated with fossil fuels</p><br/>
+    <p class="graph-title">General risks associated with fossil fuels</p>
     <div id="selection" v-show ="step < 3">
       Select a scenario:
       <SensesSelect

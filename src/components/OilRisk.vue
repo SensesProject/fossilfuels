@@ -18,7 +18,7 @@
               <g class="y-axis">
                 <g v-for="(s, i) in scenarios" :key="`s-${i}`" :transform="`translate(0 ${layout.rowHeight * (i + 0.5)})`">
                   <line :x2="layout.width - layout.colWidth * 0.5"/>
-                  <text :x="-8" :y="4">{{ s }}</text>
+                  <text :x="-8" :y="4" :data="labels">{{ labels[i] }}</text>
                 </g>
               </g>
             </g>
@@ -78,6 +78,7 @@ export default {
       regions: [...new Set(risks.map(r => r.region))],
       model: 'REMIND-MAgPIE 1.7-3.0',
       region: 'World',
+      labels: ['1.5', '2.0', 'No Policy'],
       svg: {
         width: 320,
         height: 320
