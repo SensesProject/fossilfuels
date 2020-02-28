@@ -6,16 +6,16 @@
       <h1 class="subtitle">Why you shouldn't invest in fossil fuels in the next 100 years</h1>
       <h2 class="title" id="quantity">What kind of risks are we talking about?</h2>
       <p>
-        We live in a society heavily relying on fossil fuels, mitigation
-        strategies due to climate change will force us to change our model.
-        <br />
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.
+        Our society is currently relying heavily on fossil fuels to provide
+        energy to our industries, keep our homes at comfortable temperatures
+        and move goods and persons around the globe. However, limiting climate
+        change will require us to reduce the emission of greenhouse gasses and
+        by phasing out the use of fossil fuels. As a result, the demand for fossil
+        fuels will evolve differently in the future than what we have seen in the
+        past. This has consequences for investors in the fossil fuel sector.<br /><br />
+        In this module we show the change in risks associated with investing
+        in the fossil fuel sector to explain why investors should consider climate
+        policy in their decisions.
       </p>
     </div>
     <LayoutScrollytelling>
@@ -31,39 +31,31 @@
       </template>
       <div slot="text" class="observer">
         <IntersectionObserver :step="0">
-          <p>hey!</p>
+          <p>Currently society is using large amounts of coal, oil and gas</p>
         </IntersectionObserver>
         <IntersectionObserver :step="1">
-          <p>hey!</p>
+          <p>To limit climate change, fossil need to be phased out</p>
         </IntersectionObserver>
         <IntersectionObserver :step="2">
-          <p>hey!</p>
+          <p>Coal is the most carbon intensive fossil fuel and will be phased
+            out first. Oil use will be drastically reduced, but there may be
+            a long-term role for natural gas in the energy system. </p>
         </IntersectionObserver>
         <IntersectionObserver :step="3">
-          <p>hey!</p>
+          <p>Quantity risk: reduced use of fossil fuels</p>
         </IntersectionObserver>
         <IntersectionObserver :step="4">
-          <p>hey!</p>
+          <p>Uncertainty risk: the future role of oil and natural gas depends on
+            other developments in the energy system</p>
         </IntersectionObserver>
         <IntersectionObserver :step="5">
-          <p>hey!</p>
+          <p>Price risk: the direction of fossil fuel price changes under climate
+            policy is unceratain</p>
         </IntersectionObserver>
       </div>
     </LayoutScrollytelling>
     <div class="noscroll">
-      <h2 class="title" id="quantity">What will happen to Coal production in the future?</h2  >
-      <p class="paragraph">
-        We live in a society heavily relying on fossil fuels, mitigation
-        strategies due to climate change will force us to change our model.
-        <br />
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.
-      </p>
+      <h2 class="title" id="quantity">Quantity risk: phasing out coal</h2>
     </div>
     <div class="command">
      </div>
@@ -80,27 +72,26 @@
       </template>
       <div slot="text" class="observer">
         <IntersectionObserver :step="6"  align="left">
-          <p>this would be the quantity of coal burned if no policies will be
-            implemented.</p>
+          <p>Without climate policy, coal would be a very cheap energy use to
+            fuel our economies and its use would be expected to expand into the future.</p>
         </IntersectionObserver>
         <IntersectionObserver :step="7"  align="left">
-          <p>However, if a small package of policies on fossil fuels will
-            be implemented there will be a major drop in the quantity of coal
-            that could be burned.</p>
+          <p>However, if we want to limit climate change to 2 degrees, we need
+            to phase out coal from our energy systems within a few decades</p>
         </IntersectionObserver>
         <IntersectionObserver :step="8"  align="left">
-          <p>If a strong policy model will be implemented the produced quantity
-            will decrease even more. Led investments in coal to be useless.</p>
+          <p>When limiting climate change to 1.5 degrees, the phase out of coal
+            will be even faster</p>
         </IntersectionObserver>
       </div>
     </LayoutScrollytelling>
     <div class="noscroll">
-      <h2 class="title" id="price">Are investments in fossil fuels safe investments?</h2  >
+      <h2 class="title" id="price">Uncertainty risk: different trends for oil and natural gas</h2>
         <p class="paragraph">
-        While oil quantity remains stable during time, its price will
-        decrease substantially due to taxes.
-        In a strong policies scenario, for example, oil will increase its
-        quantity on the market, however this will affect negatively revenues.
+        While it is clear that coal is phase out quickly with climate policies,
+        different scenarios and model diverge on the role of oil and natural gas.
+        Here we show the agreement between models on the trends of coal,
+        oil and gas use under different levels of climate policy.
       </p>
     </div>
     <LayoutScrollytelling>
@@ -115,17 +106,20 @@
           <p>this would be more on uncertainty.</p>
         </IntersectionObserver>
         <IntersectionObserver :step="2" class="bottom">
-          <p>this would be on uncertainty again.</p>
+          <p>The rate of change for oil and natural gas varies widely between
+            models and scenario for the next few decades.</p>
         </IntersectionObserver>
       </div>
     </LayoutScrollytelling>
     <div class="noscroll">
-      <h2 class="title" id="price">Will fossil fuels be heavily depending on price?</h2  >
+      <h2 class="title" id="price">Price risk: revenue of the fossil fuel sector
+        depends on price development</h2  >
         <p class="paragraph">
-        While oil quantity remains stable during time, its price will
-        decrease substantially due to taxes.
-        In a strong policies scenario, for example, oil will increase its
-        quantity on the market, however this will affect negatively revenues.
+        Even though oil and natural gas could still be used in a low-carbon energy
+        system, their volumes are reduced, and the total revenue of these sectors
+        in the future will depend strongly on the price. If prices increase,
+        the total revenue of the sector might still remain large, even though
+        the volume of fossil fuel use is reduced.
       </p>
     </div>
     <LayoutScrollytelling>

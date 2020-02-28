@@ -1,7 +1,8 @@
 <template>
   <div class="first_graph">
   <div class="command">
-    <p class="graph-title">General risks associated with fossil fuels</p>
+    <p class="graph-title" v-if="step < 3">Trends in fossil fuel use in climate policy scenarios</p>
+    <p class="graph-title" v-if="step >= 3">We explore three types of risks: </p>
     <div id="selection" v-show ="step < 3">
       Select a scenario:
       <SensesSelect
@@ -50,7 +51,7 @@
       :cy="single.vertical"/>
       <text
       v-bind:key="'label'  + i"
-      :x="dot.singleDots[0]['horizontal'] - 100"
+      :x="dot.singleDots[0]['horizontal'] - 80"
       :y="dot.singleDots[0]['vertical']"
       >
       {{ dot.label }}
@@ -226,7 +227,7 @@ export default {
           this.step === 1 | this.step >= 3
             ? [singleDots[0], singleDots[15]] : singleDots,
           label: e.replace('primen', ''),
-          id: e,
+          id: e === 'primenNat. Gas' ? 'Gas' : e,
           risks: ['➔ Quantity Risk', '➔ Uncertainty Risk', '➔ Price Risk'],
           area: this.step === 1 | this.step >= 3
             ? this.drawArea([singleDots[0], singleDots[15]]) : this.drawArea(singleDots) &&
@@ -329,7 +330,7 @@ svg {
     stroke: getColor(orange, 40);
   }
 
-  .primenGas {
+  .Gas {
     fill: getColor(red, 80);
     stroke: getColor(red, 40);
   }
@@ -366,12 +367,9 @@ svg {
       }
 }
 
-#primenGas {
+#Gas {
       & > .paths_info {
         fill: url(#UncRisk);
-        // -webkit-filter: url("#glitch");
-        // filter: url("/#glitch");
-        // fill: url(#UncRisk);
         stroke: none;
         }
 

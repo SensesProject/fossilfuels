@@ -42,7 +42,7 @@
     "model": "REMIND-MAgPIE 1.7-3.0",
     "scenario": "2.0ºC",
     "region": "World",
-    "variable": "primenGas",
+    "variable": "primenNat. Gas",
     "unit": "EJ/yr"
   },
   {
@@ -111,7 +111,7 @@
     "model": "REMIND-MAgPIE 1.7-3.0",
     "scenario": "1.5ºC",
     "region": "World",
-    "variable": "primenGas",
+    "variable": "primenNat. Gas",
     "unit": "EJ/yr"
   },
   {
@@ -180,7 +180,7 @@
     "model": "REMIND-MAgPIE 1.7-3.0",
     "scenario": "No Policy",
     "region": "World",
-    "variable": "primenGas",
+    "variable": "primenNat. Gas",
     "unit": "EJ/yr"
   },
   {

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p class="graph-title">Fossil Fuels volatily ($/year)</p>
+    <p class="graph-title">Changes in price, quantity (Ej/yr) and revenue ($/year) of the fossil fuel sector</p>
     <div class="legend-cont">
     <p>How to read:</p>
   <svg id="square">

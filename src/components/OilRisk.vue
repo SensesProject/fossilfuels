@@ -78,7 +78,7 @@ export default {
       regions: [...new Set(risks.map(r => r.region))],
       model: 'REMIND-MAgPIE 1.7-3.0',
       region: 'World',
-      labels: ['1.5', '2.0', 'No Policy'],
+      labels: ['1.5ºC', '2.0ºC', 'No Policy'],
       svg: {
         width: 320,
         height: 320
