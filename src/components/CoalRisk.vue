@@ -16,6 +16,15 @@
             stroke="black"
           />
         </g>
+        <rect class="bg" :width="chartWidth" :height="chartHeight" :class="{active: step > 6}"/>
+        <g v-for="(path, i) in generateArea" v-bind:key="`${i}area`">
+          <path
+          class="area"
+          :d="path.area"
+          :fill="'#000'"
+          :class="{active: path.active}"
+          />
+        </g>
         <g v-for="(path, i) in generateLine" v-bind:key="`${i}paths`">
           <path
           :d="path.singleLine"
@@ -32,15 +41,14 @@
         </g>
         <circle id="coal" :cx="scales.x(2005)" :cy="scales.y(131.2274)" r="5"/>
         <GapElements
-        :scales="scales"
-        :data="{
-        valueLabel: valueLabel,
-        colorValue: colorValue,
-        transformData: transformData,
-        gapValue: gapValue,
-        step: step
-        }"
-        />
+          :scales="scales"
+          :data="{
+            valueLabel: valueLabel,
+            colorValue: colorValue,
+            transformData: transformData,
+            gapValue: gapValue,
+            step: step
+          }"/>
       </g>
    </svg>
   </div>
@@ -161,6 +169,18 @@ export default {
         }
       })
     },
+    generateArea () {
+      const { generateLine, chartWidth, chartHeight, step } = this
+      return generateLine.map(l => {
+        const y = l.id === 'No Policy' ? 0 : chartHeight
+        const area = l.singleLine[0].replace(/^M/, `M${chartWidth},${y}L0,${y},`)
+        return {
+          ...l,
+          active: l.id !== '2.0ºC' || step <= 7,
+          area
+        }
+      })
+    },
     valueLabel () {
       const { lastValue } = this.transformData
       let current = lastValue['No Policy']
@@ -256,6 +276,25 @@ svg {
     fill: none;
     stroke-width: 3;
     transition: stroke-opacity 0.5s;
+
+    &.area {
+      fill: $color-white;
+      opacity: 0;
+      transition: opacity 0.5s;
+      &.active {
+        opacity: 1;
+      }
+    }
+  }
+
+  .bg {
+    // fill: green;
+    opacity: 0;
+    transition: opacity 0.5s;
+    fill: getColor(violet, 100);
+    &.active {
+      opacity: 1;
+    }
   }
 
   #inactive {
