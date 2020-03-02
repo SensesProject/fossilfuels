@@ -111,7 +111,6 @@ export default {
         lastValue[scenario['scenario']] = [scenario['2100'], scenario['scenario']]
         obj[scenario['scenario']] = [ data ]
       })
-      console.log(max)
       return {
         obj,
         max,
@@ -175,9 +174,9 @@ export default {
     },
     colorValue () {
       const colors = this.colors
-      let color = colors[0]
-      if (this.step === 7) { color = colors[1] }
-      if (this.step === 8) { color = colors[2] }
+      let color = colors[2]
+      if (this.step === 7) { color = colors[0] }
+      if (this.step === 8) { color = colors[1] }
 
       return color
     }

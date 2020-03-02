@@ -3,7 +3,7 @@
     <SensesMenu />
     <div class="noscroll">
       <h1 class="t" id="cover">Fossil Fuels Risks</h1>
-      <h1 class="subtitle">Why you shouldn't invest in fossil fuels in the next 100 years</h1>
+      <h1 class="subtitle">Why you shouldn't invest in fossil fuels in the next decades</h1>
       <h2 class="title" id="quantity">What kind of risks are we talking about?</h2>
       <p>
         Our society is currently relying heavily on fossil fuels to provide
@@ -56,6 +56,12 @@
     </LayoutScrollytelling>
     <div class="noscroll">
       <h2 class="title" id="quantity">Quantity risk: phasing out coal</h2>
+      <p class="paragraph">
+        All fossil fuels will be prone to risks. However, specific risks can be
+        visualized through examples. The first risk that will be examinated,
+        for example, is related to quantity and can be easily explained by looking
+        at coal.
+    </p>
     </div>
     <div class="command">
      </div>
@@ -99,13 +105,17 @@
         <UncertaintyRisk :step="step" :width="width" :height="height"/>
       </template>
       <div slot="text" class="observer">
-        <IntersectionObserver :step="0" class="bottom">
-          <p>this would be something on uncertainty.</p>
+        <IntersectionObserver :step="0">
+          <p>Let's build this visualization stepwise. If we look at the 2.0ºC scenario
+            (PEP_2C_ref_eff / model:REMIND) we can observe a general decreasing trend in fossil fuels
+            quantities. However not all scenarios behave in the same way: trends variate according
+            to implemented policies.</p>
         </IntersectionObserver>
-        <IntersectionObserver :step="1" class="bottom">
-          <p>this would be more on uncertainty.</p>
+        <IntersectionObserver :step="1">
+          <p>If we add to the mix different models it's even clearer how uncertain is fossil fuels future:
+          different predictions and high disagreement between models  can negatively impact investments.</p>
         </IntersectionObserver>
-        <IntersectionObserver :step="2" class="bottom">
+        <IntersectionObserver :step="2" class="changeheight">
           <p>The rate of change for oil and natural gas varies widely between
             models and scenario for the next few decades.</p>
         </IntersectionObserver>
@@ -128,18 +138,21 @@
       </template>
       <div slot="text" class="observer">
         <IntersectionObserver :step="0">
-          <p>this would be the quantity of coal burned if no policies will be
-            implemented.</p>
+          <p>The wider the gap between colored and empty squares, the more fossil fuels
+          will be price dependent in the future.</p>
+        </IntersectionObserver>
+        <IntersectionObserver :step="1" class="changeheight">
+          <p>Strong variations in price and quantities are factors that negatively impact
+          investments on a medium and long term.</p>
         </IntersectionObserver>
       </div>
     </LayoutScrollytelling>
     <div class="noscroll">
       <h2 class="title" id="price">Risks and Opportunities in a Fossil Fuels free future</h2  >
         <p class="paragraph">
-        While oil quantity remains stable during time, its price will
-        decrease substantially due to taxes.
-        In a strong policies scenario, for example, oil will increase its
-        quantity on the market, however this will affect negatively revenues.
+        Navigating through uncertainty and risks is a complex task. Climate change will impact
+        greatly fossil fuels quantity and revenues in the next decades. It is vital to consider
+        climate scenarios when deciding future investments.
       </p>
       <SensesMeta :id="'transition-risk'"/>
     </div>
@@ -229,5 +242,9 @@ export default {
 
 .bottom {
   padding-bottom: 50px;
+}
+
+.changeheight {
+  padding: 80vh 0 250vh !important;
 }
 </style>

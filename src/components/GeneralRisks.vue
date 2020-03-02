@@ -183,7 +183,6 @@ export default {
     },
     scale () {
       const { allValues } = this.transformData
-      console.log(d3.max(allValues))
       return d3.scaleLinear()
         .domain([0, d3.max(allValues)])
         .range([0, 2000])
