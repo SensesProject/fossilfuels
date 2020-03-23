@@ -12,13 +12,13 @@
                 <g v-for="(y, i) in years" :key="`y-${i}`" :transform="`translate(${layout.colWidth * (i + 0.5)} 0)`">
                   <!-- <circle cy="-5" r="5"/> -->
                   <line :y2="layout.height"/>
-                  <text :y="layout.height + layout.lineHeight">{{ y }}</text>
+                  <text :y="layout.height + layout.lineHeight">{{ +y }}</text>
                 </g>
               </g>
               <g class="y-axis">
-                <g v-for="(s, i) in scenarios" :key="`s-${i}`" :transform="`translate(0 ${layout.rowHeight * (i + 0.5)})`">
+                <g v-for="(v, i) in variables" :key="`s-${i}`" :transform="`translate(0 ${layout.rowHeight * (i + 0.5)})`">
                   <line :x2="layout.width - layout.colWidth * 0.5"/>
-                  <text :x="-8" :y="4" :data="labels">{{ labels[i] }}</text>
+                  <text :x="-8" :y="4" :data="labels">{{v}}</text>
                 </g>
               </g>
             </g>
@@ -77,7 +77,8 @@ export default {
       variables: [...new Set(risks.map(r => r.variable))],
       regions: [...new Set(risks.map(r => r.region))],
       model: 'REMIND-MAgPIE 1.7-3.0',
-      region: 'World',
+      // region: 'World',
+      category: 'Revenue',
       labels: ['1.5ºC', '2.0ºC', 'No Policy'],
       svg: {
         width: 320,
@@ -91,25 +92,25 @@ export default {
       return Math.min(width, 1000)
     },
     rows () {
-      const { risks, scenarios, years, region, model, variables, categories } = this
-      const risks1 = risks.filter(r => r.region === region && r.model === model)
-      return scenarios.map(s => {
-        const risks2 = risks1.filter(r => r.scenario === s)
+      const { risks, scenarios, years, category, model, variables, regions } = this
+      const risks1 = risks.filter(r => r.category === category && r.model === model)
+      return variables.map(v => {
+        const risks2 = risks1.filter(r => r.variable === v)
         return years.map(y => {
           const risks3 = risks2.filter(r => r.year === y)
-          const vars = {}
-          variables.forEach(v => {
-            vars[v] = {}
-            categories.forEach(c => {
-              vars[v][c] = +risks3.find(r => r.variable === v && r.category === c).value
+          const obj = {}
+          scenarios.forEach(s => {
+            obj[s] = {}
+            regions.forEach(reg => {
+              obj[s][reg] = +risks3.find(r => r.scenario === s && r.region === reg).value
             })
           })
-          return vars
+          return obj
         })
       })
     },
     layout () {
-      const { svg, scenarios, years } = this
+      const { svg, variables, years } = this
       const margin = {
         top: 16,
         right: 0,
@@ -118,7 +119,7 @@ export default {
       }
       const height = svg.height - margin.top - margin.bottom
       const width = svg.width - margin.left - margin.right
-      const rowHeight = height / scenarios.length
+      const rowHeight = height / variables.length
       const colWidth = width / years.length
       return {
         margin,
@@ -134,11 +135,7 @@ export default {
       const { rows } = this
       return Math.max(...rows.map(r => {
         return r.map(c => {
-          return Object.keys(c).map(k => {
-            // return (c[k]['Direct emissions cost'] + c[k]['Revenue']) / c[k]['Primary Energy']
-            return Math.max(c[k]['Primary Energy'] * 1000, c[k]['Revenue'])
-            // return Object.keys(c[k]).map(v => c[k][v]).reduce((a, b) => a + b)
-          })
+          return Object.keys(c).map(k => c[k]['World'])
         })
       }).flat(2))
     }

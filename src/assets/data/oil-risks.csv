@@ -1,136 +1,271 @@
-year,value,model,scenario,region,variable,category
-2020,15.252091607925,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Coal,Direct emissions cost
-2020,1631.97380204797,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Gas,Direct emissions cost
-2020,4179.07310057145,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Oil,Direct emissions cost
-2020,302055.63332,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Coal,Revenue
-2020,775726.94199,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Gas,Revenue
-2020,1.93963062354e6,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Oil,Revenue
-2020,15.252091607925,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Coal,Direct emissions cost
-2020,1631.97380204797,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Gas,Direct emissions cost
-2020,4179.07310057145,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Oil,Direct emissions cost
-2020,302055.63332,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Coal,Revenue
-2020,775726.94199,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Gas,Revenue
-2020,1.93963062354e6,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Oil,Revenue
-2020,0,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Coal,Direct emissions cost
-2020,0,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Gas,Direct emissions cost
-2020,0,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Oil,Direct emissions cost
-2020,474802.94499,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Coal,Revenue
-2020,874605.19652,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Gas,Revenue
-2020,2.457729401e6,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Oil,Revenue
-2040,887.88276589833,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Coal,Direct emissions cost
-2040,95003.4559511213,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Gas,Direct emissions cost
-2040,243279.877856142,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Oil,Direct emissions cost
-2040,2219.94548,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Coal,Revenue
-2040,453798.39384,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Gas,Revenue
-2040,1.2337207428e6,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Oil,Revenue
-2040,354.9648121185,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Coal,Direct emissions cost
-2040,37981.2348966795,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Gas,Direct emissions cost
-2040,97260.358520469,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Oil,Direct emissions cost
-2040,10502.23104,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Coal,Revenue
-2040,806966.32442,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Gas,Revenue
-2040,2.23800770739e6,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Oil,Revenue
-2040,0,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Coal,Direct emissions cost
-2040,0,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Gas,Direct emissions cost
-2040,0,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Oil,Direct emissions cost
-2040,1.12191277887e6,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Coal,Revenue
-2040,1.8219963531e6,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Gas,Revenue
-2040,3.64936643643e6,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Oil,Revenue
-2060,1328.80576941711,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Coal,Direct emissions cost
-2060,142182.217327631,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Gas,Direct emissions cost
-2060,364092.780820288,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Oil,Direct emissions cost
-2060,1253.70866,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Coal,Revenue
-2060,349937.50385,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Gas,Revenue
-2060,623841.8564,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Oil,Revenue
-2060,686.60831193924,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Coal,Direct emissions cost
-2060,73467.0893774987,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Gas,Direct emissions cost
-2060,188130.677471352,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Oil,Direct emissions cost
-2060,8830.38765,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Coal,Revenue
-2060,655655.33685,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Gas,Revenue
-2060,2.06908790622e6,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Oil,Revenue
-2060,0,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Coal,Direct emissions cost
-2060,0,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Gas,Direct emissions cost
-2060,0,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Oil,Direct emissions cost
-2060,2.62404934169e6,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Coal,Revenue
-2060,2.48708857866e6,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Gas,Revenue
-2060,3.202368007e6,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Oil,Revenue
-2080,1680.14029132296,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Coal,Direct emissions cost
-2080,179775.011171557,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Gas,Direct emissions cost
-2080,460358.439822491,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Oil,Direct emissions cost
-2080,1764.32032,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Coal,Revenue
-2080,182064.31971,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Gas,Revenue
-2080,530703.978,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Oil,Revenue
-2080,899.27368906986,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Coal,Direct emissions cost
-2080,96222.284730475,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Gas,Direct emissions cost
-2080,246400.990805142,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Oil,Direct emissions cost
-2080,8170.3327,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Coal,Revenue
-2080,483203.95715,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Gas,Revenue
-2080,1.9097600071e6,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Oil,Revenue
-2080,0,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Coal,Direct emissions cost
-2080,0,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Gas,Direct emissions cost
-2080,0,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Oil,Direct emissions cost
-2080,3.75386021096e6,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Coal,Revenue
-2080,3.30290965037e6,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Gas,Revenue
-2080,2.49314344652e6,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Oil,Revenue
-2100,2168.9803578264,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Coal,Direct emissions cost
-2100,232080.898287425,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Gas,Direct emissions cost
-2100,594300.618044434,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Oil,Direct emissions cost
-2100,2343.69595,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Coal,Revenue
-2100,171337.89432,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Gas,Revenue
-2100,430415.33545,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Oil,Revenue
-2100,1119.42557758854,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Coal,Direct emissions cost
-2100,119778.536801974,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Gas,Direct emissions cost
-2100,306722.60825926,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Oil,Direct emissions cost
-2100,6662.6378,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Coal,Revenue
-2100,467237.95125,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Gas,Revenue
-2100,1.76995825816e6,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Oil,Revenue
-2100,0,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Coal,Direct emissions cost
-2100,0,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Gas,Direct emissions cost
-2100,0,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Oil,Direct emissions cost
-2100,4.10219163156e6,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Coal,Revenue
-2100,4.09898213119e6,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Gas,Revenue
-2100,2.96017949643e6,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Oil,Revenue
-2020,149.6362,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Coal,Primary Energy
-2020,149.8497,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Gas,Primary Energy
-2020,190.0369,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Oil,Primary Energy
-2020,149.6362,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Coal,Primary Energy
-2020,149.8497,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Gas,Primary Energy
-2020,190.0369,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Oil,Primary Energy
-2020,171.3657,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Coal,Primary Energy
-2020,150.4723,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Gas,Primary Energy
-2020,199.4975,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Oil,Primary Energy
-2040,1.4876,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Coal,Primary Energy
-2040,45.9864,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Gas,Primary Energy
-2040,113.0402,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Oil,Primary Energy
-2040,6.5118,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Coal,Primary Energy
-2040,106.7783,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Gas,Primary Energy
-2040,172.8979,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Oil,Primary Energy
-2040,278.4801,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Coal,Primary Energy
-2040,226.4334,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Gas,Primary Energy
-2040,212.1367,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Oil,Primary Energy
-2060,0.4846,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Coal,Primary Energy
-2060,27.7607,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Gas,Primary Energy
-2060,41.2076,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Oil,Primary Energy
-2060,3.9095,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Coal,Primary Energy
-2060,70.7585,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Gas,Primary Energy
-2060,108.0791,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Oil,Primary Energy
-2060,438.7969,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Coal,Primary Energy
-2060,226.9697,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Gas,Primary Energy
-2060,132.0428,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Oil,Primary Energy
-2080,0.4496,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Coal,Primary Energy
-2080,14.2457,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Gas,Primary Energy
-2080,28.0536,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Oil,Primary Energy
-2080,2.9917,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Coal,Primary Energy
-2080,48.0365,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Gas,Primary Energy
-2080,80.0503,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Oil,Primary Energy
-2080,471.1643,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Coal,Primary Energy
-2080,230.0573,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Gas,Primary Energy
-2080,94.1989,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Oil,Primary Energy
-2100,0.5305,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Coal,Primary Energy
-2100,13.6632,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Gas,Primary Energy
-2100,23.0557,REMIND-MAgPIE 1.7-3.0,PEP_1p5C_red_eff,World,Oil,Primary Energy
-2100,2.3618,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Coal,Primary Energy
-2100,45.1765,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Gas,Primary Energy
-2100,71.1644,REMIND-MAgPIE 1.7-3.0,PEP_2C_red_eff,World,Oil,Primary Energy
-2100,433.7868,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Coal,Primary Energy
-2100,233.9989,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Gas,Primary Energy
-2100,99.3759,REMIND-MAgPIE 1.7-3.0,PEP_NoPolicy,World,Oil,Primary Energy
+year,value,category,variable,model,scenario,region,unit
+2020.0,317449.104,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,World,$ 2010/local currency per year
+2020.0,237779.77469000022,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5ASIA,$ 2010/local currency per year
+2020.0,16540.311539999988,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5MAF,$ 2010/local currency per year
+2020.0,2904.3227199999997,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5LAM,$ 2010/local currency per year
+2020.0,2868.85125,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5REF,$ 2010/local currency per year
+2020.0,57359.28307999997,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5OECD90+EU,$ 2010/local currency per year
+2020.0,317449.104,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,World,$ 2010/local currency per year
+2020.0,237779.77469000022,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5ASIA,$ 2010/local currency per year
+2020.0,16540.311539999988,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5MAF,$ 2010/local currency per year
+2020.0,2904.3227199999997,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5LAM,$ 2010/local currency per year
+2020.0,2868.85125,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5REF,$ 2010/local currency per year
+2020.0,57359.28307999997,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5OECD90+EU,$ 2010/local currency per year
+2020.0,854708.97494,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,World,$ 2010/local currency per year
+2020.0,266903.25497,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5ASIA,$ 2010/local currency per year
+2020.0,98594.04763999995,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5MAF,$ 2010/local currency per year
+2020.0,41985.95616,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5LAM,$ 2010/local currency per year
+2020.0,49939.96656,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5REF,$ 2010/local currency per year
+2020.0,397277.7815899998,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5OECD90+EU,$ 2010/local currency per year
+2020.0,854708.97494,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,World,$ 2010/local currency per year
+2020.0,266903.25497,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5ASIA,$ 2010/local currency per year
+2020.0,98594.04763999995,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5MAF,$ 2010/local currency per year
+2020.0,41985.95616,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5LAM,$ 2010/local currency per year
+2020.0,49939.96656,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5REF,$ 2010/local currency per year
+2020.0,397277.7815899998,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5OECD90+EU,$ 2010/local currency per year
+2020.0,2.20429541046e6,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,World,$ 2010/local currency per year
+2020.0,773432.2701299996,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5ASIA,$ 2010/local currency per year
+2020.0,241699.84768999997,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5MAF,$ 2010/local currency per year
+2020.0,206587.93338,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5LAM,$ 2010/local currency per year
+2020.0,63681.14808,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5REF,$ 2010/local currency per year
+2020.0,918905.1887199974,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5OECD90+EU,$ 2010/local currency per year
+2020.0,2.20429541046e6,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,World,$ 2010/local currency per year
+2020.0,773432.2701299996,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5ASIA,$ 2010/local currency per year
+2020.0,241699.84768999997,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5MAF,$ 2010/local currency per year
+2020.0,206587.93338,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5LAM,$ 2010/local currency per year
+2020.0,63681.14808,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5REF,$ 2010/local currency per year
+2020.0,918905.1887199974,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5OECD90+EU,$ 2010/local currency per year
+2040.0,8427.56733,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,World,$ 2010/local currency per year
+2040.0,3409.427519999993,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5ASIA,$ 2010/local currency per year
+2040.0,520.2323399999997,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5MAF,$ 2010/local currency per year
+2040.0,476.8175999999999,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5LAM,$ 2010/local currency per year
+2040.0,77.0763,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5REF,$ 2010/local currency per year
+2040.0,3943.9489000000062,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5OECD90+EU,$ 2010/local currency per year
+2040.0,569784.50802,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,World,$ 2010/local currency per year
+2040.0,388341.1566199995,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5ASIA,$ 2010/local currency per year
+2040.0,83168.20069999991,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5MAF,$ 2010/local currency per year
+2040.0,27230.7024,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5LAM,$ 2010/local currency per year
+2040.0,16847.6504,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5REF,$ 2010/local currency per year
+2040.0,54194.874419999906,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5OECD90+EU,$ 2010/local currency per year
+2040.0,549550.1453999999,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,World,$ 2010/local currency per year
+2040.0,280193.1017900001,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5ASIA,$ 2010/local currency per year
+2040.0,54732.21376000004,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5MAF,$ 2010/local currency per year
+2040.0,32752.906599999995,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5LAM,$ 2010/local currency per year
+2040.0,7795.696490000001,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5REF,$ 2010/local currency per year
+2040.0,174072.2036500001,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5OECD90+EU,$ 2010/local currency per year
+2040.0,1.5972766726799998e6,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,World,$ 2010/local currency per year
+2040.0,623329.5075200002,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5ASIA,$ 2010/local currency per year
+2040.0,268542.6956,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5MAF,$ 2010/local currency per year
+2040.0,87222.78109999998,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5LAM,$ 2010/local currency per year
+2040.0,70048.01685,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5REF,$ 2010/local currency per year
+2040.0,548122.32034,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5OECD90+EU,$ 2010/local currency per year
+2040.0,2.39831791578e6,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,World,$ 2010/local currency per year
+2040.0,1.0373496009899968e6,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5ASIA,$ 2010/local currency per year
+2040.0,397171.43252999923,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5MAF,$ 2010/local currency per year
+2040.0,166198.35099,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5LAM,$ 2010/local currency per year
+2040.0,65624.39552,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5REF,$ 2010/local currency per year
+2040.0,731965.6787700014,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5OECD90+EU,$ 2010/local currency per year
+2040.0,3.593051154e6,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,World,$ 2010/local currency per year
+2040.0,1.3569390788000019e6,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5ASIA,$ 2010/local currency per year
+2040.0,591700.0897499993,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5MAF,$ 2010/local currency per year
+2040.0,351655.82092,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5LAM,$ 2010/local currency per year
+2040.0,52357.6288,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5REF,$ 2010/local currency per year
+2040.0,1.240405642670003e6,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5OECD90+EU,$ 2010/local currency per year
+2060.0,8724.37124,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,World,$ 2010/local currency per year
+2060.0,3028.082020000002,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5ASIA,$ 2010/local currency per year
+2060.0,380.4617599999995,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5MAF,$ 2010/local currency per year
+2060.0,474.28080000000006,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5LAM,$ 2010/local currency per year
+2060.0,41.97214,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5REF,$ 2010/local currency per year
+2060.0,4800.028420000006,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5OECD90+EU,$ 2010/local currency per year
+2060.0,1.52086747263e6,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,World,$ 2010/local currency per year
+2060.0,783545.5176600008,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5ASIA,$ 2010/local currency per year
+2060.0,434453.2555600001,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5MAF,$ 2010/local currency per year
+2060.0,183318.15374999997,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5LAM,$ 2010/local currency per year
+2060.0,46568.5989,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5REF,$ 2010/local currency per year
+2060.0,72994.23278000005,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5OECD90+EU,$ 2010/local currency per year
+2060.0,386651.59789999994,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,World,$ 2010/local currency per year
+2060.0,188814.63082000005,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5ASIA,$ 2010/local currency per year
+2060.0,71023.71474999994,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5MAF,$ 2010/local currency per year
+2060.0,41474.26799999999,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5LAM,$ 2010/local currency per year
+2060.0,5587.47504,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5REF,$ 2010/local currency per year
+2060.0,79751.50701000002,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5OECD90+EU,$ 2010/local currency per year
+2060.0,2.1208702926e6,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,World,$ 2010/local currency per year
+2060.0,782566.2307999999,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5ASIA,$ 2010/local currency per year
+2060.0,482530.1749900001,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5MAF,$ 2010/local currency per year
+2060.0,174434.6016,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5LAM,$ 2010/local currency per year
+2060.0,67826.36246,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5REF,$ 2010/local currency per year
+2060.0,613511.2748100024,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5OECD90+EU,$ 2010/local currency per year
+2060.0,1.7698981299999997e6,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,World,$ 2010/local currency per year
+2060.0,874785.2907099997,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5ASIA,$ 2010/local currency per year
+2060.0,327055.5634999999,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5MAF,$ 2010/local currency per year
+2060.0,54213.185,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5LAM,$ 2010/local currency per year
+2060.0,31648.66146,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5REF,$ 2010/local currency per year
+2060.0,482191.8556299992,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5OECD90+EU,$ 2010/local currency per year
+2060.0,3.33434743378e6,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,World,$ 2010/local currency per year
+2060.0,591670.1762699987,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5ASIA,$ 2010/local currency per year
+2060.0,719397.6521300011,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5MAF,$ 2010/local currency per year
+2060.0,296733.7494,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5LAM,$ 2010/local currency per year
+2060.0,11951.205199999999,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5REF,$ 2010/local currency per year
+2060.0,1.7145877665500008e6,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5OECD90+EU,$ 2010/local currency per year
+2080.0,6145.939500000001,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,World,$ 2010/local currency per year
+2080.0,2560.096940000004,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5ASIA,$ 2010/local currency per year
+2080.0,612.2670100000008,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5MAF,$ 2010/local currency per year
+2080.0,360.6011899999999,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5LAM,$ 2010/local currency per year
+2080.0,37.5045,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5REF,$ 2010/local currency per year
+2080.0,2575.357350000003,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5OECD90+EU,$ 2010/local currency per year
+2080.0,2.6421783677599994e6,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,World,$ 2010/local currency per year
+2080.0,1.1054782035599991e6,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5ASIA,$ 2010/local currency per year
+2080.0,989184.99622,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5MAF,$ 2010/local currency per year
+2080.0,378468.15764999995,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5LAM,$ 2010/local currency per year
+2080.0,81314.03142,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5REF,$ 2010/local currency per year
+2080.0,87746.50255999998,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5OECD90+EU,$ 2010/local currency per year
+2080.0,452631.82302,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,World,$ 2010/local currency per year
+2080.0,218484.52921000085,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5ASIA,$ 2010/local currency per year
+2080.0,97505.49283999996,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5MAF,$ 2010/local currency per year
+2080.0,57539.1315,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5LAM,$ 2010/local currency per year
+2080.0,5292.92587,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5REF,$ 2010/local currency per year
+2080.0,73806.60643999999,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5OECD90+EU,$ 2010/local currency per year
+2080.0,2.6240882107199994e6,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,World,$ 2010/local currency per year
+2080.0,883595.0062599975,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5ASIA,$ 2010/local currency per year
+2080.0,736267.2797400018,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5MAF,$ 2010/local currency per year
+2080.0,287880.87006,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5LAM,$ 2010/local currency per year
+2080.0,50727.82192,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5REF,$ 2010/local currency per year
+2080.0,665609.4399200013,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5OECD90+EU,$ 2010/local currency per year
+2080.0,1.09171652541e6,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,World,$ 2010/local currency per year
+2080.0,662240.1116400006,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5ASIA,$ 2010/local currency per year
+2080.0,253061.64218000058,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5MAF,$ 2010/local currency per year
+2080.0,13826.669879999998,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5LAM,$ 2010/local currency per year
+2080.0,2423.15154,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5REF,$ 2010/local currency per year
+2080.0,160171.98905000003,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5OECD90+EU,$ 2010/local currency per year
+2080.0,2.4715621196800005e6,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,World,$ 2010/local currency per year
+2080.0,103293.2118400002,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5ASIA,$ 2010/local currency per year
+2080.0,546012.8515499993,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5MAF,$ 2010/local currency per year
+2080.0,78246.0666,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5LAM,$ 2010/local currency per year
+2080.0,8962.83162,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5REF,$ 2010/local currency per year
+2080.0,1.7350368003200027e6,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5OECD90+EU,$ 2010/local currency per year
+2100.0,5314.53,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,World,$ 2010/local currency per year
+2100.0,2567.6181600000036,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5ASIA,$ 2010/local currency per year
+2100.0,865.7693200000008,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5MAF,$ 2010/local currency per year
+2100.0,318.58008000000007,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5LAM,$ 2010/local currency per year
+2100.0,37.51776,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5REF,$ 2010/local currency per year
+2100.0,1525.0107400000018,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5OECD90+EU,$ 2010/local currency per year
+2100.0,2.85032588097e6,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,World,$ 2010/local currency per year
+2100.0,1.078555148060001e6,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5ASIA,$ 2010/local currency per year
+2100.0,1.2913250970400006e6,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5MAF,$ 2010/local currency per year
+2100.0,336609.4995,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5LAM,$ 2010/local currency per year
+2100.0,81726.12504,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5REF,$ 2010/local currency per year
+2100.0,62158.02996000001,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5OECD90+EU,$ 2010/local currency per year
+2100.0,422763.65901,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,World,$ 2010/local currency per year
+2100.0,196926.6973900001,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5ASIA,$ 2010/local currency per year
+2100.0,114227.58485999996,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5MAF,$ 2010/local currency per year
+2100.0,50415.5196,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5LAM,$ 2010/local currency per year
+2100.0,4704.37504,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5REF,$ 2010/local currency per year
+2100.0,56489.788180000025,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5OECD90+EU,$ 2010/local currency per year
+2100.0,3.2676755577e6,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,World,$ 2010/local currency per year
+2100.0,1.12410719828e6,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5ASIA,$ 2010/local currency per year
+2100.0,1.0320720176100006e6,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5MAF,$ 2010/local currency per year
+2100.0,356775.31393,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5LAM,$ 2010/local currency per year
+2100.0,40785.709800000004,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5REF,$ 2010/local currency per year
+2100.0,713924.7861800012,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5OECD90+EU,$ 2010/local currency per year
+2100.0,947151.2908,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,World,$ 2010/local currency per year
+2100.0,609892.5258300002,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5ASIA,$ 2010/local currency per year
+2100.0,253029.8167600003,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5MAF,$ 2010/local currency per year
+2100.0,12835.04244,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5LAM,$ 2010/local currency per year
+2100.0,2233.8396,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5REF,$ 2010/local currency per year
+2100.0,69160.72478000008,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,R5OECD90+EU,$ 2010/local currency per year
+2100.0,2.58077346047e6,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,World,$ 2010/local currency per year
+2100.0,119929.91644000003,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5ASIA,$ 2010/local currency per year
+2100.0,655763.3739800004,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5MAF,$ 2010/local currency per year
+2100.0,233449.18621,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5LAM,$ 2010/local currency per year
+2100.0,8911.01802,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5REF,$ 2010/local currency per year
+2100.0,1.56272596276e6,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,R5OECD90+EU,$ 2010/local currency per year
+2020.0,317449.104,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,World,$ 2010/local currency per year
+2020.0,237779.77469000022,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,R5ASIA,$ 2010/local currency per year
+2020.0,16540.311539999988,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,R5MAF,$ 2010/local currency per year
+2020.0,2904.3227199999997,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,R5LAM,$ 2010/local currency per year
+2020.0,2868.85125,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,R5REF,$ 2010/local currency per year
+2020.0,57359.28307999997,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,R5OECD90+EU,$ 2010/local currency per year
+2020.0,854708.97494,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,World,$ 2010/local currency per year
+2020.0,266903.25497,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,R5ASIA,$ 2010/local currency per year
+2020.0,98594.04763999995,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,R5MAF,$ 2010/local currency per year
+2020.0,41985.95616,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,R5LAM,$ 2010/local currency per year
+2020.0,49939.96656,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,R5REF,$ 2010/local currency per year
+2020.0,397277.7815899998,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,R5OECD90+EU,$ 2010/local currency per year
+2020.0,2.20429541046e6,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,World,$ 2010/local currency per year
+2020.0,773432.2701299996,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,R5ASIA,$ 2010/local currency per year
+2020.0,241699.84768999997,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,R5MAF,$ 2010/local currency per year
+2020.0,206587.93338,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,R5LAM,$ 2010/local currency per year
+2020.0,63681.14808,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,R5REF,$ 2010/local currency per year
+2020.0,918905.1887199974,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,R5OECD90+EU,$ 2010/local currency per year
+2040.0,8427.56733,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,World,$ 2010/local currency per year
+2040.0,3409.427519999993,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,R5ASIA,$ 2010/local currency per year
+2040.0,520.2323399999997,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,R5MAF,$ 2010/local currency per year
+2040.0,476.8175999999999,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,R5LAM,$ 2010/local currency per year
+2040.0,77.0763,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,R5REF,$ 2010/local currency per year
+2040.0,3943.9489000000062,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,R5OECD90+EU,$ 2010/local currency per year
+2040.0,549550.1453999999,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,World,$ 2010/local currency per year
+2040.0,280193.1017900001,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,R5ASIA,$ 2010/local currency per year
+2040.0,54732.21376000004,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,R5MAF,$ 2010/local currency per year
+2040.0,32752.906599999995,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,R5LAM,$ 2010/local currency per year
+2040.0,7795.696490000001,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,R5REF,$ 2010/local currency per year
+2040.0,174072.2036500001,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,R5OECD90+EU,$ 2010/local currency per year
+2040.0,2.39831791578e6,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,World,$ 2010/local currency per year
+2040.0,1.0373496009899968e6,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,R5ASIA,$ 2010/local currency per year
+2040.0,397171.43252999923,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,R5MAF,$ 2010/local currency per year
+2040.0,166198.35099,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,R5LAM,$ 2010/local currency per year
+2040.0,65624.39552,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,R5REF,$ 2010/local currency per year
+2040.0,731965.6787700014,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,R5OECD90+EU,$ 2010/local currency per year
+2060.0,8724.37124,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,World,$ 2010/local currency per year
+2060.0,3028.082020000002,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,R5ASIA,$ 2010/local currency per year
+2060.0,380.4617599999995,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,R5MAF,$ 2010/local currency per year
+2060.0,474.28080000000006,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,R5LAM,$ 2010/local currency per year
+2060.0,41.97214,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,R5REF,$ 2010/local currency per year
+2060.0,4800.028420000006,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,R5OECD90+EU,$ 2010/local currency per year
+2060.0,386651.59789999994,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,World,$ 2010/local currency per year
+2060.0,188814.63082000005,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,R5ASIA,$ 2010/local currency per year
+2060.0,71023.71474999994,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,R5MAF,$ 2010/local currency per year
+2060.0,41474.26799999999,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,R5LAM,$ 2010/local currency per year
+2060.0,5587.47504,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,R5REF,$ 2010/local currency per year
+2060.0,79751.50701000002,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,R5OECD90+EU,$ 2010/local currency per year
+2060.0,1.7698981299999997e6,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,World,$ 2010/local currency per year
+2060.0,874785.2907099997,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,R5ASIA,$ 2010/local currency per year
+2060.0,327055.5634999999,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,R5MAF,$ 2010/local currency per year
+2060.0,54213.185,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,R5LAM,$ 2010/local currency per year
+2060.0,31648.66146,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,R5REF,$ 2010/local currency per year
+2060.0,482191.8556299992,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,R5OECD90+EU,$ 2010/local currency per year
+2080.0,6145.939500000001,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,World,$ 2010/local currency per year
+2080.0,2560.096940000004,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,R5ASIA,$ 2010/local currency per year
+2080.0,612.2670100000008,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,R5MAF,$ 2010/local currency per year
+2080.0,360.6011899999999,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,R5LAM,$ 2010/local currency per year
+2080.0,37.5045,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,R5REF,$ 2010/local currency per year
+2080.0,2575.357350000003,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,R5OECD90+EU,$ 2010/local currency per year
+2080.0,452631.82302,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,World,$ 2010/local currency per year
+2080.0,218484.52921000085,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,R5ASIA,$ 2010/local currency per year
+2080.0,97505.49283999996,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,R5MAF,$ 2010/local currency per year
+2080.0,57539.1315,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,R5LAM,$ 2010/local currency per year
+2080.0,5292.92587,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,R5REF,$ 2010/local currency per year
+2080.0,73806.60643999999,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,R5OECD90+EU,$ 2010/local currency per year
+2080.0,1.09171652541e6,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,World,$ 2010/local currency per year
+2080.0,662240.1116400006,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,R5ASIA,$ 2010/local currency per year
+2080.0,253061.64218000058,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,R5MAF,$ 2010/local currency per year
+2080.0,13826.669879999998,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,R5LAM,$ 2010/local currency per year
+2080.0,2423.15154,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,R5REF,$ 2010/local currency per year
+2080.0,160171.98905000003,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,R5OECD90+EU,$ 2010/local currency per year
+2100.0,5314.53,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,World,$ 2010/local currency per year
+2100.0,2567.6181600000036,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,R5ASIA,$ 2010/local currency per year
+2100.0,865.7693200000008,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,R5MAF,$ 2010/local currency per year
+2100.0,318.58008000000007,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,R5LAM,$ 2010/local currency per year
+2100.0,37.51776,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,R5REF,$ 2010/local currency per year
+2100.0,1525.0107400000018,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,R5OECD90+EU,$ 2010/local currency per year
+2100.0,422763.65901,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,World,$ 2010/local currency per year
+2100.0,196926.6973900001,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,R5ASIA,$ 2010/local currency per year
+2100.0,114227.58485999996,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,R5MAF,$ 2010/local currency per year
+2100.0,50415.5196,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,R5LAM,$ 2010/local currency per year
+2100.0,4704.37504,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,R5REF,$ 2010/local currency per year
+2100.0,56489.788180000025,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,R5OECD90+EU,$ 2010/local currency per year
+2100.0,947151.2908,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,World,$ 2010/local currency per year
+2100.0,609892.5258300002,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,R5ASIA,$ 2010/local currency per year
+2100.0,253029.8167600003,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,R5MAF,$ 2010/local currency per year
+2100.0,12835.04244,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,R5LAM,$ 2010/local currency per year
+2100.0,2233.8396,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,R5REF,$ 2010/local currency per year
+2100.0,69160.72478000008,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,R5OECD90+EU,$ 2010/local currency per year
