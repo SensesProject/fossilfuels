@@ -1,10 +1,10 @@
 <template>
         <g class="gap_elements">
         <text :x="scales.x(2000)" :y="scales.y(131.2274)">Coal</text>
-        <circle :cx="scales.x(2100)" :cy="scales.y(data.valueLabel[0])" :fill="data.colorValue" r="5"/>
-        <rect id="indicator" width="5" height="1" :x="scales.x(2102)" :y="scales.y(data.valueLabel[0]) - 2" />
+        <circle :cx="scales.x(2050)" :cy="scales.y(data.valueLabel[0])" :fill="data.colorValue" r="5"/>
+        <rect id="indicator" width="5" height="1" :x="scales.x(2052)" :y="scales.y(data.valueLabel[0]) - 2" />
         <text
-        :x="scales.x(2104)"
+        :x="scales.x(2054)"
         :y="scales.y(data.valueLabel[0])"
         >
         {{ Math.round(data.valueLabel[0]) + ' EJ/year' }}
@@ -16,8 +16,8 @@
         Gap in Coal production
         </text>
         <line class="gapline"
-          :x1="scales.x(2102)"
-          :x2="scales.x(2102)"
+          :x1="scales.x(2052)"
+          :x2="scales.x(2052)"
           :y1="scales.y(data.gapValue)"
           :y2="scales.y(data.valueLabel[0])"
         />

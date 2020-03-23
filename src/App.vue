@@ -2,9 +2,15 @@
   <div id="app">
     <SensesMenu />
     <div class="noscroll">
-      <h1 class="t" id="cover">Fossil Fuels Risks</h1>
-      <h1 class="subtitle">Why you shouldn't invest in fossil fuels in the next decades</h1>
-      <h2 class="title" id="quantity">What kind of risks are we talking about?</h2>
+      <h1 class="t" id="cover">Transition Risk - Fossil Fuels</h1>
+      <h1 class="subtitle">From pricing carbon and phasing out fossil fuels</h1>
+      <div class="risk-card">
+        <span class="glyph-hurricanes"/><h2>Transition Risk Pathway</h2>
+      <span>
+        This module is part 1 of 3 in the "Transition Risks Pathway"
+      </span>
+      </div>
+      <h2 id="quantity">What kind of risks are we talking about?</h2>
       <p>
         Our society is currently relying heavily on fossil fuels to provide
         energy to our industries, keep our homes at comfortable temperatures
@@ -217,6 +223,7 @@ export default {
 }
 
 #quantity {
+  padding-top: $spacing * 2;
   margin-bottom: $spacing;
 }
 
@@ -246,5 +253,17 @@ export default {
 
 .changeheight {
   padding: 80vh 0 250vh !important;
+}
+
+.risk-card {
+  border: 1px solid #d8d8e4;
+  padding: $spacing;
+  border-radius: 4px;
+  display: grid;
+
+  .glyph-hurricanes {
+    font-size: 8em;
+    color: #B035C9;
+  }
 }
 </style>

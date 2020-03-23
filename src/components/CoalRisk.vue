@@ -1,7 +1,14 @@
 <template>
   <div class="second_graph">
     <div class="command">
-    <p class="graph-title">Coal volume in EJ/year across scenarios</p> <br/>
+    <p class="graph-title">Coal volume in EJ/year across scenarios</p>
+    <p class="highlight">REMIND-MAgPIE 1.7-3.0</p><br/>
+    <div id="selection" v-show ="step = 8">
+      Change region:
+        <SensesSelect
+        :options='allRegions'
+        v-model='region'/>
+        </div>
      </div>
   <div class="coal">
     <svg ref="vis">
@@ -11,8 +18,8 @@
           <line
             :x1="scales.x(line)"
             :x2="scales.x(line)"
-            :y1="scales.y(transformData.max)"
-            :y2="scales.y(0)"
+            :y1="scales.y(chartHeight - 10)"
+            :y2="scales.y(2)"
             stroke="black"
           />
         </g>
@@ -59,14 +66,16 @@
 import * as d3 from 'd3'
 import _ from 'lodash'
 
-import PrEnQuantity from '../assets/data/PrimaryEnergyQuantity.json'
+import PrEnQuantity from '../assets/data/PrimaryEnergyNpi.json'
 
 import GapElements from './subcomponents/GapElements.vue'
+import SensesSelect from 'library/src/components/SensesSelect.vue'
 
 export default {
   name: 'CoalRisk',
   components: {
-    GapElements
+    GapElements,
+    SensesSelect
   },
   props: {
     step: {
@@ -85,12 +94,13 @@ export default {
   data () {
     return {
       PrEnQuantity,
-      colors: ['#e66b46', '#FFAC00', '#4E40B2'],
-      position: [2070, 2050, 2080],
+      colors: ['#4E40B2', '#FFAC00', '#e66b46'],
+      position: [2025, 2030, 2010],
       svgWidth: 0,
       svgHeight: 0,
       chartWidth: 0,
-      chartHeight: 0
+      chartHeight: 0,
+      region: 'World'
     }
   },
   computed: {
@@ -104,8 +114,12 @@ export default {
     },
     groupData () {
       const primaryenergy = this.PrEnQuantity
-      const groupVariable = _.groupBy(primaryenergy, 'variable')
+      const groupRegion = _.groupBy(primaryenergy, 'Region')
+      const groupVariable = _.groupBy(groupRegion[this.region], 'Variable')
       return groupVariable['primenCoal']
+    },
+    allRegions () {
+      return _.uniq(_.map(this.PrEnQuantity, r => r['Region']))
     },
     transformData () {
       let obj = {}
@@ -113,30 +127,31 @@ export default {
       let max = []
       _.forEach(this.groupData, (scenario, s) => {
         let data = _.map(scenario, (energy, e) => { return [energy, e] })
-        data.splice(16)
+        data.splice(6)
         let maxValue = d3.max(_.map(scenario, (energy, e) => { return energy }))
         max.push(maxValue)
-        lastValue[scenario['scenario']] = [scenario['2100'], scenario['scenario']]
-        obj[scenario['scenario']] = [ data ]
+        lastValue[scenario['Scenario']] = [scenario['2050'], scenario['Scenario']]
+        obj[scenario['Scenario']] = [ data ]
       })
       return {
         obj,
         max,
         lastValue,
-        axis: [2005, 2100]
+        axis: [2005, 2050]
       }
     },
     scales () {
       const { max } = this.transformData
-      const maxValue = max[2]
+      console.log(max)
+      const maxValue = max[0]
       return {
         x: d3
           .scaleLinear()
-          .domain([2005, 2100])
+          .domain([2005, 2050])
           .rangeRound([0, this.chartWidth]),
         y: d3
           .scaleLinear()
-          .domain([0, maxValue + 25])
+          .domain([0, maxValue])
           .rangeRound([this.chartHeight, 0]),
         max: max[0] + 100
       }
@@ -161,7 +176,7 @@ export default {
         return {
           singleLine,
           id: l,
-          labelPos: [this.scales.y(line[0][9][0]), this.scales.y(line[0][8][0]), this.scales.y(line[0][12][0])],
+          labelPos: [this.scales.y(line[0][3][0]), this.scales.y(line[0][5][0]), this.scales.y(line[0][2][0])],
           stroke: this.colors,
           active: !!(this.step > 4 && l === 'No Policy') ||
             !!(this.step > 6 && l === '2.0ºC') ||
@@ -194,9 +209,9 @@ export default {
     },
     colorValue () {
       const colors = this.colors
-      let color = colors[2]
-      if (this.step === 7) { color = colors[0] }
-      if (this.step === 8) { color = colors[1] }
+      let color = colors[0]
+      if (this.step === 7) { color = colors[1] }
+      if (this.step === 8) { color = colors[2] }
 
       return color
     }
@@ -251,8 +266,9 @@ export default {
   height: 60px;
   left: 0px;
 
-  .senses-select {
-    margin: 10px auto;
+  .graph-title {
+    margin-right: 15px;
+    display: inline-block;
   }
 }
 

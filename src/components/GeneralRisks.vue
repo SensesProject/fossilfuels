@@ -3,11 +3,15 @@
   <div class="command">
     <p class="graph-title" v-if="step < 3">Trends in fossil fuel use in climate policy scenarios</p>
     <p class="graph-title" v-if="step >= 3">We explore three types of risks: </p>
-    <div id="selection" v-show ="step < 3">
-      Select a scenario:
+    <p class="highlight">REMIND-MAgPIE 1.7-3.0</p><br/>
+    <div id="selection" v-show ="step > 1 && step < 3">
+      Change scenario and/or region:
       <SensesSelect
     :options='scenarioArray'
     v-model='selected'/>
+    <SensesSelect
+    :options='allRegions'
+    v-model='region'/>
     </div>
    </div>
   <div class="bubbles">
@@ -79,7 +83,7 @@ import { area, curveCardinal } from 'd3-shape'
 import numberToWords from 'number-to-words'
 import _ from 'lodash'
 
-import PrEnQuantity from '../assets/data/PrimaryEnergyQuantity.json'
+import PrEnQuantity from '../assets/data/PrimaryEnergyNpi.json'
 
 import SensesSelect from 'library/src/components/SensesSelect.vue'
 
@@ -116,21 +120,17 @@ export default {
       all: [
         2005,
         2010,
-        2015,
         2020,
-        2025,
         2030,
-        2035,
         2040,
-        2045,
         2050,
-        2055,
         2060,
         2070,
         2080,
         2090,
         2100],
-      selected: '1.5ºC'
+      selected: 'No Policy',
+      region: 'World'
     }
   },
   computed: {
@@ -142,9 +142,13 @@ export default {
         bottom: 0
       }
     },
+    filterRegion () {
+      const filter = _.groupBy(this.PrEnQuantity, 'Region')
+      return filter[this.region]
+    },
     groupData () {
-      const primaryenergy = this.PrEnQuantity
-      return _.groupBy(primaryenergy, 'scenario')
+      const primaryenergy = this.filterRegion
+      return _.groupBy(primaryenergy, 'Scenario')
     },
     transformData () {
       let obj = {}
@@ -153,8 +157,9 @@ export default {
         let scenObj = {}
         _.forEach(scenario, (energy, e) => {
           const data = _.map(energy)
-          const cleanData = data.splice(0, 16)
-          const label = energy['variable']
+          const cleanData = data.splice(0, 11)
+          console.log(cleanData)
+          const label = energy['Variable']
           scenObj[label] = cleanData
           _.map(energy, (el, e) => { allValues.push(el) })
         })
@@ -175,6 +180,9 @@ export default {
       })
       return allScenario
     },
+    allRegions () {
+      return _.uniq(_.map(this.PrEnQuantity, r => r['Region']))
+    },
     selectData () {
       let selected = this.selected
       if (this.step > 2) { selected = '1.5ºC' }
@@ -182,9 +190,8 @@ export default {
       return obj[selected]
     },
     scale () {
-      const { allValues } = this.transformData
       return d3.scaleLinear()
-        .domain([0, d3.max(allValues)])
+        .domain([0, 441.699])
         .range([0, 2000])
     },
     drawArea () {
@@ -207,7 +214,7 @@ export default {
       return _.map(selecteddata, (energy, e, energies) => {
         const dist = initDist
         if (e !== 'primenCoal') {
-          initDist = dist + (this.svgHeight / energy.length) * 3.5
+          initDist = dist + (this.svgHeight / energy.length) * 2.5
         }
 
         const singleDots = _.map(energy, (dot, d, dots) => {
@@ -224,12 +231,12 @@ export default {
         return {
           singleDots: this.step === 0 ? [singleDots[0]] : singleDots &&
           this.step === 1 | this.step >= 3
-            ? [singleDots[0], singleDots[15]] : singleDots,
+            ? [singleDots[0], singleDots[10]] : singleDots,
           label: e.replace('primen', ''),
           id: e === 'primenNat. Gas' ? 'Gas' : e,
           risks: ['➔ Quantity Risk', '➔ Uncertainty Risk', '➔ Price Risk'],
           area: this.step === 1 | this.step >= 3
-            ? this.drawArea([singleDots[0], singleDots[15]]) : this.drawArea(singleDots) &&
+            ? this.drawArea([singleDots[0], singleDots[10]]) : this.drawArea(singleDots) &&
           this.step === 0
               ? '' : this.drawArea(singleDots)
         }
@@ -287,8 +294,13 @@ export default {
   height: 60px;
   left: 0px;
 
+  .graph-title {
+    display: inline-block;
+    margin-right: 15px;
+  }
+
   .senses-select {
-    margin: 10px auto;
+    margin: 10px 10px;
   }
 
   #selection {

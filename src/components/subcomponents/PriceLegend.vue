@@ -1,6 +1,7 @@
 <template>
   <div>
     <p class="graph-title">Changes in price, quantity (Ej/yr) and revenue ($/year) of the fossil fuel sector</p>
+    <p class="highlight">REMIND-MAgPIE 1.7-3.0</p><br/>
     <div class="legend-cont">
     <p>How to read:</p>
   <svg id="square">
@@ -108,6 +109,11 @@ div {
 .legend-cont {
   padding-top: 20px;
 }
+
+.highlight {
+  margin-top: 10px;
+}
+
 svg {
   width: 100%;
   height: 180px;
