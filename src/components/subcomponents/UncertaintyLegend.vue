@@ -1,6 +1,7 @@
 <template>
   <div>
     <p class="graph-title">Uncertainty trends on fossil fuels volumes</p>
+    <p class="highlight">Multiple Models</p><br/>
     <div class="legend-cont">
       <p>How to read:</p>
       <svg id="slope">
@@ -130,6 +131,11 @@ div {
 .legend-cont {
   padding-top: 20px;
 }
+
+.highlight {
+  margin-top: 10px;
+}
+
 svg {
   width: 100%;
   height: 235px;
