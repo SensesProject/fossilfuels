@@ -129,7 +129,7 @@ export default {
         2080,
         2090,
         2100],
-      selected: 'No Policy',
+      selected: '1.5ºC',
       region: 'World'
     }
   },
@@ -384,7 +384,7 @@ svg {
         stroke: none;
         }
 
-      & > #fifteen {
+      & > #ten {
         opacity: 0;
       }
 

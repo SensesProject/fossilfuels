@@ -1,77 +1,51 @@
 <template>
   <div>
-    <p class="graph-title">Changes in price, quantity (Ej/yr) and revenue ($/year) of the fossil fuel sector</p>
-    <p class="highlight">REMIND-MAgPIE 1.7-3.0</p><br/>
+    <p class="graph-title">Regional changes in revenue ($/year) of the fossil fuel sector</p>
+    <p class="highlight howto">REMIND-MAgPIE 1.7-3.0</p><br/>
     <div class="legend-cont">
-    <p>How to read:</p>
-  <svg id="square">
+    <p class="howto">How to read:</p>
+    <p>hover the visualization to see regions detail</p>
+    <svg viewBox="0 0 193 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-            <g id="Artboard-Copy-3" transform="translate(-36, -29)">
-                <g id="Group-2" transform="translate(37, 30)">
-                    <g id="Group" transform="translate(80, 21) scale(-1, 1) translate(-80, -21) translate(-0, 0)" fill-rule="nonzero">
-                        <g id="Group-8">
-                            <rect id="Rectangle-Copy-3" stroke="#979797" transform="translate(21.306041, 21.306041) rotate(90) translate(-21.306041, -21.306041) " x="-1.0658141e-14" y="1.03028697e-13" width="42.6120815" height="42.6120815"></rect>
-                            <rect id="Rectangle-Copy-4" fill="#8E8E8E" transform="translate(37.742584, 4.869497) rotate(90) translate(-37.742584, -4.869497) " x="32.8730866" y="1.05693232e-13" width="9.73899489" height="9.73899489"></rect>
-                        </g>
-                        <g id="Group-7" transform="translate(59, 0)">
-                            <rect id="Rectangle-Copy-5" stroke="#979797" transform="translate(21.306041, 21.306041) rotate(90) translate(-21.306041, -21.306041) " x="-1.0658141e-14" y="1.03028697e-13" width="42.6120815" height="42.6120815"></rect>
-                            <rect id="Rectangle-Copy-6" fill="#8E8E8E" transform="translate(32.740000, 9.740000) rotate(90) translate(-32.740000, -9.740000) " x="23" y="8.8817842e-15" width="19.48" height="19.48"></rect>
-                        </g>
-                        <g id="Group-6" transform="translate(118, 0)">
-                            <rect id="Rectangle-Copy-7" stroke="#979797" transform="translate(21.306041, 21.306041) rotate(90) translate(-21.306041, -21.306041) " x="-1.0658141e-14" y="1.03028697e-13" width="42.6120815" height="42.6120815"></rect>
-                            <rect id="Rectangle-Copy-8" fill="#8E8E8E" transform="translate(23.480000, 19.480000) rotate(90) translate(-23.480000, -19.480000) " x="4" y="1.77635684e-14" width="38.96" height="38.96"></rect>
-                        </g>
+            <g id="Artboard-Copy-3" transform="translate(-35, -40)">
+                <g id="Group" transform="translate(36, 41)">
+                    <g id="Group-8" transform="translate(151, 34) scale(-1, 1) translate(-151, -34) translate(142, 25)" fill-rule="nonzero" stroke="#979797">
+                        <polygon id="Rectangle-Copy-3" transform="translate(9, 9) rotate(90) translate(-9, -9) " points="1.18611919e-13 -7.59392549e-14 18 -7.59392549e-14 18 18 1.18611919e-13 18"></polygon>
                     </g>
-                    <text id="Gap-between-volume-a" fill="#000000">
-                        <tspan x="0" y="72">Gap between volume and </tspan>
-                        <tspan x="55" y="90">revenue</tspan>
-                    </text>
+                    <g id="Group-7" transform="translate(93, 27) scale(-1, 1) translate(-93, -27) translate(77, 11)" fill-rule="nonzero" stroke="#979797">
+                        <polygon id="Rectangle-Copy-5" transform="translate(16, 16) rotate(90) translate(-16, -16) " points="2.11473635e-12 0 32 0 32 32 2.11473635e-12 32"></polygon>
+                    </g>
+                    <g id="Group-6" transform="translate(21.500000, 21.500000) scale(-1, 1) translate(-21.500000, -21.500000) " fill-rule="nonzero" stroke="#979797">
+                        <rect id="Rectangle-Copy-7" transform="translate(21.306041, 21.306041) rotate(90) translate(-21.306041, -21.306041) " x="-1.0658141e-14" y="1.03028697e-13" width="42.6120815" height="42.6120815"></rect>
+                    </g>
+                    <text font-weight="normal" fill="#000000"><tspan x="0" y="69">Size = total revenue ($/Bn)</tspan></text>
                     <line x1="1" y1="51" x2="161" y2="51" id="Path-3" stroke="#979797"></line>
                 </g>
             </g>
         </g>
-  </svg>
-
-  <svg id="colors">
-      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-          <g id="Artboard-Copy-4" transform="translate(-40, -30)">
-              <g id="Group-4" transform="translate(40, 62)">
-                  <g id="Group" transform="translate(20, 0)">
-                      <rect id="Rectangle" stroke="#75757A" fill="#D8D8E4" x="0" y="16" width="17" height="17"></rect>
-                      <text id="Coal" font-family="IBMPlexMono, IBM Plex Mono" font-size="10" font-weight="normal" fill="#000000">
-                          <tspan x="0" y="10">Coal</tspan>
-                      </text>
-                      <rect id="Rectangle-Copy-3" stroke="#75757A" x="100" y="16" width="17" height="17"></rect>
-                      <line x1="17.5" y1="24.5" x2="100.5" y2="24.5" id="Path-2-Copy-2" stroke="#808084"></line>
-                  </g>
-                  <g id="Group-2" transform="translate(20, 37)">
-                      <rect id="Rectangle-Copy" stroke="#A85036" fill="#FCB69F" x="0" y="16" width="17" height="17"></rect>
-                      <text id="Oil" font-family="IBMPlexMono, IBM Plex Mono" font-size="10" font-weight="normal" fill="#000000">
-                          <tspan x="0" y="10">Oil</tspan>
-                      </text>
-                      <rect id="Rectangle-Copy-4" stroke="#A85036" x="100" y="16" width="17" height="17"></rect>
-                      <line x1="17.5" y1="24.5" x2="100.5" y2="24.5" id="Path-2-Copy" stroke="#A85036"></line>
-                  </g>
-                  <g id="Group-3" transform="translate(20, 74)">
-                      <rect id="Rectangle-Copy-2" stroke="#931547" fill="#ED96AB" x="0" y="16" width="17" height="17"></rect>
-                      <text id="Gas" font-family="IBMPlexMono, IBM Plex Mono" font-size="10" font-weight="normal" fill="#000000">
-                          <tspan x="0" y="10">Gas</tspan>
-                      </text>
-                      <rect id="Rectangle-Copy-5" stroke="#931547" x="100" y="16" width="17" height="17"></rect>
-                      <line x1="17.5" y1="24.5" x2="100.5" y2="24.5" id="Path-2" stroke="#9E2E5B"></line>
-                  </g>
-                  <text id="Volume-of-energy" font-family="IBMPlexMono, IBM Plex Mono" font-size="10" font-weight="normal" fill="#000000">
-                      <tspan x="1.5" y="131">Volume of </tspan>
-                      <tspan x="10.5" y="144">energy</tspan>
-                  </text>
-                  <text id="Revenue-($/year)" font-family="IBMPlexMono, IBM Plex Mono" font-size="10" font-weight="normal" fill="#000000">
-                      <tspan x="107.5" y="131">Revenue</tspan>
-                      <tspan x="104.5" y="144">($/year)</tspan>
-                  </text>
-              </g>
-          </g>
-      </g>
-  </svg>
+    </svg>
+    <svg width="144px" height="197px" viewBox="0 0 144 180" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="Artboard-Copy-4" transform="translate(-80, -40)">
+                <g id="Group" transform="translate(47, 42)">
+                    <rect id="Rectangle" stroke="#745DFF" stroke-width="2" fill="#B9ADFF" x="0" y="23" width="63" height="63"></rect>
+                    <rect id="Rectangle-Copy" stroke="#F56A23" stroke-width="2" fill="#FCB69F" x="19" y="102" width="44" height="44"></rect>
+                    <rect id="Rectangle-Copy-2" stroke="#FFC300" stroke-width="2" fill="#FFE17F" x="80" y="102" width="24" height="24"></rect>
+                    <line x1="1" y1="94.5" x2="143" y2="94.5" id="Path-2" stroke="#979797"></line>
+                    <line x1="72.5" y1="23" x2="72.5" y2="198.5" id="Path-2" stroke="#979797"></line>
+                    <text id="No-Policy" font-weight="normal" fill="#000000">
+                        <tspan x="0" y="10">No Policy</tspan>
+                    </text>
+                    <text id="2.0ºC" font-size="10" font-weight="normal" fill="#000000">
+                        <tspan x="20" y="164">2.0ºC</tspan>
+                    </text>
+                    <text id="1.5ºC" font-weight="normal" fill="#000000">
+                        <tspan x="80" y="147">1.5ºC</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </svg>
 </div>
 </div>
 </template>
@@ -101,7 +75,7 @@ div {
   margin-top: 20px;
   margin-left: 5px;
 
-  p {
+  .howto {
     font-weight: bold;
   }
 }

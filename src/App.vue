@@ -3,12 +3,30 @@
     <SensesMenu />
     <div class="noscroll">
       <h1 class="t" id="cover">Transition Risk - Fossil Fuels</h1>
-      <h1 class="subtitle">From pricing carbon and phasing out fossil fuels</h1>
+      <h1 class="subtitle">Carbon Pricing and risks associated to fossil fuels phase out</h1>
+      <p>This is the first chapter of the Finance Risks Pathway.
+      You can select another chapter below.</p>
       <div class="risk-card">
-        <span class="glyph-hurricanes"/><h2>Transition Risk Pathway</h2>
-      <span>
-        This module is part 1 of 3 in the "Transition Risks Pathway"
-      </span>
+        <nav class="risk-menu pathway">
+          <section>
+            <a class="wrapper">
+              <div><span class="glyph-oil"/></div>
+              <div><h4>Chapter 1</h4><span>Fossil Fuels</span></div>
+            </a>
+          </section>
+          <section>
+            <a class="wrapper" href="https://dev.climatescenarios.org/">
+              <div><span class="glyph-power"/></div>
+              <div><h4>Chapter 2</h4><span>Power Sector&nbsp;&nearr;</span></div>
+            </a>
+          </section>
+          <section>
+            <a class="wrapper" href="https://dev.climatescenarios.org/">
+              <div><span class="glyph-building"/></div>
+              <div><h4>Chapter 3</h4><span>End Use&nbsp;&nearr;</span></div>
+            </a>
+          </section>
+        </nav>
       </div>
       <h2 id="quantity">What kind of risks are we talking about?</h2>
       <p>
@@ -91,7 +109,7 @@
           <p>However, if we want to limit climate change to 2 degrees, we need
             to phase out coal from our energy systems within a few decades</p>
         </IntersectionObserver>
-        <IntersectionObserver :step="8"  align="left">
+        <IntersectionObserver :step="8"  align="left" class="changeheight">
           <p>When limiting climate change to 1.5 degrees, the phase out of coal
             will be even faster</p>
         </IntersectionObserver>
@@ -259,11 +277,48 @@ export default {
   border: 1px solid #d8d8e4;
   padding: $spacing;
   border-radius: 4px;
-  display: grid;
+  margin-top: $spacing;
+}
 
-  .glyph-hurricanes {
-    font-size: 8em;
+.pathway {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 1100px;
+  flex-direction: column;
+
+  a {
+    text-decoration: none;
+    background: none;
+    color: #000;
+  }
+
+  .risk-menu {
+    display: flex;
+  }
+
+  .intro {
+    display: flex;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .wrapper {
+    padding: $spacing / 2 $spacing / 1.5 $spacing / 2 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .glyph-building, .glyph-oil, .glyph-power {
+    font-size: 5rem;
+  }
+
+  .glyph-oil {
     color: #B035C9;
+  }
+
+  .glyph-building, .glyph-power {
+    color: #d8d8e4;
   }
 }
 </style>

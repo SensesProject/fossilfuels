@@ -1,6 +1,5 @@
 <template>
         <g class="gap_elements">
-        <text :x="scales.x(2000)" :y="scales.y(131.2274)">Coal</text>
         <circle :cx="scales.x(2050)" :cy="scales.y(data.valueLabel[0])" :fill="data.colorValue" r="5"/>
         <rect id="indicator" width="5" height="1" :x="scales.x(2052)" :y="scales.y(data.valueLabel[0]) - 2" />
         <text

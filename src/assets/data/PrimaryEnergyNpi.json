@@ -121,7 +121,7 @@
     "2100": 148.436,
     "Model": "REMIND-MAgPIE 1.7-3.0",
     "Scenario": "No Policy",
-    "Region": "Middle East and Africa",
+    "Region": "Mid.East + Africa",
     "Variable": "primenCoal",
     "Unit": "EJ/yr"
   },
@@ -139,7 +139,7 @@
     "2100": 63.346,
     "Model": "REMIND-MAgPIE 1.7-3.0",
     "Scenario": "No Policy",
-    "Region": "Middle East and Africa",
+    "Region": "Mid.East + Africa",
     "Variable": "primenNat. Gas",
     "Unit": "EJ/yr"
   },
@@ -157,7 +157,7 @@
     "2100": 21.932,
     "Model": "REMIND-MAgPIE 1.7-3.0",
     "Scenario": "No Policy",
-    "Region": "Middle East and Africa",
+    "Region": "Mid.East + Africa",
     "Variable": "primenOil",
     "Unit": "EJ/yr"
   },
@@ -283,7 +283,7 @@
     "2100": 7.985,
     "Model": "REMIND-MAgPIE 1.7-3.0",
     "Scenario": "No Policy",
-    "Region": "OECD90 and EU",
+    "Region": "OECD90 + EU",
     "Variable": "primenCoal",
     "Unit": "EJ/yr"
   },
@@ -301,7 +301,7 @@
     "2100": 49.124,
     "Model": "REMIND-MAgPIE 1.7-3.0",
     "Scenario": "No Policy",
-    "Region": "OECD90 and EU",
+    "Region": "OECD90 + EU",
     "Variable": "primenNat. Gas",
     "Unit": "EJ/yr"
   },
@@ -319,7 +319,7 @@
     "2100": 51.568,
     "Model": "REMIND-MAgPIE 1.7-3.0",
     "Scenario": "No Policy",
-    "Region": "OECD90 and EU",
+    "Region": "OECD90 + EU",
     "Variable": "primenOil",
     "Unit": "EJ/yr"
   },
@@ -445,7 +445,7 @@
     "2100": 0.542,
     "Model": "REMIND-MAgPIE 1.7-3.0",
     "Scenario": "2.0ºC",
-    "Region": "Middle East and Africa",
+    "Region": "Mid.East + Africa",
     "Variable": "primenCoal",
     "Unit": "EJ/yr"
   },
@@ -463,7 +463,7 @@
     "2100": 21.135,
     "Model": "REMIND-MAgPIE 1.7-3.0",
     "Scenario": "2.0ºC",
-    "Region": "Middle East and Africa",
+    "Region": "Mid.East + Africa",
     "Variable": "primenNat. Gas",
     "Unit": "EJ/yr"
   },
@@ -481,7 +481,7 @@
     "2100": 23.008,
     "Model": "REMIND-MAgPIE 1.7-3.0",
     "Scenario": "2.0ºC",
-    "Region": "Middle East and Africa",
+    "Region": "Mid.East + Africa",
     "Variable": "primenOil",
     "Unit": "EJ/yr"
   },
@@ -607,7 +607,7 @@
     "2100": 1.075,
     "Model": "REMIND-MAgPIE 1.7-3.0",
     "Scenario": "2.0ºC",
-    "Region": "OECD90 and EU",
+    "Region": "OECD90 + EU",
     "Variable": "primenCoal",
     "Unit": "EJ/yr"
   },
@@ -625,7 +625,7 @@
     "2100": 11.251,
     "Model": "REMIND-MAgPIE 1.7-3.0",
     "Scenario": "2.0ºC",
-    "Region": "OECD90 and EU",
+    "Region": "OECD90 + EU",
     "Variable": "primenNat. Gas",
     "Unit": "EJ/yr"
   },
@@ -643,7 +643,7 @@
     "2100": 10.774,
     "Model": "REMIND-MAgPIE 1.7-3.0",
     "Scenario": "2.0ºC",
-    "Region": "OECD90 and EU",
+    "Region": "OECD90 + EU",
     "Variable": "primenOil",
     "Unit": "EJ/yr"
   },
@@ -715,7 +715,7 @@
     "2100": 0.295,
     "Model": "REMIND-MAgPIE 1.7-3.0",
     "Scenario": "1.5ºC",
-    "Region": "Middle East and Africa",
+    "Region": "Mid.East + Africa",
     "Variable": "primenCoal",
     "Unit": "EJ/yr"
   },
@@ -733,7 +733,7 @@
     "2100": 12.786,
     "Model": "REMIND-MAgPIE 1.7-3.0",
     "Scenario": "1.5ºC",
-    "Region": "Middle East and Africa",
+    "Region": "Mid.East + Africa",
     "Variable": "primenNat. Gas",
     "Unit": "EJ/yr"
   },
@@ -751,7 +751,7 @@
     "2100": 11.407,
     "Model": "REMIND-MAgPIE 1.7-3.0",
     "Scenario": "1.5ºC",
-    "Region": "Middle East and Africa",
+    "Region": "Mid.East + Africa",
     "Variable": "primenOil",
     "Unit": "EJ/yr"
   },
@@ -877,7 +877,7 @@
     "2100": 0.655,
     "Model": "REMIND-MAgPIE 1.7-3.0",
     "Scenario": "1.5ºC",
-    "Region": "OECD90 and EU",
+    "Region": "OECD90 + EU",
     "Variable": "primenCoal",
     "Unit": "EJ/yr"
   },
@@ -895,7 +895,7 @@
     "2100": 6.854,
     "Model": "REMIND-MAgPIE 1.7-3.0",
     "Scenario": "1.5ºC",
-    "Region": "OECD90 and EU",
+    "Region": "OECD90 + EU",
     "Variable": "primenNat. Gas",
     "Unit": "EJ/yr"
   },
@@ -913,7 +913,7 @@
     "2100": 3.005,
     "Model": "REMIND-MAgPIE 1.7-3.0",
     "Scenario": "1.5ºC",
-    "Region": "OECD90 and EU",
+    "Region": "OECD90 + EU",
     "Variable": "primenOil",
     "Unit": "EJ/yr"
   },

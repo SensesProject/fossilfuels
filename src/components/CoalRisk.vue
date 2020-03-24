@@ -3,7 +3,7 @@
     <div class="command">
     <p class="graph-title">Coal volume in EJ/year across scenarios</p>
     <p class="highlight">REMIND-MAgPIE 1.7-3.0</p><br/>
-    <div id="selection" v-show ="step = 8">
+    <div id="selection">
       Change region:
         <SensesSelect
         :options='allRegions'
@@ -13,16 +13,6 @@
   <div class="coal">
     <svg ref="vis">
       <g :transform="'translate('+ margin.left + ',' + margin.top + ')'">
-        <g v-for="(line, i) in transformData.axis" v-bind:key="`${i}axis`">
-          <text :x="scales.x(line)" :y="scales.y(0) + 20">{{ line }}</text>
-          <line
-            :x1="scales.x(line)"
-            :x2="scales.x(line)"
-            :y1="scales.y(chartHeight - 10)"
-            :y2="scales.y(2)"
-            stroke="black"
-          />
-        </g>
         <rect class="bg" :width="chartWidth" :height="chartHeight" :class="{active: step > 6}"/>
         <g v-for="(path, i) in generateArea" v-bind:key="`${i}area`">
           <path
@@ -46,7 +36,34 @@
           > {{ path.id }}
           </text>
         </g>
-        <circle id="coal" :cx="scales.x(2005)" :cy="scales.y(131.2274)" r="5"/>
+        <g v-for="(line, i) in transformData.axis" v-bind:key="`${i}axis`">
+          <text :x="scales.x(line)" :y="scales.y(0) + 20">{{ line }}</text>
+          <line
+            :x1="scales.x(line)"
+            :x2="scales.x(line)"
+            :y1="scales.y(chartHeight)"
+            :y2="scales.y(0)"
+            stroke="black"
+          />
+        </g>
+
+        <circle v-for="(dot, i) in regionDot" v-bind:key="`${i}reg`"
+        :class="i === region ? 'regActive' : 'regInactive'"
+        id="coal"
+        :cx="scales.x(2005)"
+        :cy="scales.y(dot)"
+        r="5"
+        />
+        <text v-for="(dot, i) in regionDot" v-bind:key="`${i}text`"
+        :class="i === region ? 'regActive' : 'regInactive'"
+        class="coalValue"
+        :x="scales.x(2004)"
+        :y="scales.y(dot)">
+        {{ i }}
+        </text>
+        <text class="coalValue" :x="scales.x(2004)" :y="scales.y(transformData.firstValue) + 20">
+          {{Math.round(transformData.max[0])}} Ej/year
+        </text>
         <GapElements
           :scales="scales"
           :data="{
@@ -94,7 +111,7 @@ export default {
   data () {
     return {
       PrEnQuantity,
-      colors: ['#4E40B2', '#FFAC00', '#e66b46'],
+      colors: ['#4E40B2', '#e66b46', '#FFAC00'],
       position: [2025, 2030, 2010],
       svgWidth: 0,
       svgHeight: 0,
@@ -128,6 +145,7 @@ export default {
       _.forEach(this.groupData, (scenario, s) => {
         let data = _.map(scenario, (energy, e) => { return [energy, e] })
         data.splice(6)
+        console.log(data)
         let maxValue = d3.max(_.map(scenario, (energy, e) => { return energy }))
         max.push(maxValue)
         lastValue[scenario['Scenario']] = [scenario['2050'], scenario['Scenario']]
@@ -136,13 +154,14 @@ export default {
       return {
         obj,
         max,
+        firstValue: obj['No Policy'][0][0][0],
         lastValue,
         axis: [2005, 2050]
       }
     },
     scales () {
       const { max } = this.transformData
-      console.log(max)
+      console.log(max[0])
       const maxValue = max[0]
       return {
         x: d3
@@ -153,7 +172,7 @@ export default {
           .scaleLinear()
           .domain([0, maxValue])
           .rangeRound([this.chartHeight, 0]),
-        max: max[0] + 100
+        max: 461.855 + 100
       }
     },
     linePath () {
@@ -202,6 +221,16 @@ export default {
       if (this.step === 7) { current = lastValue['2.0ºC'] }
       if (this.step === 8) { current = lastValue['1.5ºC'] }
       return current
+    },
+    regionDot () {
+      return {
+        'World': 131.227,
+        'Latin America': 1.535,
+        'Asia (no Japan)': 67.815,
+        'Mid.East + Africa': 2.142,
+        'R5REF': 4.14,
+        'OECD90 + EU': 55.595
+      }
     },
     gapValue () {
       const { lastValue } = this.transformData
@@ -331,6 +360,18 @@ svg {
 
   #coal {
     fill: getColor(gray, 40);
+  }
+
+  .coalValue {
+    text-anchor: end;
+  }
+
+  .regActive {
+    fill-opacity: 1;
+  }
+
+  .regInactive {
+    fill-opacity: 0.3;
   }
 
 }
