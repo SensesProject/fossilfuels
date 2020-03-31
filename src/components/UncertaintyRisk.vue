@@ -29,6 +29,10 @@
               </g>
             </g>
             <g class="slopes">
+              <!-- <g v-if="step === 1" :transform="`translate(${layout.colWidth * 1}, ${(layout.rowHeight * 1) + 5})`">
+                <text>High disagreement between scenarios</text>
+                <rect class="bg-overlay" :width="layout.colWidth" :height="layout.rowHeight - 10" rx="15"/>
+              </g> -->
               <g v-for="(r, ri) in rows" :key="`r-${ri}`">
                 <UncertaintyRiskSlopes v-for="(c, ci) in r" :key="`c-${ri}-${ci}`" :data="c" :size="layout.slopeSize" :max="max" :model="model"
                   :transform="`translate(${layout.colWidth * (ci + 0.5)} ${layout.rowHeight * (ri + 0.5)})`"
@@ -186,6 +190,13 @@ export default {
         width: 100%;
         height: 100%;
         overflow: visible;
+
+        .bg-overlay {
+          fill: getColor(neon, 100);
+          fill-opacity: 0.5;
+          // stroke-width: 1px;
+          // stroke: getColor(neon, 40);
+        }
 
         .axis {
           .x-axis {

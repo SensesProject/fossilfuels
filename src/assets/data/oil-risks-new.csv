@@ -1,0 +1,271 @@
+year,value,category,variable,model,scenario,region,unit
+2020,317449104000.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,World,$ 2010/local currency per year
+2040,569784508020.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,World,$ 2010/local currency per year
+2060,1520867472630.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,World,$ 2010/local currency per year
+2080,2642178367760.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,World,$ 2010/local currency per year
+2100,2850325880970.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,World,$ 2010/local currency per year
+2020,237779774690.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,Asia (No Japan),$ 2010/local currency per year
+2040,388341156620.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,Asia (No Japan),$ 2010/local currency per year
+2060,783545517660.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,Asia (No Japan),$ 2010/local currency per year
+2080,1105478203560.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,Asia (No Japan),$ 2010/local currency per year
+2100,1078555148060.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,Asia (No Japan),$ 2010/local currency per year
+2020,16540311540.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,Mid. East + Africa,$ 2010/local currency per year
+2040,83168200700.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,Mid. East + Africa,$ 2010/local currency per year
+2060,434453255560.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,Mid. East + Africa,$ 2010/local currency per year
+2080,989184996220.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,Mid. East + Africa,$ 2010/local currency per year
+2100,1291325097040.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,Mid. East + Africa,$ 2010/local currency per year
+2020,2904322720.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,Latin America,$ 2010/local currency per year
+2040,27230702400.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,Latin America,$ 2010/local currency per year
+2060,183318153750.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,Latin America,$ 2010/local currency per year
+2080,378468157650.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,Latin America,$ 2010/local currency per year
+2100,336609499500.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,Latin America,$ 2010/local currency per year
+2020,2868851250.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,Central Asia,$ 2010/local currency per year
+2040,16847650400.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,Central Asia,$ 2010/local currency per year
+2060,46568598900.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,Central Asia,$ 2010/local currency per year
+2080,81314031420.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,Central Asia,$ 2010/local currency per year
+2100,81726125040.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,Central Asia,$ 2010/local currency per year
+2020,57359283080.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,OECD90 + EU,$ 2010/local currency per year
+2040,54194874420.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,OECD90 + EU,$ 2010/local currency per year
+2060,72994232780.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,OECD90 + EU,$ 2010/local currency per year
+2080,87746502560.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,OECD90 + EU,$ 2010/local currency per year
+2100,62158029960.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,OECD90 + EU,$ 2010/local currency per year
+2020,317449104000.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,World,$ 2010/local currency per year
+2040,16854888240.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,World,$ 2010/local currency per year
+2060,22756320210.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,World,$ 2010/local currency per year
+2080,13582834440.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,World,$ 2010/local currency per year
+2100,8416252920.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,World,$ 2010/local currency per year
+2020,237779774690.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Asia (No Japan),$ 2010/local currency per year
+2040,7006669560.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Asia (No Japan),$ 2010/local currency per year
+2060,9215873600.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Asia (No Japan),$ 2010/local currency per year
+2080,5106778750.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Asia (No Japan),$ 2010/local currency per year
+2100,4104276580.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Asia (No Japan),$ 2010/local currency per year
+2020,16540311540.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Mid. East + Africa,$ 2010/local currency per year
+2040,1529226480.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Mid. East + Africa,$ 2010/local currency per year
+2060,1561128120.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Mid. East + Africa,$ 2010/local currency per year
+2080,2165543940.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Mid. East + Africa,$ 2010/local currency per year
+2100,1443882190.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Mid. East + Africa,$ 2010/local currency per year
+2020,2904322720.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Latin America,$ 2010/local currency per year
+2040,845582300.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Latin America,$ 2010/local currency per year
+2060,688794310.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Latin America,$ 2010/local currency per year
+2080,540344150.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Latin America,$ 2010/local currency per year
+2100,565585650.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Latin America,$ 2010/local currency per year
+2020,2868851250.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Central Asia,$ 2010/local currency per year
+2040,99984460.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Central Asia,$ 2010/local currency per year
+2060,53242740.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Central Asia,$ 2010/local currency per year
+2080,47831810.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Central Asia,$ 2010/local currency per year
+2100,57541410.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Central Asia,$ 2010/local currency per year
+2020,57359283080.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,OECD90 + EU,$ 2010/local currency per year
+2040,7373101990.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,OECD90 + EU,$ 2010/local currency per year
+2060,11237807660.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,OECD90 + EU,$ 2010/local currency per year
+2080,5722121050.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,OECD90 + EU,$ 2010/local currency per year
+2100,2244698830.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,OECD90 + EU,$ 2010/local currency per year
+2020,317449104000.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,World,$ 2010/local currency per year
+2040,8427567330.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,World,$ 2010/local currency per year
+2060,8724371240.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,World,$ 2010/local currency per year
+2080,6145939500.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,World,$ 2010/local currency per year
+2100,5314530000.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,World,$ 2010/local currency per year
+2020,237779774690.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Asia (No Japan),$ 2010/local currency per year
+2040,3409427520.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Asia (No Japan),$ 2010/local currency per year
+2060,3028082020.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Asia (No Japan),$ 2010/local currency per year
+2080,2560096940.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Asia (No Japan),$ 2010/local currency per year
+2100,2567618160.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Asia (No Japan),$ 2010/local currency per year
+2020,16540311540.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Mid. East + Africa,$ 2010/local currency per year
+2040,520232340.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Mid. East + Africa,$ 2010/local currency per year
+2060,380461760.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Mid. East + Africa,$ 2010/local currency per year
+2080,612267010.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Mid. East + Africa,$ 2010/local currency per year
+2100,865769320.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Mid. East + Africa,$ 2010/local currency per year
+2020,2904322720.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Latin America,$ 2010/local currency per year
+2040,476817600.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Latin America,$ 2010/local currency per year
+2060,474280800.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Latin America,$ 2010/local currency per year
+2080,360601190.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Latin America,$ 2010/local currency per year
+2100,318580080.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Latin America,$ 2010/local currency per year
+2020,2868851250.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Central Asia,$ 2010/local currency per year
+2040,77076300.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Central Asia,$ 2010/local currency per year
+2060,41972140.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Central Asia,$ 2010/local currency per year
+2080,37504500.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Central Asia,$ 2010/local currency per year
+2100,37517760.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Central Asia,$ 2010/local currency per year
+2020,57359283080.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,OECD90 + EU,$ 2010/local currency per year
+2040,3943948900.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,OECD90 + EU,$ 2010/local currency per year
+2060,4800028420.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,OECD90 + EU,$ 2010/local currency per year
+2080,2575357350.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,OECD90 + EU,$ 2010/local currency per year
+2100,1525010740.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,OECD90 + EU,$ 2010/local currency per year
+2020,854708974940.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,World,$ 2010/local currency per year
+2040,1597276672680.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,World,$ 2010/local currency per year
+2060,2120870292600.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,World,$ 2010/local currency per year
+2080,2624088210720.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,World,$ 2010/local currency per year
+2100,3267675557700.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,World,$ 2010/local currency per year
+2020,266903254970.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,Asia (No Japan),$ 2010/local currency per year
+2040,623329507520.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,Asia (No Japan),$ 2010/local currency per year
+2060,782566230800.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,Asia (No Japan),$ 2010/local currency per year
+2080,883595006260.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,Asia (No Japan),$ 2010/local currency per year
+2100,1124107198280.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,Asia (No Japan),$ 2010/local currency per year
+2020,98594047640.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,Mid. East + Africa,$ 2010/local currency per year
+2040,268542695600.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,Mid. East + Africa,$ 2010/local currency per year
+2060,482530174990.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,Mid. East + Africa,$ 2010/local currency per year
+2080,736267279740.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,Mid. East + Africa,$ 2010/local currency per year
+2100,1032072017610.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,Mid. East + Africa,$ 2010/local currency per year
+2020,41985956160.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,Latin America,$ 2010/local currency per year
+2040,87222781100.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,Latin America,$ 2010/local currency per year
+2060,174434601600.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,Latin America,$ 2010/local currency per year
+2080,287880870060.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,Latin America,$ 2010/local currency per year
+2100,356775313930.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,Latin America,$ 2010/local currency per year
+2020,49939966560.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,Central Asia,$ 2010/local currency per year
+2040,70048016850.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,Central Asia,$ 2010/local currency per year
+2060,67826362460.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,Central Asia,$ 2010/local currency per year
+2080,50727821920.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,Central Asia,$ 2010/local currency per year
+2100,40785709800.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,Central Asia,$ 2010/local currency per year
+2020,397277781590.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,OECD90 + EU,$ 2010/local currency per year
+2040,548122320340.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,OECD90 + EU,$ 2010/local currency per year
+2060,613511274810.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,OECD90 + EU,$ 2010/local currency per year
+2080,665609439920.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,OECD90 + EU,$ 2010/local currency per year
+2100,713924786180.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,OECD90 + EU,$ 2010/local currency per year
+2020,854708974940.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,World,$ 2010/local currency per year
+2040,902417118000.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,World,$ 2010/local currency per year
+2060,793488150780.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,World,$ 2010/local currency per year
+2080,861149479680.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,World,$ 2010/local currency per year
+2100,767459977900.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,World,$ 2010/local currency per year
+2020,266903254970.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Asia (No Japan),$ 2010/local currency per year
+2040,451396998820.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Asia (No Japan),$ 2010/local currency per year
+2060,390288270180.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Asia (No Japan),$ 2010/local currency per year
+2080,412779638860.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Asia (No Japan),$ 2010/local currency per year
+2100,370246152900.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Asia (No Japan),$ 2010/local currency per year
+2020,98594047640.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Mid. East + Africa,$ 2010/local currency per year
+2040,102836184990.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Mid. East + Africa,$ 2010/local currency per year
+2060,165697083770.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Mid. East + Africa,$ 2010/local currency per year
+2080,218867712020.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Mid. East + Africa,$ 2010/local currency per year
+2100,204495563280.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Mid. East + Africa,$ 2010/local currency per year
+2020,41985956160.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Latin America,$ 2010/local currency per year
+2040,48925636540.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Latin America,$ 2010/local currency per year
+2060,63532019700.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Latin America,$ 2010/local currency per year
+2080,83714593620.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Latin America,$ 2010/local currency per year
+2100,80727042760.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Latin America,$ 2010/local currency per year
+2020,49939966560.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Central Asia,$ 2010/local currency per year
+2040,18458906000.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Central Asia,$ 2010/local currency per year
+2060,10484866750.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Central Asia,$ 2010/local currency per year
+2080,13930539720.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Central Asia,$ 2010/local currency per year
+2100,8895165930.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Central Asia,$ 2010/local currency per year
+2020,397277781590.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,OECD90 + EU,$ 2010/local currency per year
+2040,280800878600.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,OECD90 + EU,$ 2010/local currency per year
+2060,163490114830.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,OECD90 + EU,$ 2010/local currency per year
+2080,131850313280.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,OECD90 + EU,$ 2010/local currency per year
+2100,103096264460.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,OECD90 + EU,$ 2010/local currency per year
+2020,854708974940.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,World,$ 2010/local currency per year
+2040,549550145400.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,World,$ 2010/local currency per year
+2060,386651597900.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,World,$ 2010/local currency per year
+2080,452631823020.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,World,$ 2010/local currency per year
+2100,422763659010.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,World,$ 2010/local currency per year
+2020,266903254970.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Asia (No Japan),$ 2010/local currency per year
+2040,280193101790.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Asia (No Japan),$ 2010/local currency per year
+2060,188814630820.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Asia (No Japan),$ 2010/local currency per year
+2080,218484529210.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Asia (No Japan),$ 2010/local currency per year
+2100,196926697390.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Asia (No Japan),$ 2010/local currency per year
+2020,98594047640.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Mid. East + Africa,$ 2010/local currency per year
+2040,54732213760.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Mid. East + Africa,$ 2010/local currency per year
+2060,71023714750.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Mid. East + Africa,$ 2010/local currency per year
+2080,97505492840.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Mid. East + Africa,$ 2010/local currency per year
+2100,114227584860.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Mid. East + Africa,$ 2010/local currency per year
+2020,41985956160.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Latin America,$ 2010/local currency per year
+2040,32752906600.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Latin America,$ 2010/local currency per year
+2060,41474268000.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Latin America,$ 2010/local currency per year
+2080,57539131500.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Latin America,$ 2010/local currency per year
+2100,50415519600.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Latin America,$ 2010/local currency per year
+2020,49939966560.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Central Asia,$ 2010/local currency per year
+2040,7795696490.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Central Asia,$ 2010/local currency per year
+2060,5587475040.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Central Asia,$ 2010/local currency per year
+2080,5292925870.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Central Asia,$ 2010/local currency per year
+2100,4704375040.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Central Asia,$ 2010/local currency per year
+2020,397277781590.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,OECD90 + EU,$ 2010/local currency per year
+2040,174072203650.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,OECD90 + EU,$ 2010/local currency per year
+2060,79751507010.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,OECD90 + EU,$ 2010/local currency per year
+2080,73806606440.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,OECD90 + EU,$ 2010/local currency per year
+2100,56489788180.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,OECD90 + EU,$ 2010/local currency per year
+2020,2204295410460.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,World,$ 2010/local currency per year
+2040,3593051154000.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,World,$ 2010/local currency per year
+2060,3334347433780.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,World,$ 2010/local currency per year
+2080,2471562119680.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,World,$ 2010/local currency per year
+2100,2580773460470.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,World,$ 2010/local currency per year
+2020,773432270130.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,Asia (No Japan),$ 2010/local currency per year
+2040,1356939078800.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,Asia (No Japan),$ 2010/local currency per year
+2060,591670176270.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,Asia (No Japan),$ 2010/local currency per year
+2080,103293211840.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,Asia (No Japan),$ 2010/local currency per year
+2100,119929916440.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,Asia (No Japan),$ 2010/local currency per year
+2020,241699847690.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,Mid. East + Africa,$ 2010/local currency per year
+2040,591700089750.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,Mid. East + Africa,$ 2010/local currency per year
+2060,719397652130.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,Mid. East + Africa,$ 2010/local currency per year
+2080,546012851550.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,Mid. East + Africa,$ 2010/local currency per year
+2100,655763373980.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,Mid. East + Africa,$ 2010/local currency per year
+2020,206587933380.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,Latin America,$ 2010/local currency per year
+2040,351655820920.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,Latin America,$ 2010/local currency per year
+2060,296733749400.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,Latin America,$ 2010/local currency per year
+2080,78246066600.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,Latin America,$ 2010/local currency per year
+2100,233449186210.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,Latin America,$ 2010/local currency per year
+2020,63681148080.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,Central Asia,$ 2010/local currency per year
+2040,52357628800.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,Central Asia,$ 2010/local currency per year
+2060,11951205200.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,Central Asia,$ 2010/local currency per year
+2080,8962831620.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,Central Asia,$ 2010/local currency per year
+2100,8911018020.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,Central Asia,$ 2010/local currency per year
+2020,918905188720.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,OECD90 + EU,$ 2010/local currency per year
+2040,1240405642670.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,OECD90 + EU,$ 2010/local currency per year
+2060,1714587766550.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,OECD90 + EU,$ 2010/local currency per year
+2080,1735036800320.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,OECD90 + EU,$ 2010/local currency per year
+2100,1562725962760.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,OECD90 + EU,$ 2010/local currency per year
+2020,2204295410460.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,World,$ 2010/local currency per year
+2040,3156890312810.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,World,$ 2010/local currency per year
+2060,3129754495380.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,World,$ 2010/local currency per year
+2080,2275856878900.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,World,$ 2010/local currency per year
+2100,1968452610090.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,World,$ 2010/local currency per year
+2020,773432270130.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Asia (No Japan),$ 2010/local currency per year
+2040,1339535920020.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Asia (No Japan),$ 2010/local currency per year
+2060,1419568672290.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Asia (No Japan),$ 2010/local currency per year
+2080,1116167840800.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Asia (No Japan),$ 2010/local currency per year
+2100,1008091623920.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Asia (No Japan),$ 2010/local currency per year
+2020,241699847690.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Mid. East + Africa,$ 2010/local currency per year
+2040,506326466960.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Mid. East + Africa,$ 2010/local currency per year
+2060,645974881040.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Mid. East + Africa,$ 2010/local currency per year
+2080,645567537030.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Mid. East + Africa,$ 2010/local currency per year
+2100,625457351580.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Mid. East + Africa,$ 2010/local currency per year
+2020,206587933380.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Latin America,$ 2010/local currency per year
+2040,220832293000.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Latin America,$ 2010/local currency per year
+2060,103959650160.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Latin America,$ 2010/local currency per year
+2080,22383266920.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Latin America,$ 2010/local currency per year
+2100,21846456900.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Latin America,$ 2010/local currency per year
+2020,63681148080.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Central Asia,$ 2010/local currency per year
+2040,78607330560.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Central Asia,$ 2010/local currency per year
+2060,58713747020.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Central Asia,$ 2010/local currency per year
+2080,28769717460.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Central Asia,$ 2010/local currency per year
+2100,8375994980.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Central Asia,$ 2010/local currency per year
+2020,918905188720.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,OECD90 + EU,$ 2010/local currency per year
+2040,1011579922910.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,OECD90 + EU,$ 2010/local currency per year
+2060,901544029590.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,OECD90 + EU,$ 2010/local currency per year
+2080,462963330760.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,OECD90 + EU,$ 2010/local currency per year
+2100,304680725710.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,OECD90 + EU,$ 2010/local currency per year
+2020,2204295410460.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,World,$ 2010/local currency per year
+2040,2398317915780.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,World,$ 2010/local currency per year
+2060,1769898130000.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,World,$ 2010/local currency per year
+2080,1091716525410.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,World,$ 2010/local currency per year
+2100,947151290800.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,World,$ 2010/local currency per year
+2020,773432270130.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Asia (No Japan),$ 2010/local currency per year
+2040,1037349600990.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Asia (No Japan),$ 2010/local currency per year
+2060,874785290710.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Asia (No Japan),$ 2010/local currency per year
+2080,662240111640.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Asia (No Japan),$ 2010/local currency per year
+2100,609892525830.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Asia (No Japan),$ 2010/local currency per year
+2020,241699847690.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Mid. East + Africa,$ 2010/local currency per year
+2040,397171432530.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Mid. East + Africa,$ 2010/local currency per year
+2060,327055563500.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Mid. East + Africa,$ 2010/local currency per year
+2080,253061642180.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Mid. East + Africa,$ 2010/local currency per year
+2100,253029816760.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Mid. East + Africa,$ 2010/local currency per year
+2020,206587933380.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Latin America,$ 2010/local currency per year
+2040,166198350990.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Latin America,$ 2010/local currency per year
+2060,54213185000.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Latin America,$ 2010/local currency per year
+2080,13826669880.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Latin America,$ 2010/local currency per year
+2100,12835042440.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Latin America,$ 2010/local currency per year
+2020,63681148080.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Central Asia,$ 2010/local currency per year
+2040,65624395520.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Central Asia,$ 2010/local currency per year
+2060,31648661460.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Central Asia,$ 2010/local currency per year
+2080,2423151540.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Central Asia,$ 2010/local currency per year
+2100,2233839600.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Central Asia,$ 2010/local currency per year
+2020,918905188720.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,OECD90 + EU,$ 2010/local currency per year
+2040,731965678770.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,OECD90 + EU,$ 2010/local currency per year
+2060,482191855630.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,OECD90 + EU,$ 2010/local currency per year
+2080,160171989050.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,OECD90 + EU,$ 2010/local currency per year
+2100,69160724780.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,OECD90 + EU,$ 2010/local currency per year

@@ -2,14 +2,14 @@
   <div id="app">
     <SensesMenu />
     <div class="noscroll">
-      <h1 class="t" id="cover">Transition Risk - Fossil Fuels</h1>
-      <h1 class="subtitle">Carbon Pricing and risks associated to fossil fuels phase out</h1>
+      <h1 class="t" id="cover">Fossil Fuels Risk</h1>
+      <h1 class="subtitle">Risks associated with investing in fossil fuel assets</h1>
       <p>This is the first chapter of the Finance Risks Pathway.
       You can select another chapter below.</p>
       <div class="risk-card">
         <nav class="risk-menu pathway">
           <section>
-            <a class="wrapper">
+            <a class="wrapper active">
               <div><span class="glyph-oil"/></div>
               <div><h4>Chapter 1</h4><span>Fossil Fuels</span></div>
             </a>
@@ -28,18 +28,17 @@
           </section>
         </nav>
       </div>
-      <h2 id="quantity">What kind of risks are we talking about?</h2>
+      <h2 id="quantity">What risks will be discussed?</h2>
       <p>
-        Our society is currently relying heavily on fossil fuels to provide
-        energy to our industries, keep our homes at comfortable temperatures
-        and move goods and persons around the globe. However, limiting climate
-        change will require us to reduce the emission of greenhouse gasses and
-        by phasing out the use of fossil fuels. As a result, the demand for fossil
-        fuels will evolve differently in the future than what we have seen in the
-        past. This has consequences for investors in the fossil fuel sector.<br /><br />
-        In this module we show the change in risks associated with investing
-        in the fossil fuel sector to explain why investors should consider climate
-        policy in their decisions.
+        Our society is currently relying heavily on fossil fuels to provide energy
+        to our industries, keep our homes at comfortable temperatures and move
+        goods and persons around the globe. However, limiting climate change
+        will require us to reduce the emission of greenhouse gasses by reducing
+        the use of fossil fuels. As a result, the demand for fossil fuels will
+        evolve differently in the future than what we have seen in the past.
+        This has consequences for the risk of investing in the fossil fuel sector.<br/><br/>
+        In this module we show the risks associated with investing in the fossil
+        fuel sector to explain why investors should consider climate policy in their decisions.
       </p>
     </div>
     <LayoutScrollytelling>
@@ -55,26 +54,40 @@
       </template>
       <div slot="text" class="observer">
         <IntersectionObserver :step="0">
-          <p>Currently society is using large amounts of coal, oil and gas</p>
+          <p>Currently, society is using large amounts of coal, oil and gas.
+            This is happening across all sectors worldwide: we heavily rely on fossil fuels.
+            What will happen if climate policies will be implemented?</p>
         </IntersectionObserver>
         <IntersectionObserver :step="1">
-          <p>To limit climate change, fossil need to be phased out</p>
+          <p>As fossil fuel use is the major source of greenhouse gas emissions,
+            their use needs to be reduced, or even phased out to limit climate change.
+            This can be done through policies to regulate and/or tax the use of
+            carbon intensive fuels.</p>
         </IntersectionObserver>
         <IntersectionObserver :step="2">
-          <p>Coal is the most carbon intensive fossil fuel and will be phased
-            out first. Oil use will be drastically reduced, but there may be
-            a long-term role for natural gas in the energy system. </p>
+          <p>As we can see in the figure: coal is the most carbon intensive
+            fossil fuel and is phased out first in climate change mitigation
+            scenarios. Oil use will be drastically reduced as well in the next
+            decades, less certain but still transitioning is natural gas,
+            that may have a long-term role in the energy system.  </p>
         </IntersectionObserver>
-        <IntersectionObserver :step="3">
-          <p>Quantity risk: reduced use of fossil fuels</p>
+        <IntersectionObserver :step="3" align="right">
+          <p>The world is in a phase of abandoning fossil fuels. As fossil fuels,
+            especially coal, will be produced and used drastically less than now,
+            this results in a so-called quantity risk.</p>
         </IntersectionObserver>
-        <IntersectionObserver :step="4">
-          <p>Uncertainty risk: the future role of oil and natural gas depends on
-            other developments in the energy system</p>
+        <IntersectionObserver :step="4" align="right">
+          <p>While for certain fossil fuels (such as coal) a strong decline in use
+            is very likely to happen, the future role of oil and natural gas
+            depends on various developments in the energy system, making it very
+            difficult to predict their use in the future. Therefore, investors
+            will face an uncertainty risk.</p>
         </IntersectionObserver>
-        <IntersectionObserver :step="5">
-          <p>Price risk: the direction of fossil fuel price changes under climate
-            policy is unceratain</p>
+        <IntersectionObserver :step="5" align="right">
+          <p>Finally, revenue risks will be explored: as the price of fossil fuels
+            becomes even less predictable than historically, revenues for the
+            sector can change faster or slower than the physical changes in
+            fossil fuel use, leading to lower profits or even losses for investors.</p>
         </IntersectionObserver>
       </div>
     </LayoutScrollytelling>
@@ -102,26 +115,38 @@
       </template>
       <div slot="text" class="observer">
         <IntersectionObserver :step="6"  align="left">
-          <p>Without climate policy, coal would be a very cheap energy use to
-            fuel our economies and its use would be expected to expand into the future.</p>
+          <p>In a scenario with no climate policies, coal would be relatively
+            cheap and its use would be expected (in the majority of cases) to
+            expand even further in the future. </p>
         </IntersectionObserver>
         <IntersectionObserver :step="7"  align="left">
           <p>However, if we want to limit climate change to 2 degrees, we need
-            to phase out coal from our energy systems within a few decades</p>
+            to phase out coal from our energy systems within a few decades.
+            This can happen through a carbon tax or through more direct policy measures.</p>
         </IntersectionObserver>
         <IntersectionObserver :step="8"  align="left" class="changeheight">
-          <p>When limiting climate change to 1.5 degrees, the phase out of coal
-            will be even faster</p>
+          <p>When introducing stronger policies, coal dramatically drops even faster before 2050.
+            Investors must therefore be aware that coal as well as other fossil
+            fuels assets may have the potential to become stranded assets.</p>
         </IntersectionObserver>
       </div>
     </LayoutScrollytelling>
     <div class="noscroll">
       <h2 class="title" id="price">Uncertainty risk: different trends for oil and natural gas</h2>
         <p class="paragraph">
-        While it is clear that coal is phase out quickly with climate policies,
-        different scenarios and model diverge on the role of oil and natural gas.
-        Here we show the agreement between models on the trends of coal,
-        oil and gas use under different levels of climate policy.
+        While it is clear that coal is phased out quickly only by introducing
+        mild climate policies, scenarios developed with different models diverge
+        on the role of oil and natural gas. The future role of these energy sources
+        under climate policies depends on various developments such as the development
+        of alternative technologies (electric cars, heat pumps) or the role of flexible
+        gas power plants in the integration of renewable energy in the power grid.
+        Investors are confronted with fundamental uncertainties about future trends
+        in these fuels, as can be seen in the figure below. <br/><br/>
+        Here agreement between models is visualized – one beam represents a trend in primary energy quantity
+        at a different level of climate policy. Trends can be increasing,
+        fairly neutral or decreasing based on the model assumptions and methods.
+        Simply put, the more overlaying beams differ between each other,
+        the greater the disagreement between models, hence a higher degree of uncertainty.
       </p>
     </div>
     <LayoutScrollytelling>
@@ -130,30 +155,39 @@
       </template>
       <div slot="text" class="observer">
         <IntersectionObserver :step="0">
-          <p>Let's build this visualization stepwise. If we look at the 2.0ºC scenario
-            (PEP_2C_ref_eff / model:REMIND) we can observe a general decreasing trend in fossil fuels
-            quantities. However not all scenarios behave in the same way: trends variate according
-            to implemented policies.</p>
+          <p> Let's build the visualization stepwise. If we look at the 2.0ºC scenario
+          (NPi2020_1000_V3 / model:REMIND) we can observe a general decreasing trend in fossil fuels quantities.
+          However not all scenarios behave in the same way: trends variate according to implemented policies.</p>
         </IntersectionObserver>
         <IntersectionObserver :step="1">
-          <p>If we add to the mix different models it's even clearer how uncertain is fossil fuels future:
-          different predictions and high disagreement between models  can negatively impact investments.</p>
+          <p>If we add to the mix other models it becomes even clearer how uncertain
+            the future of fossil fuels is. In the long run, the uncertainty
+            between different models reduces, as they agree on the need to phase
+            out oil and gas in the second half of the century. </p>
         </IntersectionObserver>
         <IntersectionObserver :step="2" class="changeheight">
           <p>The rate of change for oil and natural gas varies widely between
-            models and scenario for the next few decades.</p>
+            models and scenarios for the next few decades. For the financial
+            world this means that different predictions and high disagreement
+            between models can lead to wrong decision making that negatively
+            impact investments.</p>
         </IntersectionObserver>
       </div>
     </LayoutScrollytelling>
     <div class="noscroll">
-      <h2 class="title" id="price">Price risk: revenue of the fossil fuel sector
-        depends on price development</h2  >
+      <h2 class="title" id="price"> Revenue risk: the fossil fuel sector depends on price developments</h2>
         <p class="paragraph">
-        Even though oil and natural gas could still be used in a low-carbon energy
-        system, their volumes are reduced, and the total revenue of these sectors
-        in the future will depend strongly on the price. If prices increase,
-        the total revenue of the sector might still remain large, even though
-        the volume of fossil fuel use is reduced.
+        As seen above, the prediction of trends in fossil fuel use show that oil
+        and natural gas could still be used for several decades in a low-carbon
+        energy system. However, in the long run, a reduction in volume should
+        still be expected. The effects of these trends on the price of fossil
+        fuels are hard to predict and these will directly affect revenue of the
+        fossil fuel sectors.<br/><br/>
+        Even if oil quantity would remain more or less stable, the total revenue
+        of the sector will be strongly dependent on uncertain price developments.
+        The visualization below shows the trend of fossil fuels revenues across
+        different scenarios and regions. Despite a first grow for oil, in the long
+        run we will witness a drastic shrink in revenue.
       </p>
     </div>
     <LayoutScrollytelling>
@@ -162,8 +196,8 @@
       </template>
       <div slot="text" class="observer">
         <IntersectionObserver :step="0">
-          <p>The wider the gap between colored and empty squares, the more fossil fuels
-          will be price dependent in the future.</p>
+          <p>The smaller the squares, the smaller the revenue from fossil fuels
+          under different scenarios.</p>
         </IntersectionObserver>
         <IntersectionObserver :step="1" class="changeheight">
           <p>Strong variations in price and quantities are factors that negatively impact
@@ -172,11 +206,17 @@
       </div>
     </LayoutScrollytelling>
     <div class="noscroll">
-      <h2 class="title" id="price">Risks and Opportunities in a Fossil Fuels free future</h2  >
+      <h2 class="title" id="price">Assessing risks with the help of climate scenarios</h2  >
         <p class="paragraph">
-        Navigating through uncertainty and risks is a complex task. Climate change will impact
-        greatly fossil fuels quantity and revenues in the next decades. It is vital to consider
-        climate scenarios when deciding future investments.
+          We have seen that climate  policies will strongly impact fossil fuels
+          quantities and revenues over the next decades. Navigating through the
+          resulting uncertainty and risks is a complex task.
+          However, climate scenarios can help us understand the timing of such
+          transitions by providing a detailed and differentiated projection of
+          future transitions.
+          It is vital for investors and financial analysts to acknowledge and
+          navigate through climate scenarios to understand the challenges of
+          this ongoing transition.
       </p>
       <SensesMeta :id="'transition-risk'"/>
     </div>
@@ -290,6 +330,10 @@ export default {
     text-decoration: none;
     background: none;
     color: #000;
+  }
+
+  .active {
+    color: #B035C9;
   }
 
   .risk-menu {

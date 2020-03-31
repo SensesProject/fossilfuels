@@ -41,7 +41,7 @@
               <text id="No-Policy" font-size="10" x="0" y="19">Scenarios:</text>
               <transition name="fade">
                 <text v-if="step >= 1" id="Scenarios" font-size="10" fill="#000000">
-                  <tspan x="0" y="9">No Policy</tspan>
+                  <tspan x="0" y="9">Current Policies</tspan>
                 </text>
               </transition>
               <transition name="fade">

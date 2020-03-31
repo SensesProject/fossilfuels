@@ -4,7 +4,7 @@
     <p class="highlight howto">REMIND-MAgPIE 1.7-3.0</p><br/>
     <div class="legend-cont">
     <p class="howto">How to read:</p>
-    <p>hover the visualization to see regions detail</p>
+    <p>hover the visualization to see regions</p>
     <svg viewBox="0 0 193 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
             <g id="Artboard-Copy-3" transform="translate(-35, -40)">
@@ -27,19 +27,20 @@
     <svg width="144px" height="197px" viewBox="0 0 144 180" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
             <g id="Artboard-Copy-4" transform="translate(-80, -40)">
-                <g id="Group" transform="translate(47, 42)">
-                    <rect id="Rectangle" stroke="#745DFF" stroke-width="2" fill="#B9ADFF" x="0" y="23" width="63" height="63"></rect>
-                    <rect id="Rectangle-Copy" stroke="#F56A23" stroke-width="2" fill="#FCB69F" x="19" y="102" width="44" height="44"></rect>
-                    <rect id="Rectangle-Copy-2" stroke="#FFC300" stroke-width="2" fill="#FFE17F" x="80" y="102" width="24" height="24"></rect>
+                <g id="Group" transform="translate(50, 50)">
+                    <rect id="Rectangle" stroke="#806cc6" stroke-width="1.5" fill="#ac9bd9" fill-opacity="0.3" x="0" y="23" width="63" height="63"></rect>
+                    <rect id="Rectangle-Copy" stroke="#f39172" stroke-width="1.5" fill="#ffdbcf" x="19" y="102" width="44" height="44"></rect>
+                    <rect id="Rectangle-Copy-2" stroke="#ffc361" stroke-width="1.5" fill="#ffecce" x="80" y="102" width="24" height="24"></rect>
                     <line x1="1" y1="94.5" x2="143" y2="94.5" id="Path-2" stroke="#979797"></line>
                     <line x1="72.5" y1="23" x2="72.5" y2="198.5" id="Path-2" stroke="#979797"></line>
-                    <text id="No-Policy" font-weight="normal" fill="#000000">
-                        <tspan x="0" y="10">No Policy</tspan>
+                    <text id="No-Policy" font-weight="normal" fill="#806cc6">
+                        <tspan x="0" y="0" fill="#806cc6">Current</tspan>
+                        <tspan x="0" y="15">Policies</tspan>
                     </text>
-                    <text id="2.0ºC" font-size="10" font-weight="normal" fill="#000000">
+                    <text id="2.0ºC" font-size="10" font-weight="normal" fill="#f39172">
                         <tspan x="20" y="164">2.0ºC</tspan>
                     </text>
-                    <text id="1.5ºC" font-weight="normal" fill="#000000">
+                    <text id="1.5ºC" font-weight="normal" fill="#ffc361">
                         <tspan x="80" y="147">1.5ºC</tspan>
                     </text>
                 </g>

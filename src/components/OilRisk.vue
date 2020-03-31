@@ -39,7 +39,7 @@
 // import * as d3 from 'd3'
 // import _ from 'lodash'
 
-import risks from 'dsv-loader!@/assets/data/oil-risks.csv' // eslint-disable-line import/no-webpack-loader-syntax
+import risks from 'dsv-loader!@/assets/data/oil-risks-new.csv' // eslint-disable-line import/no-webpack-loader-syntax
 import resize from 'vue-resize-directive'
 import PriceLegend from './subcomponents/PriceLegend.vue'
 import OilRiskBoxes from '@/components/OilRiskBoxes.vue'
@@ -79,7 +79,7 @@ export default {
       model: 'REMIND-MAgPIE 1.7-3.0',
       // region: 'World',
       category: 'Revenue',
-      labels: ['1.5ºC', '2.0ºC', 'No Policy'],
+      labels: ['1.5ºC', '2.0ºC', 'Current Policies'],
       svg: {
         width: 320,
         height: 320

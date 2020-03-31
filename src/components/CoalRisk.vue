@@ -1,80 +1,83 @@
 <template>
   <div class="second_graph">
     <div class="command">
-    <p class="graph-title">Coal volume in EJ/year across scenarios</p>
-    <p class="highlight">REMIND-MAgPIE 1.7-3.0</p><br/>
-    <div id="selection">
-      Change region:
-        <SensesSelect
-        :options='allRegions'
-        v-model='region'/>
+      <p class="graph-title">Coal volume in EJ/year across scenarios</p>
+      <p class="highlight">REMIND-MAgPIE 1.7-3.0</p><br/>
+        <div id="selection">
+          Change region:
+            <SensesSelect
+            :options='allRegions'
+            v-model='region'/>
         </div>
+        <svg id="legend">
+          <rect x="0" y="5" width="50px" height="3px" fill="#4E40B2"/>
+          <text x="55px" y="10" fill="#4E40B2">Current Policies</text>
+          <rect x="160" y="5" width="50px" height="3px" fill="#e66b46"/>
+          <text x="220px" y="10" fill="#e66b46">2.0ºC</text>
+          <rect x="270" y="5" width="50px" height="3px" fill="#FFAC00"/>
+          <text x="330px" y="10" fill="#FFAC00">1.5ºC</text>
+        </svg>
      </div>
   <div class="coal">
-    <svg ref="vis">
-      <g :transform="'translate('+ margin.left + ',' + margin.top + ')'">
-        <rect class="bg" :width="chartWidth" :height="chartHeight" :class="{active: step > 6}"/>
-        <g v-for="(path, i) in generateArea" v-bind:key="`${i}area`">
-          <path
-          class="area"
-          :d="path.area"
-          :fill="'#000'"
-          :class="{active: path.active}"
-          />
-        </g>
-        <g v-for="(path, i) in generateLine" v-bind:key="`${i}paths`">
-          <path
-          :d="path.singleLine"
-          :stroke="path.stroke[i]"
-          :id="path.active ? 'active' : 'inactive'"
-          />
-          <text
-          :class="path.active ? 'text-active' : 'text-inactive'"
-          :fill="path.stroke[i]"
-          :x="scales.x(position[i])"
-          :y="path.labelPos[i] - 15"
-          > {{ path.id }}
-          </text>
-        </g>
-        <g v-for="(line, i) in transformData.axis" v-bind:key="`${i}axis`">
-          <text :x="scales.x(line)" :y="scales.y(0) + 20">{{ line }}</text>
-          <line
-            :x1="scales.x(line)"
-            :x2="scales.x(line)"
-            :y1="scales.y(chartHeight)"
-            :y2="scales.y(0)"
-            stroke="black"
-          />
-        </g>
-
-        <circle v-for="(dot, i) in regionDot" v-bind:key="`${i}reg`"
-        :class="i === region ? 'regActive' : 'regInactive'"
-        id="coal"
-        :cx="scales.x(2005)"
-        :cy="scales.y(dot)"
-        r="5"
-        />
-        <text v-for="(dot, i) in regionDot" v-bind:key="`${i}text`"
-        :class="i === region ? 'regActive' : 'regInactive'"
-        class="coalValue"
-        :x="scales.x(2004)"
-        :y="scales.y(dot)">
-        {{ i }}
-        </text>
-        <text class="coalValue" :x="scales.x(2004)" :y="scales.y(transformData.firstValue) + 20">
-          {{Math.round(transformData.max[0])}} Ej/year
-        </text>
-        <GapElements
-          :scales="scales"
-          :data="{
-            valueLabel: valueLabel,
-            colorValue: colorValue,
-            transformData: transformData,
-            gapValue: gapValue,
-            step: step
-          }"/>
-      </g>
-   </svg>
+        <div class="wrapper">
+            <svg ref="vis">
+              <g :transform="'translate('+ margin.left + ',' + margin.top  + ')'">
+                <rect class="bg" :width="chartWidth" :height="chartHeight" :class="{active: step > 6}"/>
+                <g v-for="(path, i) in generateArea" v-bind:key="`${i}area`">
+                  <path
+                  class="area"
+                  :d="path.area"
+                  :fill="'#000'"
+                  :class="{active: path.active}"
+                  />
+                </g>
+                <g v-for="(path, i) in generateLine" v-bind:key="`${i}paths`">
+                  <path
+                  :d="path.singleLine"
+                  :stroke="path.stroke[i]"
+                  :id="path.active ? 'active' : 'inactive'"
+                  />
+                </g>
+                <g v-for="(line, i) in transformData.axis" v-bind:key="`${i}axis`">
+                  <text :x="scales.x(line)" :y="scales.y(0) + 20">{{ line }}</text>
+                  <line
+                    :x1="scales.x(line)"
+                    :x2="scales.x(line)"
+                    y1="0"
+                    :y2="scales.y(0)"
+                    stroke="black"
+                  />
+                </g>
+                <circle class="regActive" id="coal" :cx="scales.x(2005)" :cy="scales.y(transformData.firstValue)" r="5"/>
+                <circle v-for="(dot, i) in regionDot" v-bind:key="`${i}reg`"
+                class="regInactive"
+                :class="i === region ? 'noOp' : 'Op'"
+                :cx="scales.x(2005)"
+                :cy="scales.y(dot)"
+                r="5"
+                />
+                <text v-for="(dot, i) in regionDot" v-bind:key="`${i}text`"
+                :class="i === region ? 'regActive' : 'regInactive'"
+                class="coalValue"
+                :x="scales.x(2004)"
+                :y="scales.y(dot)">
+                {{ i }}
+                </text>
+                <text class="coalValue coalNum" :x="scales.x(2004)" :y="scales.y(transformData.firstValue) - 20">
+                  {{Math.round(transformData.max[0])}} Ej/year
+                </text>
+                <GapElements
+                  :scales="scales"
+                  :data="{
+                    valueLabel: valueLabel,
+                    colorValue: colorValue,
+                    transformData: transformData,
+                    gapValue: gapValue,
+                    step: step
+                  }"/>
+              </g>
+           </svg>
+     </div>
   </div>
 </div>
 </template>
@@ -112,7 +115,6 @@ export default {
     return {
       PrEnQuantity,
       colors: ['#4E40B2', '#e66b46', '#FFAC00'],
-      position: [2025, 2030, 2010],
       svgWidth: 0,
       svgHeight: 0,
       chartWidth: 0,
@@ -121,6 +123,10 @@ export default {
     }
   },
   computed: {
+    innerWidth () {
+      const { width } = this
+      return Math.min(width, 1000)
+    },
     margin () {
       return {
         top: 65,
@@ -145,7 +151,6 @@ export default {
       _.forEach(this.groupData, (scenario, s) => {
         let data = _.map(scenario, (energy, e) => { return [energy, e] })
         data.splice(6)
-        console.log(data)
         let maxValue = d3.max(_.map(scenario, (energy, e) => { return energy }))
         max.push(maxValue)
         lastValue[scenario['Scenario']] = [scenario['2050'], scenario['Scenario']]
@@ -154,7 +159,7 @@ export default {
       return {
         obj,
         max,
-        firstValue: obj['No Policy'][0][0][0],
+        firstValue: obj['Current Policies'][0][0][0],
         lastValue,
         axis: [2005, 2050]
       }
@@ -195,9 +200,8 @@ export default {
         return {
           singleLine,
           id: l,
-          labelPos: [this.scales.y(line[0][3][0]), this.scales.y(line[0][5][0]), this.scales.y(line[0][2][0])],
           stroke: this.colors,
-          active: !!(this.step > 4 && l === 'No Policy') ||
+          active: !!(this.step > 4 && l === 'Current Policies') ||
             !!(this.step > 6 && l === '2.0ºC') ||
             !!(this.step > 7 && l === '1.5ºC')
         }
@@ -206,7 +210,7 @@ export default {
     generateArea () {
       const { generateLine, chartWidth, chartHeight, step } = this
       return generateLine.map(l => {
-        const y = l.id === 'No Policy' ? 0 : chartHeight
+        const y = l.id === 'Current Policies' ? 0 : chartHeight
         const area = l.singleLine[0].replace(/^M/, `M${chartWidth},${y}L0,${y},`)
         return {
           ...l,
@@ -217,7 +221,7 @@ export default {
     },
     valueLabel () {
       const { lastValue } = this.transformData
-      let current = lastValue['No Policy']
+      let current = lastValue['Current Policies']
       if (this.step === 7) { current = lastValue['2.0ºC'] }
       if (this.step === 8) { current = lastValue['1.5ºC'] }
       return current
@@ -228,13 +232,13 @@ export default {
         'Latin America': 1.535,
         'Asia (no Japan)': 67.815,
         'Mid.East + Africa': 2.142,
-        'R5REF': 4.14,
+        'Central Asia': 4.14,
         'OECD90 + EU': 55.595
       }
     },
     gapValue () {
       const { lastValue } = this.transformData
-      return lastValue['No Policy'][0]
+      return lastValue['Current Policies'][0]
     },
     colorValue () {
       const colors = this.colors
@@ -292,12 +296,29 @@ export default {
   font-weight: bold;
   margin: 0 auto;
   max-width: 900px;
-  height: 60px;
+  height: 80px;
   left: 0px;
 
   .graph-title {
     margin-right: 15px;
     display: inline-block;
+  }
+
+  #selection {
+    display: inline-flex;
+    margin-top: 20px;
+    width: 300px;
+  }
+
+  #legend {
+    display: inline-flex;
+    margin-top: 20px;
+    width: 60%;
+    height: 10px;
+
+    text {
+      text-anchor: start;
+    }
   }
 }
 
@@ -360,18 +381,28 @@ svg {
 
   #coal {
     fill: getColor(gray, 40);
+    transition: cy 0.5s;
   }
 
   .coalValue {
     text-anchor: end;
   }
 
-  .regActive {
-    fill-opacity: 1;
+  .coalNum {
+    fill: $color-accent;
   }
 
   .regInactive {
+    fill: getColor(gray, 60);
+    transition: fill-opacity 1s;
+  }
+
+  .Op {
     fill-opacity: 0.3;
+  }
+
+  .noOp {
+    fill-opacity: 0;
   }
 
 }

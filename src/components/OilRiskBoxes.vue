@@ -74,7 +74,7 @@ export default {
             width: size,
             height: size
           },
-          regions: ['R5ASIA', 'R5MAF', 'R5LAM', 'R5REF', 'R5OECD90+EU'].map((region, i2, regions) => {
+          regions: ['Asia (No Japan)', 'Mid. East + Africa', 'Latin America', 'Central Asia', 'OECD90 + EU'].map((region, i2, regions) => {
             const width = size * (data[scenario][region] / data[scenario].World)
             offset += width
             return {
@@ -97,21 +97,21 @@ export default {
       const a = {
         y: scale(data.NPi2020_400_V3.World) + 8 + 16,
         x: 8,
-        top: `${formatter(data.NPi2020_400_V3[region || 'World'] / 1000)} Bn$`,
+        top: `${formatter(data.NPi2020_400_V3[region || 'World'] / 1000000000)} Bn$`,
         // bottom: '1.5°C',
         class: 'NPi2020_400_V3'
       }
       const b = {
         y: scale(data.NPi2020_1000_V3.World) + 8 + 16,
         x: -8,
-        top: `${formatter(data.NPi2020_1000_V3[region || 'World'] / 1000)} Bn$`,
+        top: `${formatter(data.NPi2020_1000_V3[region || 'World'] / 1000000000)} Bn$`,
         // bottom: '2.0°C',
         class: 'NPi2020_1000_V3'
       }
       const c = {
         y: -scale(data.NPi_V3.World) + 8 - 24 - 16,
         x: -8,
-        bottom: `${formatter(data.NPi_V3[region || 'World'] / 1000)} Bn$`,
+        bottom: `${formatter(data.NPi_V3[region || 'World'] / 1000000000)} Bn$`,
         // top: 'No Policy',
         top: region || 'World',
         class: 'NPi_V3'
