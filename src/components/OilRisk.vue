@@ -182,7 +182,7 @@ export default {
       // background: getColor(green, 100);
     }
     .chart {
-      padding: $spacing / 2;
+      // padding: $spacing / 2;
       width: calc(100% - #{$key-width});
       height: 100%;
       svg {

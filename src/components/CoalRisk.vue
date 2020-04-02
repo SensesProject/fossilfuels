@@ -19,7 +19,6 @@
         </svg>
      </div>
   <div class="coal">
-        <div class="wrapper">
             <svg ref="vis">
               <g :transform="'translate('+ margin.left + ',' + margin.top  + ')'">
                 <rect class="bg" :width="chartWidth" :height="chartHeight" :class="{active: step > 6}"/>
@@ -77,7 +76,6 @@
                   }"/>
               </g>
            </svg>
-     </div>
   </div>
 </div>
 </template>
