@@ -92,7 +92,6 @@ export default {
     },
     labels () {
       const { data, scale, region } = this
-      console.log(region)
       const formatter = format(`.0f`)
       const a = {
         y: scale(data.NPi2020_400_V3.World) + 8 + 16,

@@ -62,7 +62,7 @@
                 :y="scales.y(dot)">
                 {{ i }}
                 </text>
-                <text class="coalValue coalNum" :x="scales.x(2004)" :y="scales.y(transformData.firstValue) - 20">
+                <text class="coalValue coalNum" :x="scales.x(2004)" :y="scales.y(transformData.firstValue) + 15">
                   {{Math.round(transformData.max[0])}} Ej/year
                 </text>
                 <GapElements
@@ -164,7 +164,6 @@ export default {
     },
     scales () {
       const { max } = this.transformData
-      console.log(max[0])
       const maxValue = max[0]
       return {
         x: d3
@@ -225,7 +224,7 @@ export default {
       return current
     },
     regionDot () {
-      return {
+      let regions = {
         'World': 131.227,
         'Latin America': 1.535,
         'Asia (no Japan)': 67.815,
@@ -233,6 +232,33 @@ export default {
         'Central Asia': 4.14,
         'OECD90 + EU': 55.595
       }
+      if (this.region === 'Latin America') {
+        regions = {
+          'World': 131.227,
+          'Asia (no Japan)': 67.815,
+          'Latin America': 1.535,
+          'Other Regions': 4.14 + 2.142,
+          'OECD90 + EU': 55.595
+        }
+      }
+      if (this.region === 'Mid.East + Africa') {
+        regions = {
+          'World': 131.227,
+          'Asia (no Japan)': 67.815,
+          'Mid.East + Africa': 2.142,
+          'Other Regions': 4.14 + 1.535,
+          'OECD90 + EU': 55.595
+        }
+      }
+      if (this.region === 'World' | this.region === 'Asia (no Japan)' | this.region === 'OECD90 + EU') {
+        regions = {
+          'World': 131.227,
+          'Asia (no Japan)': 67.815,
+          'Other Regions': 4.14 + 2.142 + 1.535,
+          'OECD90 + EU': 55.595
+        }
+      }
+      return regions
     },
     gapValue () {
       const { lastValue } = this.transformData

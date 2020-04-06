@@ -1,7 +1,7 @@
 <template>
   <div class="first_graph">
   <div class="command">
-    <p class="graph-title" v-if="step < 3">Trends in fossil fuel use in climate policy scenarios</p>
+    <p class="graph-title" v-if="step < 3">Trends absolute volume of fossil fuels in climate policy scenarios</p>
     <p class="graph-title" v-if="step >= 3">We explore three types of risks: </p>
     <p class="highlight">REMIND-MAgPIE 1.7-3.0</p><br/>
     <div id="selection" v-show ="step > 1 && step < 3">
@@ -158,7 +158,6 @@ export default {
         _.forEach(scenario, (energy, e) => {
           const data = _.map(energy)
           const cleanData = data.splice(0, 11)
-          console.log(cleanData)
           const label = energy['Variable']
           scenObj[label] = cleanData
           _.map(energy, (el, e) => { allValues.push(el) })

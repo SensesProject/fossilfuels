@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <SensesMenu />
+    <SensesMenu :id="'transition-risk'"/>
     <div class="noscroll">
       <h1 class="t" id="cover">Fossil Fuels Risk</h1>
       <h1 class="subtitle">Risks associated with investing in fossil fuel assets</h1>
@@ -163,7 +163,9 @@
           <p>If we add to the mix other models it becomes even clearer how uncertain
             the future of fossil fuels is. In the long run, the uncertainty
             between different models reduces, as they agree on the need to phase
-            out oil and gas in the second half of the century. </p>
+            out oil and gas in the second half of the century.
+            To switch models you can use the selector on the bottom left side of
+            the screen.</p>
         </IntersectionObserver>
         <IntersectionObserver :step="2" class="changeheight">
           <p>The rate of change for oil and natural gas varies widely between
