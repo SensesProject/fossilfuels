@@ -3,7 +3,7 @@
   <div class="command">
     <p class="graph-title" v-if="step < 3">Trends absolute volume of fossil fuels in climate policy scenarios</p>
     <p class="graph-title" v-if="step >= 3">We explore three types of risks: </p>
-    <p class="highlight">REMIND-MAgPIE 1.7-3.0</p><br/>
+    <p class="dotted">REMIND-MAgPIE 1.7-3.0</p><br/>
     <div id="selection" v-show ="step > 1 && step < 3">
       Change scenario and/or region:
       <SensesSelect
@@ -53,6 +53,9 @@
       :r="single.single"
       :cx="single.horizontal"
       :cy="single.vertical"/>
+      <text class="single-numbers" v-show="step === 2" v-for="(single, i) in dot.singleDots" :key="`${i}number`" :x="single.horizontal + 10" :y="(single.vertical - single.single) - 5">
+        {{Math.round(single.single)}} EJ/yr
+      </text>
       <text
       v-bind:key="'label'  + i"
       :x="dot.singleDots[0]['horizontal'] - 80"
@@ -83,7 +86,7 @@ import { area, curveCardinal } from 'd3-shape'
 import numberToWords from 'number-to-words'
 import _ from 'lodash'
 
-import PrEnQuantity from '../assets/data/PrimaryEnergyNpi.json'
+import PrEnQuantity from '../assets/data/PrimaryEnergyNpi2.json'
 
 import SensesSelect from 'library/src/components/SensesSelect.vue'
 
@@ -233,7 +236,7 @@ export default {
             ? [singleDots[0], singleDots[10]] : singleDots,
           label: e.replace('primen', ''),
           id: e === 'primenNat. Gas' ? 'Gas' : e,
-          risks: ['➔ Quantity Risk', '➔ Uncertainty Risk', '➔ Price Risk'],
+          risks: ['➔ Quantity Risk', '➔ Uncertainty Risk', '➔ Revenue Risk'],
           area: this.step === 1 | this.step >= 3
             ? this.drawArea([singleDots[0], singleDots[10]]) : this.drawArea(singleDots) &&
           this.step === 0
@@ -276,6 +279,13 @@ export default {
   max-width: 1000px;
   max-height: 900px;
   width: 100%;
+}
+
+.dotted {
+  width: 190px;
+  display: inline;
+  font-weight: normal;
+
 }
 
 .bubbles {
@@ -328,6 +338,12 @@ svg {
 
   text {
     text-anchor: middle;
+  }
+
+  .single-numbers {
+    font-size: 10px;
+    fill: $color-gray;
+    text-anchor: start;
   }
 
   .primenCoal {

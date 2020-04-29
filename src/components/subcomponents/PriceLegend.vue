@@ -1,7 +1,7 @@
 <template>
   <div>
     <p class="graph-title">Regional changes in revenue ($/year) of the fossil fuel sector</p>
-    <p class="highlight howto">REMIND-MAgPIE 1.7-3.0</p><br/>
+    <p class="dotted">REMIND-MAgPIE 1.7-3.0</p><br/>
     <div class="legend-cont">
     <p class="howto">How to read:</p>
     <p>hover the visualization to see regions</p>
@@ -85,8 +85,10 @@ div {
   padding-top: 20px;
 }
 
-.highlight {
+.dotted {
   margin-top: 10px;
+  width: 190px;
+  font-weight: normal;
 }
 
 svg {

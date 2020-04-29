@@ -2,7 +2,7 @@
   <div id="app">
     <SensesMenu :id="'transition-risk'"/>
     <div class="noscroll">
-      <h1 class="t" id="cover">Fossil Fuels Risk</h1>
+      <h1 class="t" id="cover">Transition Risks – Phasing Out Fossil Fuels</h1>
       <h1 class="subtitle">Risks associated with investing in fossil fuel assets</h1>
       <p>This is the first chapter of the Finance Risks Pathway.
       You can select another chapter below.</p>
@@ -11,19 +11,19 @@
           <section>
             <a class="wrapper active">
               <div><span class="glyph-oil"/></div>
-              <div><h4>Chapter 1</h4><span>Fossil Fuels</span></div>
+              <div><span class="coming reading">Now reading</span><h4>Chapter 1</h4><span>Fossil Fuels</span></div>
             </a>
           </section>
           <section>
-            <a class="wrapper" href="https://dev.climatescenarios.org/">
+            <a class="wrapper" href="#">
               <div><span class="glyph-power"/></div>
-              <div><h4>Chapter 2</h4><span>Power Sector&nbsp;&nearr;</span></div>
+              <div><span class="coming soon">Coming Soon</span><h4 class="soon">Chapter 2</h4><span class="soon">Power Sector&nbsp;&nearr;</span></div>
             </a>
           </section>
           <section>
-            <a class="wrapper" href="https://dev.climatescenarios.org/">
+            <a class="wrapper" href="#">
               <div><span class="glyph-building"/></div>
-              <div><h4>Chapter 3</h4><span>End Use&nbsp;&nearr;</span></div>
+              <div><span class="coming soon">Coming Soon</span><h4 class="soon">Chapter 3</h4><span class="soon">End Use&nbsp;&nearr;</span></div>
             </a>
           </section>
         </nav>
@@ -161,13 +161,16 @@
         </IntersectionObserver>
         <IntersectionObserver :step="1">
           <p>If we add to the mix other models it becomes even clearer how uncertain
-            the future of fossil fuels is. In the long run, the uncertainty
+            the future of fossil fuels is.</p>
+        </IntersectionObserver>
+        <IntersectionObserver :step="2">
+            <p>In the long run, the uncertainty
             between different models reduces, as they agree on the need to phase
             out oil and gas in the second half of the century.
             To switch models you can use the selector on the bottom left side of
             the screen.</p>
         </IntersectionObserver>
-        <IntersectionObserver :step="2" class="changeheight">
+        <IntersectionObserver :step="3" class="changeheight">
           <p>The rate of change for oil and natural gas varies widely between
             models and scenarios for the next few decades. For the financial
             world this means that different predictions and high disagreement
@@ -179,14 +182,12 @@
     <div class="noscroll">
       <h2 class="title" id="price"> Revenue risk: the fossil fuel sector depends on price developments</h2>
         <p class="paragraph">
-        As seen above, the prediction of trends in fossil fuel use show that oil
+        As seen above, the trends in fossil fuel use show that oil
         and natural gas could still be used for several decades in a low-carbon
         energy system. However, in the long run, a reduction in volume should
         still be expected. The effects of these trends on the price of fossil
         fuels are hard to predict and these will directly affect revenue of the
         fossil fuel sectors.<br/><br/>
-        Even if oil quantity would remain more or less stable, the total revenue
-        of the sector will be strongly dependent on uncertain price developments.
         The visualization below shows the trend of fossil fuels revenues across
         different scenarios and regions. Despite a first grow for oil, in the long
         run we will witness a drastic shrink in revenue.
@@ -288,7 +289,7 @@ export default {
 }
 
 .t {
-  font-size: 60px;
+  font-size: 40px;
   margin-bottom: $spacing / 2;
 }
 
@@ -355,11 +356,20 @@ export default {
     height: 100%;
   }
 
+  .coming {
+    font-style: italic;
+    font-size: 12px;
+  }
+
+  .soon {
+    color: $color-gray;
+  }
+
   .glyph-building, .glyph-oil, .glyph-power {
     font-size: 5rem;
   }
 
-  .glyph-oil {
+  .glyph-oil, .reading {
     color: #B035C9;
   }
 

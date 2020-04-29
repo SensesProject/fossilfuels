@@ -74,7 +74,7 @@ export default {
             width: size,
             height: size
           },
-          regions: ['Asia (No Japan)', 'Mid. East + Africa', 'Latin America', 'Central Asia', 'OECD90 + EU'].map((region, i2, regions) => {
+          regions: ['Asia (No Japan)', 'Mid. East + Africa', 'Latin America', 'Transition Economies', 'OECD90 + EU'].map((region, i2, regions) => {
             const width = size * (data[scenario][region] / data[scenario].World)
             offset += width
             return {

@@ -19,11 +19,11 @@ year,value,category,variable,model,scenario,region,unit
 2060,183318153750.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,Latin America,$ 2010/local currency per year
 2080,378468157650.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,Latin America,$ 2010/local currency per year
 2100,336609499500.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,Latin America,$ 2010/local currency per year
-2020,2868851250.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,Central Asia,$ 2010/local currency per year
-2040,16847650400.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,Central Asia,$ 2010/local currency per year
-2060,46568598900.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,Central Asia,$ 2010/local currency per year
-2080,81314031420.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,Central Asia,$ 2010/local currency per year
-2100,81726125040.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,Central Asia,$ 2010/local currency per year
+2020,2868851250.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,Transition Economies,$ 2010/local currency per year
+2040,16847650400.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,Transition Economies,$ 2010/local currency per year
+2060,46568598900.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,Transition Economies,$ 2010/local currency per year
+2080,81314031420.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,Transition Economies,$ 2010/local currency per year
+2100,81726125040.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,Transition Economies,$ 2010/local currency per year
 2020,57359283080.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,OECD90 + EU,$ 2010/local currency per year
 2040,54194874420.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,OECD90 + EU,$ 2010/local currency per year
 2060,72994232780.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi_V3,OECD90 + EU,$ 2010/local currency per year
@@ -49,11 +49,11 @@ year,value,category,variable,model,scenario,region,unit
 2060,688794310.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Latin America,$ 2010/local currency per year
 2080,540344150.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Latin America,$ 2010/local currency per year
 2100,565585650.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Latin America,$ 2010/local currency per year
-2020,2868851250.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Central Asia,$ 2010/local currency per year
-2040,99984460.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Central Asia,$ 2010/local currency per year
-2060,53242740.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Central Asia,$ 2010/local currency per year
-2080,47831810.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Central Asia,$ 2010/local currency per year
-2100,57541410.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Central Asia,$ 2010/local currency per year
+2020,2868851250.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Transition Economies,$ 2010/local currency per year
+2040,99984460.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Transition Economies,$ 2010/local currency per year
+2060,53242740.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Transition Economies,$ 2010/local currency per year
+2080,47831810.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Transition Economies,$ 2010/local currency per year
+2100,57541410.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Transition Economies,$ 2010/local currency per year
 2020,57359283080.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,OECD90 + EU,$ 2010/local currency per year
 2040,7373101990.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,OECD90 + EU,$ 2010/local currency per year
 2060,11237807660.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,OECD90 + EU,$ 2010/local currency per year
@@ -79,11 +79,11 @@ year,value,category,variable,model,scenario,region,unit
 2060,474280800.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Latin America,$ 2010/local currency per year
 2080,360601190.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Latin America,$ 2010/local currency per year
 2100,318580080.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Latin America,$ 2010/local currency per year
-2020,2868851250.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Central Asia,$ 2010/local currency per year
-2040,77076300.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Central Asia,$ 2010/local currency per year
-2060,41972140.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Central Asia,$ 2010/local currency per year
-2080,37504500.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Central Asia,$ 2010/local currency per year
-2100,37517760.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Central Asia,$ 2010/local currency per year
+2020,2868851250.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Transition Economies,$ 2010/local currency per year
+2040,77076300.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Transition Economies,$ 2010/local currency per year
+2060,41972140.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Transition Economies,$ 2010/local currency per year
+2080,37504500.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Transition Economies,$ 2010/local currency per year
+2100,37517760.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Transition Economies,$ 2010/local currency per year
 2020,57359283080.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,OECD90 + EU,$ 2010/local currency per year
 2040,3943948900.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,OECD90 + EU,$ 2010/local currency per year
 2060,4800028420.00,Revenue,Coal,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,OECD90 + EU,$ 2010/local currency per year
@@ -109,11 +109,11 @@ year,value,category,variable,model,scenario,region,unit
 2060,174434601600.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,Latin America,$ 2010/local currency per year
 2080,287880870060.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,Latin America,$ 2010/local currency per year
 2100,356775313930.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,Latin America,$ 2010/local currency per year
-2020,49939966560.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,Central Asia,$ 2010/local currency per year
-2040,70048016850.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,Central Asia,$ 2010/local currency per year
-2060,67826362460.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,Central Asia,$ 2010/local currency per year
-2080,50727821920.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,Central Asia,$ 2010/local currency per year
-2100,40785709800.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,Central Asia,$ 2010/local currency per year
+2020,49939966560.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,Transition Economies,$ 2010/local currency per year
+2040,70048016850.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,Transition Economies,$ 2010/local currency per year
+2060,67826362460.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,Transition Economies,$ 2010/local currency per year
+2080,50727821920.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,Transition Economies,$ 2010/local currency per year
+2100,40785709800.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,Transition Economies,$ 2010/local currency per year
 2020,397277781590.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,OECD90 + EU,$ 2010/local currency per year
 2040,548122320340.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,OECD90 + EU,$ 2010/local currency per year
 2060,613511274810.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi_V3,OECD90 + EU,$ 2010/local currency per year
@@ -139,11 +139,11 @@ year,value,category,variable,model,scenario,region,unit
 2060,63532019700.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Latin America,$ 2010/local currency per year
 2080,83714593620.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Latin America,$ 2010/local currency per year
 2100,80727042760.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Latin America,$ 2010/local currency per year
-2020,49939966560.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Central Asia,$ 2010/local currency per year
-2040,18458906000.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Central Asia,$ 2010/local currency per year
-2060,10484866750.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Central Asia,$ 2010/local currency per year
-2080,13930539720.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Central Asia,$ 2010/local currency per year
-2100,8895165930.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Central Asia,$ 2010/local currency per year
+2020,49939966560.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Transition Economies,$ 2010/local currency per year
+2040,18458906000.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Transition Economies,$ 2010/local currency per year
+2060,10484866750.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Transition Economies,$ 2010/local currency per year
+2080,13930539720.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Transition Economies,$ 2010/local currency per year
+2100,8895165930.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Transition Economies,$ 2010/local currency per year
 2020,397277781590.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,OECD90 + EU,$ 2010/local currency per year
 2040,280800878600.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,OECD90 + EU,$ 2010/local currency per year
 2060,163490114830.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,OECD90 + EU,$ 2010/local currency per year
@@ -169,11 +169,11 @@ year,value,category,variable,model,scenario,region,unit
 2060,41474268000.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Latin America,$ 2010/local currency per year
 2080,57539131500.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Latin America,$ 2010/local currency per year
 2100,50415519600.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Latin America,$ 2010/local currency per year
-2020,49939966560.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Central Asia,$ 2010/local currency per year
-2040,7795696490.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Central Asia,$ 2010/local currency per year
-2060,5587475040.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Central Asia,$ 2010/local currency per year
-2080,5292925870.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Central Asia,$ 2010/local currency per year
-2100,4704375040.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Central Asia,$ 2010/local currency per year
+2020,49939966560.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Transition Economies,$ 2010/local currency per year
+2040,7795696490.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Transition Economies,$ 2010/local currency per year
+2060,5587475040.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Transition Economies,$ 2010/local currency per year
+2080,5292925870.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Transition Economies,$ 2010/local currency per year
+2100,4704375040.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Transition Economies,$ 2010/local currency per year
 2020,397277781590.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,OECD90 + EU,$ 2010/local currency per year
 2040,174072203650.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,OECD90 + EU,$ 2010/local currency per year
 2060,79751507010.00,Revenue,Gas,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,OECD90 + EU,$ 2010/local currency per year
@@ -199,11 +199,11 @@ year,value,category,variable,model,scenario,region,unit
 2060,296733749400.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,Latin America,$ 2010/local currency per year
 2080,78246066600.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,Latin America,$ 2010/local currency per year
 2100,233449186210.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,Latin America,$ 2010/local currency per year
-2020,63681148080.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,Central Asia,$ 2010/local currency per year
-2040,52357628800.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,Central Asia,$ 2010/local currency per year
-2060,11951205200.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,Central Asia,$ 2010/local currency per year
-2080,8962831620.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,Central Asia,$ 2010/local currency per year
-2100,8911018020.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,Central Asia,$ 2010/local currency per year
+2020,63681148080.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,Transition Economies,$ 2010/local currency per year
+2040,52357628800.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,Transition Economies,$ 2010/local currency per year
+2060,11951205200.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,Transition Economies,$ 2010/local currency per year
+2080,8962831620.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,Transition Economies,$ 2010/local currency per year
+2100,8911018020.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,Transition Economies,$ 2010/local currency per year
 2020,918905188720.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,OECD90 + EU,$ 2010/local currency per year
 2040,1240405642670.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,OECD90 + EU,$ 2010/local currency per year
 2060,1714587766550.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi_V3,OECD90 + EU,$ 2010/local currency per year
@@ -229,11 +229,11 @@ year,value,category,variable,model,scenario,region,unit
 2060,103959650160.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Latin America,$ 2010/local currency per year
 2080,22383266920.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Latin America,$ 2010/local currency per year
 2100,21846456900.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Latin America,$ 2010/local currency per year
-2020,63681148080.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Central Asia,$ 2010/local currency per year
-2040,78607330560.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Central Asia,$ 2010/local currency per year
-2060,58713747020.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Central Asia,$ 2010/local currency per year
-2080,28769717460.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Central Asia,$ 2010/local currency per year
-2100,8375994980.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Central Asia,$ 2010/local currency per year
+2020,63681148080.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Transition Economies,$ 2010/local currency per year
+2040,78607330560.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Transition Economies,$ 2010/local currency per year
+2060,58713747020.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Transition Economies,$ 2010/local currency per year
+2080,28769717460.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Transition Economies,$ 2010/local currency per year
+2100,8375994980.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,Transition Economies,$ 2010/local currency per year
 2020,918905188720.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,OECD90 + EU,$ 2010/local currency per year
 2040,1011579922910.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,OECD90 + EU,$ 2010/local currency per year
 2060,901544029590.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_1000_V3,OECD90 + EU,$ 2010/local currency per year
@@ -259,11 +259,11 @@ year,value,category,variable,model,scenario,region,unit
 2060,54213185000.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Latin America,$ 2010/local currency per year
 2080,13826669880.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Latin America,$ 2010/local currency per year
 2100,12835042440.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Latin America,$ 2010/local currency per year
-2020,63681148080.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Central Asia,$ 2010/local currency per year
-2040,65624395520.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Central Asia,$ 2010/local currency per year
-2060,31648661460.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Central Asia,$ 2010/local currency per year
-2080,2423151540.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Central Asia,$ 2010/local currency per year
-2100,2233839600.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Central Asia,$ 2010/local currency per year
+2020,63681148080.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Transition Economies,$ 2010/local currency per year
+2040,65624395520.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Transition Economies,$ 2010/local currency per year
+2060,31648661460.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Transition Economies,$ 2010/local currency per year
+2080,2423151540.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Transition Economies,$ 2010/local currency per year
+2100,2233839600.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,Transition Economies,$ 2010/local currency per year
 2020,918905188720.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,OECD90 + EU,$ 2010/local currency per year
 2040,731965678770.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,OECD90 + EU,$ 2010/local currency per year
 2060,482191855630.00,Revenue,Oil,REMIND-MAgPIE 1.7-3.0,NPi2020_400_V3,OECD90 + EU,$ 2010/local currency per year

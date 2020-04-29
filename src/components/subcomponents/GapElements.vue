@@ -3,8 +3,10 @@
         <circle :cx="scales.x(2050)" :cy="scales.y(data.valueLabel[0])" :fill="data.colorValue" r="5"/>
         <rect id="indicator" width="5" height="1" :x="scales.x(2052)" :y="scales.y(data.valueLabel[0]) - 2" />
         <text
+        class="number"
         :x="scales.x(2054)"
         :y="scales.y(data.valueLabel[0])"
+        :fill="data.colorValue"
         >
         {{ Math.round(data.valueLabel[0]) + ' EJ/year' }}
         </text>
@@ -77,6 +79,7 @@ export default {
 
       transition: y 0.8s;
       transition-timing-function: easeInOutQuint;
+
     }
   }
 </style>

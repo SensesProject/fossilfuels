@@ -5,7 +5,7 @@
         <UncertaintyLegend :step="step" call="legend"/>
         <transition name="fade">
           <div v-if="step >= 2">
-            Select model:<br>
+            Select foreground model:<br>
             <SensesSelect :options="models" v-model="model"/>
           </div>
         </transition>
@@ -48,10 +48,8 @@
 </template>
 
 <script>
-// import * as d3 from 'd3'
-// import _ from 'lodash'
 
-import risks from 'dsv-loader!@/assets/data/uncertainty.csv' // eslint-disable-line import/no-webpack-loader-syntax
+import risks from 'dsv-loader!@/assets/data/c3-uncertainty.csv' // eslint-disable-line import/no-webpack-loader-syntax
 import resize from 'vue-resize-directive'
 import UncertaintyRiskSlopes from '@/components/UncertaintyRiskSlopes.vue'
 import UncertaintyLegend from './subcomponents/UncertaintyLegend.vue'

@@ -2,10 +2,11 @@
   <div class="second_graph">
     <div class="command">
       <p class="graph-title">Coal volume in EJ/year across scenarios</p>
-      <p class="highlight">REMIND-MAgPIE 1.7-3.0</p><br/>
+      <p class="dotted">REMIND-MAgPIE 1.7-3.0</p><br/>
         <div id="selection">
           Change region:
             <SensesSelect
+            class="regionselect"
             :options='allRegions'
             v-model='region'/>
         </div>
@@ -14,8 +15,10 @@
           <text x="55px" y="10" fill="#4E40B2">Current Policies</text>
           <rect x="160" y="5" width="50px" height="3px" fill="#e66b46"/>
           <text x="220px" y="10" fill="#e66b46">2.0ºC</text>
-          <rect x="270" y="5" width="50px" height="3px" fill="#FFAC00"/>
-          <text x="330px" y="10" fill="#FFAC00">1.5ºC</text>
+          <rect x="270" y="5" width="50px" height="3px" fill="#f8ae98"/>
+          <text x="330px" y="10" fill="#f8ae98">2.0ºC Limited CDR</text>
+          <rect x="460" y="5" width="50px" height="3px" fill="#FFAC00"/>
+          <text x="520px" y="10" fill="#FFAC00">1.5ºC</text>
         </svg>
      </div>
   <div class="coal">
@@ -34,6 +37,7 @@
                   <path
                   :d="path.singleLine"
                   :stroke="path.stroke[i]"
+                  :class="path.id"
                   :id="path.active ? 'active' : 'inactive'"
                   />
                 </g>
@@ -46,24 +50,12 @@
                     :y2="scales.y(0)"
                     stroke="black"
                   />
+                  <line v-for="thick in axisThicks" v-bind:key="thick" class="thicks" :x1="0" :x2="scales.x(line)" :y1="scales.y(thick)" :y2="scales.y(thick)"/>
+                  <text v-for="thick in axisThicks" v-bind:key="`${thick}-label`" class="thicks-labels" x="30" :y="scales.y(thick) - 5"> {{ thick }}EJ/yr</text>
                 </g>
                 <circle class="regActive" id="coal" :cx="scales.x(2005)" :cy="scales.y(transformData.firstValue)" r="5"/>
-                <circle v-for="(dot, i) in regionDot" v-bind:key="`${i}reg`"
-                class="regInactive"
-                :class="i === region ? 'noOp' : 'Op'"
-                :cx="scales.x(2005)"
-                :cy="scales.y(dot)"
-                r="5"
-                />
-                <text v-for="(dot, i) in regionDot" v-bind:key="`${i}text`"
-                :class="i === region ? 'regActive' : 'regInactive'"
-                class="coalValue"
-                :x="scales.x(2004)"
-                :y="scales.y(dot)">
-                {{ i }}
-                </text>
                 <text class="coalValue coalNum" :x="scales.x(2004)" :y="scales.y(transformData.firstValue) + 15">
-                  {{Math.round(transformData.max[0])}} Ej/year
+                  {{Math.round(transformData.firstValue)}} Ej/year
                 </text>
                 <GapElements
                   :scales="scales"
@@ -84,7 +76,7 @@
 import * as d3 from 'd3'
 import _ from 'lodash'
 
-import PrEnQuantity from '../assets/data/PrimaryEnergyNpi.json'
+import PrEnQuantity from '../assets/data/PrimaryEnergyNpi2.json'
 
 import GapElements from './subcomponents/GapElements.vue'
 import SensesSelect from 'library/src/components/SensesSelect.vue'
@@ -112,7 +104,7 @@ export default {
   data () {
     return {
       PrEnQuantity,
-      colors: ['#4E40B2', '#e66b46', '#FFAC00'],
+      colors: ['#4E40B2', '#e66b46', '#FFAC00', '#f8ae98', '#f8ae98'],
       svgWidth: 0,
       svgHeight: 0,
       chartWidth: 0,
@@ -154,6 +146,7 @@ export default {
         lastValue[scenario['Scenario']] = [scenario['2050'], scenario['Scenario']]
         obj[scenario['Scenario']] = [ data ]
       })
+      console.log(obj)
       return {
         obj,
         max,
@@ -161,6 +154,10 @@ export default {
         lastValue,
         axis: [2005, 2050]
       }
+    },
+    axisThicks () {
+      const { max } = this.transformData
+      return _.range(0, d3.max(max), 100)
     },
     scales () {
       const { max } = this.transformData
@@ -200,7 +197,8 @@ export default {
           stroke: this.colors,
           active: !!(this.step > 4 && l === 'Current Policies') ||
             !!(this.step > 6 && l === '2.0ºC') ||
-            !!(this.step > 7 && l === '1.5ºC')
+            !!(this.step > 7 && l === '1.5ºC') ||
+            !!(this.step > 6 && l === '2.0ºC Limited CDR')
         }
       })
     },
@@ -222,43 +220,6 @@ export default {
       if (this.step === 7) { current = lastValue['2.0ºC'] }
       if (this.step === 8) { current = lastValue['1.5ºC'] }
       return current
-    },
-    regionDot () {
-      let regions = {
-        'World': 131.227,
-        'Latin America': 1.535,
-        'Asia (no Japan)': 67.815,
-        'Mid.East + Africa': 2.142,
-        'Central Asia': 4.14,
-        'OECD90 + EU': 55.595
-      }
-      if (this.region === 'Latin America') {
-        regions = {
-          'World': 131.227,
-          'Asia (no Japan)': 67.815,
-          'Latin America': 1.535,
-          'Other Regions': 4.14 + 2.142,
-          'OECD90 + EU': 55.595
-        }
-      }
-      if (this.region === 'Mid.East + Africa') {
-        regions = {
-          'World': 131.227,
-          'Asia (no Japan)': 67.815,
-          'Mid.East + Africa': 2.142,
-          'Other Regions': 4.14 + 1.535,
-          'OECD90 + EU': 55.595
-        }
-      }
-      if (this.region === 'World' | this.region === 'Asia (no Japan)' | this.region === 'OECD90 + EU') {
-        regions = {
-          'World': 131.227,
-          'Asia (no Japan)': 67.815,
-          'Other Regions': 4.14 + 2.142 + 1.535,
-          'OECD90 + EU': 55.595
-        }
-      }
-      return regions
     },
     gapValue () {
       const { lastValue } = this.transformData
@@ -308,6 +269,12 @@ export default {
   width: 100%;
 }
 
+.dotted {
+  width: 190px;
+  display: inline;
+  font-weight: normal;
+}
+
 .coal {
   margin: 0 auto;
   display: flex;
@@ -332,12 +299,16 @@ export default {
     display: inline-flex;
     margin-top: 20px;
     width: 300px;
+
+    .regionselect {
+      margin-left: 3px;
+    }
   }
 
   #legend {
     display: inline-flex;
     margin-top: 20px;
-    width: 60%;
+    width: 70%;
     height: 10px;
 
     text {
@@ -362,10 +333,24 @@ svg {
     transition: fill-opacity 0.5s;
   }
 
+  .thicks {
+    stroke: $color-gray;
+    stroke-dasharray: 4 4;
+  }
+
+  .thicks-labels {
+    font-size: 10px;
+    fill: $color-gray;
+  }
+
   path {
     fill: none;
     stroke-width: 3;
     transition: stroke-opacity 0.5s;
+
+    &.CDR {
+      stroke-width: 2.5;
+    }
 
     &.area {
       fill: $color-white;
