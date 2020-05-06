@@ -95,7 +95,7 @@
       <h2 class="title" id="quantity">Quantity risk: phasing out coal</h2>
       <p class="paragraph">
         All fossil fuels will be prone to risks. However, specific risks can be
-        visualized through examples. The first risk that will be examinated,
+        shown through specific fossil fuels. The first risk that will be examinated,
         for example, is related to quantity and can be easily explained by looking
         at coal.
     </p>
@@ -137,7 +137,7 @@
         While it is clear that coal is phased out quickly only by introducing
         mild climate policies, scenarios developed with different models diverge
         on the role of oil and natural gas. The future role of these energy sources
-        under climate policies depends on various developments such as the development
+        under climate policies depends on various aspects such as the development
         of alternative technologies (electric cars, heat pumps) or the role of flexible
         gas power plants in the integration of renewable energy in the power grid.
         Investors are confronted with fundamental uncertainties about future trends
@@ -157,8 +157,11 @@
         <IntersectionObserver :step="0">
           <p> Let's build the visualization stepwise. If we look at the 2.0ºC scenario
           (NPi2020_1000_V3 / model:REMIND) we can observe a general decreasing trend in fossil fuels quantities.
-          However not all scenarios behave in the same way: trends variate according to implemented policies.</p>
+          </p>
         </IntersectionObserver>
+        <IntersectionObserver :step="0.1">
+        <p>However not all scenarios behave in the same way: trends variate according to implemented policies.</p>
+      </IntersectionObserver>
         <IntersectionObserver :step="1">
           <p>If we add to the mix other models it becomes even clearer how uncertain
             the future of fossil fuels is.</p>
@@ -167,7 +170,7 @@
             <p>In the long run, the uncertainty
             between different models reduces, as they agree on the need to phase
             out oil and gas in the second half of the century.
-            To switch models you can use the selector on the bottom left side of
+            To switch models you can use the selector on the left side of
             the screen.</p>
         </IntersectionObserver>
         <IntersectionObserver :step="3" class="changeheight">

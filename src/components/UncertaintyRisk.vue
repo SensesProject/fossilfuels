@@ -89,7 +89,7 @@ export default {
   data () {
     return {
       risks,
-      calculation: 'The calculation for trend slopes is obtained via the followinf calculation: (PE(t+10) - PE(t)) / PE(2020) * 90° (rel. change to 2020)',
+      calculation: 'The calculation for trend slopes is obtained via the following calculation: (PE(t+10) - PE(t)) / PE(2020) * 90° (rel. change to 2020)',
       scenarios: [...new Set(risks.map(r => r.scenario))],
       models: [...new Set(risks.map(r => r.model))],
       years: [...new Set(risks.map(r => r.year))],

@@ -1,8 +1,8 @@
 <template>
   <div class="first_graph">
   <div class="command">
-    <p class="graph-title" v-if="step < 3">Trends absolute volume of fossil fuels in climate policy scenarios</p>
-    <p class="graph-title" v-if="step >= 3">We explore three types of risks: </p>
+    <p class="graph-title" v-if="step < 3">Absolute volumes of fossil fuels in climate policy scenarios</p>
+    <p class="graph-title" v-if="step >= 3">We explore three types of risks</p>
     <div id="selection" v-show ="step > 1 && step < 3">
       Change scenario and/or region:
       <SensesSelect
@@ -169,6 +169,7 @@ export default {
         })
         obj[s] = scenObj
       })
+      console.log(obj)
       return {
         obj,
         allValues: d3.values(allValues)

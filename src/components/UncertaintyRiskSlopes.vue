@@ -56,7 +56,7 @@ export default {
       return scalePow()
         .exponent(1)
         .domain([-max, max])
-        .range([85, -85])
+        .range([80, -80])
     }
   }
 }

@@ -10,16 +10,7 @@
             v-model='region'/>
             <span class="model-label">REMIND-MAgPIE 1.7-3.0</span>
         </div>
-        <svg id="legend">
-          <rect x="0" y="5" width="50px" height="3px" fill="#4E40B2"/>
-          <text x="55px" y="10" fill="#4E40B2">Current Policies</text>
-          <rect x="160" y="5" width="50px" height="3px" fill="#e66b46"/>
-          <text x="220px" y="10" fill="#e66b46">2.0ºC</text>
-          <rect x="270" y="5" width="50px" height="3px" fill="#f8ae98"/>
-          <text x="330px" y="10" fill="#f8ae98">2.0ºC Limited CDR</text>
-          <rect x="460" y="5" width="50px" height="3px" fill="#FFAC00"/>
-          <text x="520px" y="10" fill="#FFAC00">1.5ºC</text>
-        </svg>
+        <img id="legend" src="../assets/img/coal-legend.svg"/>
      </div>
   <div class="coal">
             <svg ref="vis">
@@ -104,7 +95,7 @@ export default {
   data () {
     return {
       PrEnQuantity,
-      colors: ['#4E40B2', '#e66b46', '#FFAC00', '#f8ae98', '#f8ae98'],
+      colors: ['#4E40B2', '#e66b46', '#FFAC00', '#FFD682', '#f8ae98'],
       svgWidth: 0,
       svgHeight: 0,
       chartWidth: 0,
@@ -198,7 +189,8 @@ export default {
           active: !!(this.step > 4 && l === 'Current Policies') ||
             !!(this.step > 6 && l === '2.0ºC') ||
             !!(this.step > 7 && l === '1.5ºC') ||
-            !!(this.step > 6 && l === '2.0ºC Limited CDR')
+            !!(this.step > 6 && l === '2.0ºC Limited CDR') ||
+            !!(this.step > 7 && l === '1.5ºC Limited CDR')
         }
       })
     },
@@ -306,7 +298,7 @@ export default {
   #selection {
     margin-top: 20px;
     font-weight: normal;
-    width: 500px;
+    width: 800px;
 
     .regionselect {
       margin-left: 3px;
@@ -316,8 +308,6 @@ export default {
   #legend {
     display: inline-flex;
     margin-top: 20px;
-    width: 70%;
-    height: 10px;
 
     text {
       text-anchor: start;
