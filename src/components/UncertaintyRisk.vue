@@ -2,13 +2,18 @@
   <div class="uncertainty-risk">
     <div class="wrapper" :style="{width: `${innerWidth}px`, height: `${height}px`}">
       <div class="key">
-        <UncertaintyLegend :step="step" call="legend"/>
+        <p class="graph-title">Uncertainty trends in fossil fuels volumes <SensesTooltip class="superscript" :tooltip="calculation">[1]</SensesTooltip></p>
+        <p class="model-label">Multiple Models</p><br/>
         <transition name="fade">
-          <div v-if="step >= 2">
+          <div v-show="step >= 2">
             Select foreground model:<br>
             <SensesSelect :options="models" v-model="model"/>
           </div>
         </transition>
+        <transition name="fade">
+        <UncertaintyLegend v-show="step >= 3" :step="step" call="legend"/>
+        </transition>
+
       </div>
       <div class="chart" v-resize:debounce.initial="onResize">
         <svg>
@@ -54,6 +59,7 @@ import resize from 'vue-resize-directive'
 import UncertaintyRiskSlopes from '@/components/UncertaintyRiskSlopes.vue'
 import UncertaintyLegend from './subcomponents/UncertaintyLegend.vue'
 import SensesSelect from 'library/src/components/SensesSelect.vue'
+import SensesTooltip from 'library/src/components/SensesTooltip.vue'
 
 export default {
   name: 'uncertainty-risk',
@@ -63,7 +69,8 @@ export default {
   components: {
     UncertaintyRiskSlopes,
     UncertaintyLegend,
-    SensesSelect
+    SensesSelect,
+    SensesTooltip
   },
   props: {
     step: {
@@ -82,6 +89,7 @@ export default {
   data () {
     return {
       risks,
+      calculation: 'The calculation for trend slopes is obtained via the followinf calculation: (PE(t+10) - PE(t)) / PE(2020) * 90° (rel. change to 2020)',
       scenarios: [...new Set(risks.map(r => r.scenario))],
       models: [...new Set(risks.map(r => r.model))],
       years: [...new Set(risks.map(r => r.year))],
@@ -166,6 +174,19 @@ export default {
   display: flex;
   align-items: center;
   flex-direction: column;
+
+  .superscript{
+      display: inline;
+    vertical-align: super;
+    font-size: 10px;
+  }
+
+  .model-label {
+    color: $color-neon;
+    margin-top: 10px;
+    width: 120px;
+    font-weight: normal;
+  }
 
   .wrapper {
     position: relative;

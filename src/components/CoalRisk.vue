@@ -2,13 +2,13 @@
   <div class="second_graph">
     <div class="command">
       <p class="graph-title">Coal volume in EJ/year across scenarios</p>
-      <p class="dotted">REMIND-MAgPIE 1.7-3.0</p><br/>
         <div id="selection">
           Change region:
             <SensesSelect
             class="regionselect"
             :options='allRegions'
             v-model='region'/>
+            <span class="model-label">REMIND-MAgPIE 1.7-3.0</span>
         </div>
         <svg id="legend">
           <rect x="0" y="5" width="50px" height="3px" fill="#4E40B2"/>
@@ -295,10 +295,18 @@ export default {
     display: inline-block;
   }
 
+  .model-label {
+    color: $color-neon;
+    margin-top: 10px;
+    width: 120px;
+    font-weight: normal;
+    margin-left: 5px;
+  }
+
   #selection {
-    display: inline-flex;
     margin-top: 20px;
-    width: 300px;
+    font-weight: normal;
+    width: 500px;
 
     .regionselect {
       margin-left: 3px;

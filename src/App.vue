@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <SensesMenu :id="'transition-risk'"/>
+    <SensesMenu :id="'transition-risk'" :minWidth="'768'"/>
     <div class="noscroll">
       <h1 class="t" id="cover">Transition Risks – Phasing Out Fossil Fuels</h1>
       <h1 class="subtitle">Risks associated with investing in fossil fuel assets</h1>
@@ -375,6 +375,19 @@ export default {
 
   .glyph-building, .glyph-power {
     color: #d8d8e4;
+  }
+}
+
+@include max-width(950px) {
+  .noscroll {
+    max-width: 700px;
+  }
+
+  .vis {
+    width: 90%;
+  }
+  .command {
+    width: 80%;
   }
 }
 </style>

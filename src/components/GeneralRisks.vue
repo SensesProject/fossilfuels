@@ -3,7 +3,6 @@
   <div class="command">
     <p class="graph-title" v-if="step < 3">Trends absolute volume of fossil fuels in climate policy scenarios</p>
     <p class="graph-title" v-if="step >= 3">We explore three types of risks: </p>
-    <p class="dotted">REMIND-MAgPIE 1.7-3.0</p><br/>
     <div id="selection" v-show ="step > 1 && step < 3">
       Change scenario and/or region:
       <SensesSelect
@@ -12,6 +11,7 @@
     <SensesSelect
     :options='allRegions'
     v-model='region'/>
+    <span class="model-label">REMIND-MAgPIE 1.7-3.0</span>
     </div>
    </div>
   <div class="bubbles">
@@ -48,13 +48,14 @@
       <circle
       v-for="(single, i) in dot.singleDots"
       v-bind:key="'circle'  + i"
+      @mouseover="over = i"
       :id="step >= 3 ? single.id : ''"
       :class="[dot.id, step >= 3 ? 'dots_info' : '']"
       :r="single.single"
       :cx="single.horizontal"
       :cy="single.vertical"/>
-      <text class="single-numbers" v-show="step === 2" v-for="(single, i) in dot.singleDots" :key="`${i}number`" :x="single.horizontal + 10" :y="(single.vertical - single.single) - 5">
-        {{Math.round(single.single)}} EJ/yr
+      <text class="single-numbers" v-show="step === 2 && over === i" v-for="(single, i) in dot.singleDots" :key="`${i}number`" :x="single.horizontal + 10" :y="(single.vertical - single.single) - 5">
+        {{Math.round(single.value)}} EJ/yr
       </text>
       <text
       v-bind:key="'label'  + i"
@@ -133,7 +134,8 @@ export default {
         2090,
         2100],
       selected: '1.5ºC',
-      region: 'World'
+      region: 'World',
+      over: 'none'
     }
   },
   computed: {
@@ -194,7 +196,7 @@ export default {
     scale () {
       return d3.scaleLinear()
         .domain([0, 441.699])
-        .range([0, 2000])
+        .range([0, (this.height * 2)])
     },
     drawArea () {
       return area()
@@ -220,9 +222,11 @@ export default {
         }
 
         const singleDots = _.map(energy, (dot, d, dots) => {
+          console.log(dot)
           const horizontal = (this.axisWidth / dots.length) * d
           return {
             id: numberToWords.toWords(d),
+            value: dot,
             single: scale(Math.sqrt(dot)),
             vertical: initDist,
             horizontal,
@@ -281,11 +285,11 @@ export default {
   width: 100%;
 }
 
-.dotted {
-  width: 190px;
-  display: inline;
+.model-label {
+  color: $color-neon;
+  margin-top: 10px;
   font-weight: normal;
-
+  display: inline;
 }
 
 .bubbles {
@@ -402,6 +406,6 @@ svg {
       & > #ten {
         opacity: 0;
       }
-
 }
+
 </style>

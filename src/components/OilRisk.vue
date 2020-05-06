@@ -6,7 +6,7 @@
       </div>
       <div class="chart" v-resize:debounce.initial="onResize">
         <svg>
-          <g :transform="`translate(${layout.margin.left} ${layout.margin.top})`">
+          <g :transform="`translate(${layout.margin.left} 0)`">
             <g class="axis">
               <g class="x-axis">
                 <g v-for="(y, i) in years" :key="`y-${i}`" :transform="`translate(${layout.colWidth * (i + 0.5)} 0)`">
