@@ -1,7 +1,7 @@
 <template>
   <div>
       <p>How to read:</p>
-        <svg id="slope" width="151px" height="218px" viewBox="0 0 200 218" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <svg id="slope" width="100%" height="40%" viewBox="0 0 200 218" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                 <g id="Artboard" transform="translate(-3, -28)">
                     <g id="Group-4" transform="translate(3, 26)">
@@ -36,7 +36,7 @@
                 </g>
             </g>
         </svg>
-        <svg id="models" width="131px" height="120px" viewBox="0 0 200 133" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <svg id="models" width="100%" height="40%" viewBox="0 0 200 133" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                 <g id="Artboard-Copy-2" transform="translate(0, -45)">
                     <g id="Group-4" transform="translate(8, 9)">
@@ -96,8 +96,8 @@ export default {
 <style scoped lang="scss">
 @import "library/src/style/global.scss";
 div {
-  height: 280px * 2;
-  margin-top: 40px;
+  height: 80%;
+  margin-top: 20px;
   margin-bottom: 30px;
   margin-left: 5px;
 
@@ -108,8 +108,8 @@ div {
 }
 
 svg {
-  width: 100%;
-  height: 235px;
+  // width: 100%;
+  // height: 235px;
   overflow: visible;
 
   &#slope {

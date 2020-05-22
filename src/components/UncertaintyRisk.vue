@@ -183,7 +183,7 @@ export default {
 
   .model-label {
     color: $color-neon;
-    margin-top: 10px;
+    // margin-top: 10px;
     width: 120px;
     font-weight: normal;
   }
@@ -198,6 +198,10 @@ export default {
       width: $key-width;
       padding: $spacing / 2;
       // background: getColor(green, 100);
+
+      .legend {
+        height: 50%;
+      }
 
     }
     .chart {

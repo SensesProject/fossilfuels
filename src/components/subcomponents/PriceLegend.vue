@@ -5,7 +5,7 @@
     <div class="legend-cont">
     <p class="howto">How to read:</p>
     <p>hover the boxes to activate regions</p>
-    <svg width="191px" height="104px" viewBox="0 0 191 104" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg width="100%" height="40%" viewBox="0 0 191 104" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
             <g id="Artboard-Copy-3" transform="translate(-30, -18)">
                 <g id="Group" transform="translate(31, 17)">
@@ -27,7 +27,7 @@
             </g>
         </g>
     </svg>
-    <svg width="144px" height="197px" viewBox="0 0 144 180" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg width="100%" height="40%" viewBox="0 0 144 180" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
             <g id="Artboard-Copy-4" transform="translate(-80, -40)">
                 <g id="Group" transform="translate(50, 50)">
@@ -75,8 +75,8 @@ export default {
 @import "library/src/style/global.scss";
 
 div {
-  height: 256px * 2;
-  margin-top: 20px;
+  height: 70%;
+  margin-top: 10px;
   margin-left: 5px;
 
   .howto {
@@ -84,13 +84,8 @@ div {
   }
 }
 
-.legend-cont {
-  padding-top: 20px;
-}
-
 .model-label {
   color: $color-neon;
-  margin-top: 10px;
   font-weight: normal;
 }
 
