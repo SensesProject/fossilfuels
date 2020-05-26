@@ -5,7 +5,7 @@
     <div class="legend-cont">
     <p class="howto">How to read:</p>
     <p>hover the boxes to activate regions</p>
-    <svg width="100%" height="40%" viewBox="0 0 191 104" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg id="boxes" width="100%" height="40%" viewBox="0 0 191 104" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
             <g id="Artboard-Copy-3" transform="translate(-30, -18)">
                 <g id="Group" transform="translate(31, 17)">
@@ -27,7 +27,7 @@
             </g>
         </g>
     </svg>
-    <svg width="100%" height="40%" viewBox="0 0 144 180" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg id="scenarios" width="100%" height="40%" viewBox="0 0 124 180" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
             <g id="Artboard-Copy-4" transform="translate(-80, -40)">
                 <g id="Group" transform="translate(50, 50)">
@@ -91,7 +91,15 @@ div {
 
 svg {
   width: 100%;
-  height: 180px;
+  height: 100%;
+
+  &#boxes {
+    height: 60%;
+  }
+
+  &#scenarios {
+    height: 50%;
+  }
 
   text {
     font-size: 14px;

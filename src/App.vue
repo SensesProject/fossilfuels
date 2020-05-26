@@ -366,6 +366,7 @@ export default {
 
   .soon {
     color: $color-gray;
+    cursor: not-allowed;
   }
 
   .glyph-building, .glyph-oil, .glyph-power {

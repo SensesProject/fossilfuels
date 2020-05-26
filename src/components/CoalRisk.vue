@@ -298,7 +298,7 @@ export default {
   #selection {
     margin-top: 20px;
     font-weight: normal;
-    width: 800px;
+    width: 90%;
 
     .regionselect {
       margin-left: 3px;
@@ -412,5 +412,11 @@ svg {
     fill-opacity: 0;
   }
 
+}
+
+@media screen and (max-width: 1024px) {
+#legend {
+  width: 90%;
+}
 }
 </style>
