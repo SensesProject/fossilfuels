@@ -169,7 +169,6 @@ export default {
         })
         obj[s] = scenObj
       })
-      console.log(obj)
       return {
         obj,
         allValues: d3.values(allValues)
@@ -223,7 +222,6 @@ export default {
         }
 
         const singleDots = _.map(energy, (dot, d, dots) => {
-          console.log(dot)
           const horizontal = (this.axisWidth / dots.length) * d
           return {
             id: numberToWords.toWords(d),

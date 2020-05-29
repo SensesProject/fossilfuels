@@ -137,7 +137,6 @@ export default {
         lastValue[scenario['Scenario']] = [scenario['2050'], scenario['Scenario']]
         obj[scenario['Scenario']] = [ data ]
       })
-      console.log(obj)
       return {
         obj,
         max,
