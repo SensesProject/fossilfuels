@@ -95,7 +95,7 @@ export default {
   data () {
     return {
       PrEnQuantity,
-      colors: ['#4E40B2', '#e66b46', '#FFAC00', '#FFD682', '#f8ae98'],
+      colors: ['#4E40B2', '#e66b46', '#FFAC00', '#C5A25B', '#C88673'],
       svgWidth: 0,
       svgHeight: 0,
       chartWidth: 0,

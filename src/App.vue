@@ -224,9 +224,10 @@
           navigate through climate scenarios to understand the challenges of
           this ongoing transition.
       </p>
+    </div>
+    <div class="meta">
       <SensesMeta :id="'transition-risk'"/>
     </div>
-
   </div>
 </template>
 
@@ -267,6 +268,11 @@ export default {
   margin: 20px auto;
   max-width: 900px;
   width: 100%;
+}
+
+.meta {
+  max-width: 1200px;
+  margin: 20px auto;
 }
 
 .graph-title {
