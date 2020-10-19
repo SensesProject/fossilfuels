@@ -15,7 +15,7 @@ Data sources and if applicable licenses are listed below on a per-file basis.
 - `src/assets/data/oil-risks-new.csv`
 - `src/assets/data/PrimaryEnergyNpi2.json`
 
-[CD-LINKS Scenario and Data hosted by IIASA]( https://data.ene.iiasa.ac.at/cd-links/); [Licence for the CD-LINKS scenario ensemble data](https://data.ene.iiasa.ac.at/cd-links/#/license)
+All data are licensed by [CD-LINKS Scenario and Data hosted by IIASA]( https://data.ene.iiasa.ac.at/cd-links/); [Licence for the CD-LINKS scenario ensemble data](https://data.ene.iiasa.ac.at/cd-links/#/license)
 
 ## Last update on:
 October 19th, 2020
