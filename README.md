@@ -1,5 +1,5 @@
 # Fossil Fuels Risks Module
-This repository contains the code for [*Transition Risks – Net-Zero Pathways for Industrialized Economies*](https://climatescenarios.org/countries-pathways), a learn module focusing on possible decarbonization strategies for a selection of economies. It is part of the [SENSES Toolkit](https://climatescenarios.org/).
+This repository contains the code for [*Transition Risks – Phasing Out Fossil Fuels*](https://climatescenarios.org/fossil-fuels/), a learn module dedicated to fossil fuels and risks associated with investments. It is part of the [SENSES Toolkit](https://climatescenarios.org/).
 
 ![screenshot of the module](./module.png)
 
