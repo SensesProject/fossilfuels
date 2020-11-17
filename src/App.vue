@@ -2,31 +2,21 @@
   <div id="app">
     <SensesMenu :id="'transition-risk'" :minWidth="'768'"/>
     <div class="noscroll">
-      <h1 class="t" id="cover">Transition Risks – Phasing Out Fossil Fuels</h1>
-      <h1 class="subtitle">Risks associated with investing in fossil fuel assets</h1>
-      <p>This is the first chapter of the Finance Risks Pathway.
-      You can select another chapter below.</p>
-      <div class="risk-card">
-        <nav class="risk-menu pathway">
-          <section>
-            <a class="wrapper active">
-              <div><span class="glyph-oil"/></div>
-              <div><span class="coming reading">Now reading</span><h4>Chapter 1</h4><span>Fossil Fuels</span></div>
-            </a>
-          </section>
-          <section>
-            <a class="wrapper" href="#">
-              <div><span class="glyph-power"/></div>
-              <div><span class="coming soon">Coming Soon</span><h4 class="soon">Chapter 2</h4><span class="soon">Power Sector&nbsp;&nearr;</span></div>
-            </a>
-          </section>
-          <section>
-            <a class="wrapper" href="#">
-              <div><span class="glyph-building"/></div>
-              <div><span class="coming soon">Coming Soon</span><h4 class="soon">Chapter 3</h4><span class="soon">End Use&nbsp;&nearr;</span></div>
-            </a>
-          </section>
-        </nav>
+      <div class="title-wrapper">
+        <h1 class="t" id="cover">Transition Risks – Phasing Out Fossil Fuels</h1>
+        <h1 class="subtitle">Risks associated with investing in fossil fuel assets</h1>
+      </div>
+      <div class="text-wrapper">
+        <p class="intro-paragraph"> This is the first chapter of the Transition Risks modules. You can select another chapter below.
+        The Transition Risks modules are based on the Risk Factor Pathways as created by the UNEP Finance Initiative and
+        Olyver Wyman in their report <a id="link" href="https://www.unepfi.org/wordpress/wp-content/uploads/2018/04/EXTENDING-OUR-HORIZONS.pdf" target="_blank">Extending Our Horizons</a>.
+        These Risk Factor Pathways (RFPs) structure the different
+        types of risks that emerge for the finance sector from the transition to a low-carbon future.
+      </p>
+      </div>
+
+      <div>
+        <RiskPathway />
       </div>
       <h2 id="quantity">What risks will be discussed?</h2>
       <p>
@@ -36,7 +26,7 @@
         will require us to reduce the emission of greenhouse gasses by reducing
         the use of fossil fuels. As a result, the demand for fossil fuels will
         evolve differently in the future than what we have seen in the past.
-        This has consequences for the risk of investing in the fossil fuel sector.<br/><br/>
+        This has consequences for the risk of investing in the fossil fuel sector.
         In this module we show the risks associated with investing in the fossil
         fuel sector to explain why investors should consider climate policy in their decisions.
       </p>
@@ -141,7 +131,7 @@
         of alternative technologies (electric cars, heat pumps) or the role of flexible
         gas power plants in the integration of renewable energy in the power grid.
         Investors are confronted with fundamental uncertainties about future trends
-        in these fuels, as can be seen in the figure below. <br/><br/>
+        in these fuels, as can be seen in the figure below.
         Here agreement between models is visualized – one beam represents a trend in primary energy quantity
         at a different level of climate policy. Trends can be increasing,
         fairly neutral or decreasing based on the model assumptions and methods.
@@ -190,7 +180,7 @@
         energy system. However, in the long run, a reduction in volume should
         still be expected. The effects of these trends on the price of fossil
         fuels are hard to predict and these will directly affect revenue of the
-        fossil fuel sectors.<br/><br/>
+        fossil fuel sectors.
         The visualization below shows the trend of fossil fuels revenues across
         different scenarios and regions. Despite a first grow for oil, in the long
         run we will witness a drastic shrink in revenue.
@@ -239,6 +229,7 @@ import IntersectionObserver from 'library/src/components/IntersectionObserver.vu
 import SensesMeta from 'library/src/components/SensesMeta.vue'
 
 //  from project
+import RiskPathway from './components/RiskPathway.vue'
 import GeneralRisks from './components/GeneralRisks.vue'
 import CoalRisk from './components/CoalRisk.vue'
 import OilRisk from './components/OilRisk.vue'
@@ -249,6 +240,7 @@ export default {
   components: {
     SensesMenu,
     SensesMeta,
+    RiskPathway,
     GeneralRisks,
     CoalRisk,
     OilRisk,
@@ -268,6 +260,10 @@ export default {
   margin: 20px auto;
   max-width: 900px;
   width: 100%;
+
+  p {
+    column-count: 2;
+  }
 }
 
 .meta {
@@ -386,6 +382,12 @@ export default {
   .glyph-building, .glyph-power {
     color: #d8d8e4;
   }
+}
+
+.intersection-observer .default {
+  -webkit-box-shadow: 2px 2px 9px 0px rgba(128,128,128,0.12);
+  -moz-box-shadow: 2px 2px 9px 0px rgba(128,128,128,0.12);
+  box-shadow: 2px 2px 9px 0px rgba(128,128,128,0.12);
 }
 
 @include max-width(950px) {

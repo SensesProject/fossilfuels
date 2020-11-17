@@ -11,7 +11,7 @@
     <SensesSelect
     :options='allRegions'
     v-model='region'/>
-    <span class="model-label">REMIND-MAgPIE 1.7-3.0</span>
+    <span class="model-label">(Model: REMIND-MAgPIE 1.7-3.0)</span>
     </div>
    </div>
   <div class="bubbles">
