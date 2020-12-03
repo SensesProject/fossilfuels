@@ -4,21 +4,21 @@
     </div>
     <nav class="risk-menu pathway">
       <section>
-        <a class="wrapper active" id="fossil" href="#">
-          <div><span class="glyph-oil"/></div>
+        <div class="wrapper active">
+          <div class="svg fossils"></div>
           <div><p>Chapter 1</p><span>Fossil Fuels</span></div>
-        </a>
+        </div>
       </section>
       <section>
         <a class="wrapper" href="https://climatescenarios.org/power-sector/" target="_blank">
-          <div><span class="glyph-power"/></div>
-          <div><p>Chapter 2</p><span>Power Sector&nbsp;&nearr;</span></div>
+          <div class="svg power"></div>
+          <div ><p>Chapter 2</p><span>Power Sector&nbsp;&nearr;</span></div>
         </a>
       </section>
       <section>
-        <a class="wrapper not-available" href="#">
-          <div><span class="glyph-building"/></div>
-          <div><p>Chapter 3</p><span>End Use</span></div>
+        <a class="wrapper" href="https://climatescenarios.org/end-use/" target="_blank">
+          <div class="svg enduse"></div>
+          <div ><p>Chapter 3</p><span>End-Use&nbsp;&nearr;</span></div>
         </a>
       </section>
     </nav>
@@ -42,26 +42,13 @@ export default {
 @import "library/src/style/variables.scss";
 
 .risk-card {
-  padding: $spacing/1.5;
+  padding: $spacing*1.5;
   border-radius: 4px;
   background-color: rgba(221,214,255,.3);
-
-  p {
-    column-count: 1;
-  }
-
-  #header{
-    color: getColor(neon, 40);
-    margin-bottom: $spacing*0.5;
-  opacity: 0.9;
-    font-size: 0.8em;
-  }
 
   .other-chapters {
     text-align: center;
     font-size: 11px;
-
-    // text-transform: uppercase;
   }
 }
 
@@ -73,22 +60,11 @@ export default {
   a {
     text-decoration: none;
     background: none;
-    color: #B035C9;
+    //color: getColor(neon, 60);
     }
 
   .active {
-    color: getColor(neon, 40);
-    opacity: 0.8;
-    cursor: default;
-  }
-
-  .not-available {
-    cursor: not-allowed;
-
-    div {
-      color: gray;
-      opacity: 0.7;
-    }
+    color: getColor(violet, 40);
   }
 
   .risk-menu {
@@ -99,28 +75,33 @@ export default {
     display: flex;
     grid-template-columns: repeat(1, 1fr);
   }
-
   .wrapper {
     padding: 0 $spacing / 1.5 $spacing / 2 0;
     display: flex;
     align-items: center;
     width: 100%;
     height: 100%;
-  }
+    outline: none;
 
-  .glyph-building, .glyph-oil, .glyph-power {
-    font-size: 5rem;
-  }
-
-  .glyph-power {
-    color: #B035C9;
-    opacity: 0.9;
-  }
-  .glyph-oil {
-    color: getColor(neon, 40);
-  }
-  .glyph-building {
-    color: #75757b;
+      div.svg {
+        display: block;
+        background-size: 80px 80px;
+        width: 80px;
+        height: 80px;
+        color: getColor(violet, 40);
+        &.fossils
+        {filter: invert(18%) sepia(19%) saturate(6441%) hue-rotate(234deg) brightness(92%) contrast(91%);
+          background-image: url('~@/assets/img/fossils.svg');
+        }
+        &.power
+        {filter: invert(30%) sepia(91%) saturate(2513%) hue-rotate(227deg) brightness(106%) contrast(102%);
+          background-image: url('~@/assets/img/power.svg');
+        }
+        &.enduse
+        {filter: invert(30%) sepia(91%) saturate(2513%) hue-rotate(227deg) brightness(106%) contrast(102%);
+          background-image: url('~@/assets/img/enduse.svg');
+        }
+      }
   }
 }
 

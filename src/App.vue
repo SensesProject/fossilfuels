@@ -322,7 +322,6 @@ export default {
 }
 
 .risk-card {
-  border: 1px solid #d8d8e4;
   padding: $spacing;
   border-radius: 4px;
   margin-top: $spacing;
@@ -337,7 +336,7 @@ export default {
   a {
     text-decoration: none;
     background: none;
-    color: #000;
+    color: $color-neon;
   }
 
   .active {

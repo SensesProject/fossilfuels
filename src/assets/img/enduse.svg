@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="65px" height="96px" viewBox="0 0 65 96" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(7.000000, 18.000000)" stroke="#000000" stroke-width="3">
+            <polyline id="Path" stroke-linejoin="round" points="20 65 40 60.4153995 40 28 20 33.1571767 20 33.1571767"></polyline>
+            <polygon id="Path-9" stroke-linejoin="round" points="20 65 0 60.1301089 0 28 20 33.1571767"></polygon>
+            <path d="M20.5,1 L20.5,27" id="Path" stroke-linejoin="round"></path>
+            <polygon id="Path-10" stroke-linejoin="round" points="20.2473571 27 40 21.0481646 20.2473571 0 1 21.0481646"></polygon>
+            <path d="M-4.63629135e-13,28 L10.7599853,24.2340052" id="Path-23" stroke-linecap="round"></path>
+            <path d="M-4.609646e-13,28 L10.7599853,24.2340052" id="Path-23" stroke-linecap="round"></path>
+            <path d="M29,28 L39.5,24.2340052" id="Path-23" stroke-linecap="round" transform="translate(34.500000, 26.000000) scale(-1, 1) translate(-34.500000, -26.000000) "></path>
+        </g>
+    </g>
+</svg>
