@@ -2710,9 +2710,9 @@ core-js@^3.6.5:
   integrity sha512-NwS7fI5M5B85EwpWuIwJN4i/fbisQUwLwiSNUWeXlkAZ0sbBjLEvLvFLf1uzAUV66PcEPt4xCGCmOZSxVf3xzA==
 
 core-js@^3.8.0:
-  version "3.8.1"
-  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.8.1.tgz#f51523668ac8a294d1285c3b9db44025fda66d47"
-  integrity sha512-9Id2xHY1W7m8hCl8NkhQn5CufmF/WuR30BTRewvCXc1aZd3kMECwNZ69ndLbekKfakw9Rf2Xyc+QR6E7Gg+obg==
+  version "3.8.0"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.8.0.tgz#0fc2d4941cadf80538b030648bb64d230b4da0ce"
+  integrity sha512-W2VYNB0nwQQE7tKS7HzXd7r2y/y2SVJl4ga6oH/dnaLFzM0o2lB2P3zCkWj5Wc/zyMYjtgd5Hmhk0ObkQFZOIA==
 
 core-util-is@1.0.2, core-util-is@~1.0.0:
   version "1.0.2"
@@ -7241,9 +7241,9 @@ sass-loader@^8.0.0:
     semver "^6.3.0"
 
 sass@^1.29.0:
-  version "1.30.0"
-  resolved "https://registry.yarnpkg.com/sass/-/sass-1.30.0.tgz#60bbbbaf76ba10117e61c6c24f00161c3d60610e"
-  integrity sha512-26EUhOXRLaUY7+mWuRFqGeGGNmhB1vblpTENO1Z7mAzzIZeVxZr9EZoaY1kyGLFWdSOZxRMAufiN2mkbO6dAlw==
+  version "1.29.0"
+  resolved "https://registry.yarnpkg.com/sass/-/sass-1.29.0.tgz#ec4e1842c146d8ea9258c28c141b8c2b7c6ab7f1"
+  integrity sha512-ZpwAUFgnvAUCdkjwPREny+17BpUj8nh5Yr6zKPGtLNTLrmtoRYIjm7njP24COhjJldjwW1dcv52Lpf4tNZVVRA==
   dependencies:
     chokidar ">=2.0.0 <4.0.0"
 
